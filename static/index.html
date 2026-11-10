@@ -7,8 +7,8 @@
 <meta name="description" content="Remote data engineering, analytics and architect roles open to India, fresh from the source.">
 <meta name="theme-color" content="#F2F6F4" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0C1513" media="(prefers-color-scheme: dark)">
-<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:title" content="shoreless.dev">
 <meta property="og:description" content="Remote data roles open to India, fresh from the source.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -107,7 +107,6 @@ details.src summary{cursor:pointer}
     <p class="tagline">Remote data roles open to India, fresh from the source.</p>
     <div class="meta" id="meta">Loading…</div>
   </div>
-  <button class="btn" id="refresh" type="button">Refresh feeds</button>
 </header>
 
 <div class="bar" id="bar">
@@ -250,39 +249,29 @@ function render(){
   if(!list.length){
     const li=document.createElement("li");li.className="empty";
     li.textContent=jobs.length?"No jobs match these filters. Try widening the date range or regions."
-      :(lastUpdated?"No listings came back from the sources. Open Sources below to see which ones failed.":"Fetching listings from all sources. The first load takes about a minute.");
+      :(lastUpdated?"No listings came back from the sources. Open Sources below to see which ones failed.":"Loading jobs…");
     feed.append(li);
   }
 }
 
 async function load(){
   try{
-    const r=await fetch("/api/jobs");const d=await r.json();
-    if(d.updated!==lastUpdated){
-      lastUpdated=d.updated;
-      if(prevSeen===null){prevSeen=new Set(store.get("seen",[]));}
-      const first=prevSeen.size===0;
-      jobs=d.jobs.map(j=>({...j,_new:!first&&!prevSeen.has(j.id)}));
-      store.set("seen",[...new Set([...prevSeen,...jobs.map(j=>j.id)])].slice(-8000));
-      render();
-    }
-    $("meta").textContent=d.updated?`Updated ${ago(d.updated)} ago · ${d.sources_ok}/${d.sources_total} sources`:"First fetch in progress";
-    $("status").textContent=d.refreshing?"Refreshing…":"";
-    if(d.refreshing||!d.updated)setTimeout(load,6000);
-    loadSources();
-  }catch(e){
-    $("meta").textContent="Server is waking up. This takes about a minute on the free plan.";setTimeout(load,5000);
-  }
-}
-async function loadSources(){
-  try{
-    const d=await (await fetch("/api/sources")).json();
-    const bad=d.sources.filter(s=>!s.ok).length;
-    $("src-sum").textContent=`Sources · ${d.sources.length-bad} working, ${bad} not responding`;
+    const d=await (await fetch("jobs.json",{cache:"no-cache"})).json();
+    lastUpdated=d.updated;
+    prevSeen=new Set(store.get("seen",[]));
+    const first=prevSeen.size===0;
+    jobs=d.jobs.map(j=>({...j,_new:!first&&!prevSeen.has(j.id)}));
+    store.set("seen",[...new Set([...prevSeen,...jobs.map(j=>j.id)])].slice(-8000));
+    const ok=d.sources.filter(x=>x.ok).length;
+    $("meta").textContent=`Updated ${ago(d.updated)} ago · refreshes every 6 hours · ${ok}/${d.sources.length} sources`;
+    render();
     const box=$("srclist");box.replaceChildren();
-    d.sources.forEach(s=>{const div=document.createElement("div");div.className=s.ok?"":"bad";
-      div.textContent=s.ok?`${s.key} · ${s.kept}/${s.total}`:`${s.key} · ${s.error==="404"?"not found":s.error}`;box.append(div)});
-  }catch{}
+    $("src-sum").textContent=`Sources · ${ok} working, ${d.sources.length-ok} not responding`;
+    d.sources.forEach(x=>{const div=document.createElement("div");div.className=x.ok?"":"bad";
+      div.textContent=x.ok?`${x.key} · ${x.kept}/${x.total}`:`${x.key} · ${x.error==="404"?"not found":x.error}`;box.append(div)});
+  }catch(e){
+    $("meta").textContent="Couldn't load the job list. Pull down to reload.";
+  }
 }
 
 $("q").addEventListener("input",()=>{limit=60;render()});
@@ -292,10 +281,6 @@ $("only-senior").onclick=()=>{S.onlySenior=!S.onlySenior;persist();render()};
 $("age").onchange=e=>{S.age=+e.target.value;persist();render()};
 document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{S.tab=b.dataset.tab;limit=60;persist();render()});
 $("more").onclick=()=>{limit+=60;render()};
-$("refresh").onclick=async()=>{
-  const r=await fetch("/api/refresh",{method:"POST"});const d=await r.json();
-  $("status").textContent=d.ok?"Refreshing…":d.message;if(d.ok)setTimeout(load,4000);
-};
 render();load();
 </script>
 </body>

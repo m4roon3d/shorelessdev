@@ -140,7 +140,8 @@ def boot():
     threading.Thread(target=scheduler, daemon=True).start()
 
 
-boot()
+if not os.environ.get("SHORELESS_BUILD"):
+    boot()
 
 
 @app.get("/")
