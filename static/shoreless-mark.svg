@@ -1,11 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
-  <title>shoreless.dev mark</title>
-  <rect x="10" y="10" width="44" height="44" rx="12" fill="#0A4F4A"/>
-  <clipPath id="sky"><rect x="10" y="10" width="44" height="27"/></clipPath>
-  <circle cx="32" cy="37" r="9" fill="#F0A236" clip-path="url(#sky)"/>
-  <rect x="2" y="35.5" width="60" height="3" rx="1.5" fill="#F0A236"/>
-  <g fill="#9FD9CC">
-    <rect x="18" y="43" width="10" height="2" rx="1"/><rect x="31" y="43" width="4" height="2" rx="1"/><rect x="38" y="43" width="8" height="2" rx="1"/>
-    <rect x="23" y="48" width="6" height="2" rx="1"/><rect x="32" y="48" width="9" height="2" rx="1"/>
-  </g>
+  <title>shoreless.dev</title>
+  <clipPath id="in"><circle cx="29" cy="32" r="25"/></clipPath>
+  <circle cx="29" cy="32" r="25" fill="#3A2BFF"/>
+  <path d="M2 39 C12 21 23 21 31 33 S50 46 61 26" fill="none" stroke="#FF4D2E" stroke-width="7" stroke-linecap="round"/>
+  <path d="M2 39 C12 21 23 21 31 33 S50 46 61 26" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" clip-path="url(#in)"/>
 </svg>
