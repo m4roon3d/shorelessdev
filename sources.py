@@ -10,7 +10,7 @@ import requests
 
 import companies
 
-UA = {"User-Agent": "RemoteDataDesk/1.0 (personal job search tool)"}
+UA = {"User-Agent": "shoreless.dev/1.0 (personal job search tool)"}
 TIMEOUT = 20
 
 

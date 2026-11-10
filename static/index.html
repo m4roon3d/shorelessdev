@@ -3,47 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Remote Data Desk</title>
-<meta name="theme-color" content="#f3f5f4">
+<title>shoreless.dev</title>
+<meta name="description" content="Remote data engineering, analytics and architect roles open to India, fresh from the source.">
+<meta name="theme-color" content="#F2F6F4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0C1513" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/static/apple-touch-icon.png">
+<meta property="og:title" content="shoreless.dev">
+<meta property="og:description" content="Remote data roles open to India, fresh from the source.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Manrope:wght@700;800&display=swap">
 <style>
 /* Layout: one narrow reading column — sticky filter bar over a dense, scannable feed of job rows */
 :root{
-  --bg:#f3f5f4; --surface:#ffffff; --ink:#15201d; --muted:#5d6b67; --line:#dbe2df;
-  --accent:#0b6e5f; --accent-ink:#ffffff; --accent-soft:#e2f0ec;
-  --new:#b45309; --new-soft:#fdf0dc;
-  --india:#0b6e5f; --apac:#2f6f9f; --world:#5b4fa3; --unclear:#7a7f7d; --locked:#a3423a;
-  --display:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --deep-sea:#0A4F4A; --saffron:#F0A236; --foam:#9FD9CC;
+  --bg:#F2F6F4; --surface:#FFFFFF; --ink:#11201D; --muted:#55665F; --line:#D6E1DD;
+  --accent:#0B6E62; --accent-ink:#FFFFFF; --accent-soft:#E0F0EC;
+  --new:#9A5405; --new-soft:#FCEFD9;
+  --india:#0B6E62; --apac:#2B6896; --world:#56499A; --unclear:#55665F; --locked:#A3423A;
+  --display:"Manrope","Segoe UI",system-ui,sans-serif;
   --body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
   color-scheme:light;
 }
 @media (prefers-color-scheme:dark){:root{
-  --bg:#0f1513; --surface:#161e1b; --ink:#e6ece9; --muted:#93a19c; --line:#26312d;
-  --accent:#4cc3a9; --accent-ink:#06201a; --accent-soft:#16332c;
-  --new:#f0a54a; --new-soft:#33240f;
-  --india:#4cc3a9; --apac:#77b3e0; --world:#a99cf0; --unclear:#9aa29f; --locked:#ec8a80;
+  --bg:#0C1513; --surface:#14201D; --ink:#E5EEEB; --muted:#94A6A1; --line:#25332F;
+  --accent:#4CC3A9; --accent-ink:#06201A; --accent-soft:#16332D;
+  --new:#F3B055; --new-soft:#33240F;
+  --india:#4CC3A9; --apac:#7DB5E3; --world:#AB9FEE; --unclear:#94A6A1; --locked:#EC8A80;
   color-scheme:dark;
 }}
 *{box-sizing:border-box}
+[hidden]{display:none!important}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--body);
   padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .wrap{max-width:760px;margin:0 auto}
 header{padding-block:calc(18px + env(safe-area-inset-top,0px)) 10px;display:flex;gap:12px;align-items:flex-end;justify-content:space-between;flex-wrap:wrap}
-h1{font:700 26px/1 var(--display);letter-spacing:-.01em;margin:0;text-wrap:balance}
+.brand{display:flex;align-items:center;gap:10px}
+.brand svg{width:40px;height:40px;flex:none}
+h1{font:800 26px/1 var(--display);letter-spacing:-.035em;margin:0}
 h1 span{color:var(--accent)}
+.tagline{font-size:13px;color:var(--muted);margin:4px 0 2px}
 .meta{font:12px/1.4 var(--mono);color:var(--muted)}
 button,select,input{font:inherit;color:inherit}
 .btn{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:7px 12px;cursor:pointer;font-size:13px}
 .btn:hover{border-color:var(--accent)}
 .btn:focus-visible,.chip:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
-.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line);display:grid;gap:8px;
+.bar{background:var(--bg);padding-block:10px;border-bottom:1px solid var(--line);display:grid;gap:8px;
   padding-top:calc(10px + env(safe-area-inset-top,0px))}
-.search{display:flex;gap:8px}
-.search input{flex:1;min-width:0;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:9px 12px;font-size:15px}
+.search{display:flex;gap:8px;flex-wrap:wrap}
+.search input{flex:1 1 220px}
+.search input{min-width:0;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:9px 12px;font-size:15px}
 .row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
 .lbl{font:600 10.5px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px}
 .chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:4px 10px;font-size:13px;cursor:pointer;user-select:none}
@@ -57,7 +69,7 @@ select{border:1px solid var(--line);background:var(--surface);border-radius:999p
 .summary{font:12px var(--mono);color:var(--muted);padding:10px 0 4px;display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
 ol.feed{list-style:none;margin:0;padding:0;display:grid;gap:8px;padding-bottom:28px}
 .job{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:grid;gap:6px;min-width:0}
-.job.is-new{border-color:var(--new);box-shadow:inset 3px 0 0 var(--new)}
+.job.is-new{border-color:var(--saffron);box-shadow:inset 3px 0 0 var(--saffron)}
 .job.applied{opacity:.55}
 .top{display:flex;gap:10px;justify-content:space-between;align-items:flex-start}
 .title{font-weight:600;font-size:15.5px;line-height:1.3;color:var(--ink);text-decoration:none;min-width:0;overflow-wrap:anywhere}
@@ -88,7 +100,11 @@ details.src summary{cursor:pointer}
 <div class="wrap">
 <header>
   <div>
-    <h1>Remote <span>Data</span> Desk</h1>
+    <div class="brand">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect x="10" y="10" width="44" height="44" rx="12" fill="#0A4F4A"/><clipPath id="sky"><rect x="10" y="10" width="44" height="27"/></clipPath><circle cx="32" cy="37" r="9" fill="#F0A236" clip-path="url(#sky)"/><rect x="2" y="35.5" width="60" height="3" rx="1.5" fill="#F0A236"/><g fill="#9FD9CC"><rect x="18" y="43" width="10" height="2" rx="1"/><rect x="31" y="43" width="4" height="2" rx="1"/><rect x="38" y="43" width="8" height="2" rx="1"/><rect x="23" y="48" width="6" height="2" rx="1"/><rect x="32" y="48" width="9" height="2" rx="1"/></g></svg>
+      <h1>shoreless<span>.dev</span></h1>
+    </div>
+    <p class="tagline">Remote data roles open to India, fresh from the source.</p>
     <div class="meta" id="meta">Loading…</div>
   </div>
   <button class="btn" id="refresh" type="button">Refresh feeds</button>
@@ -134,15 +150,15 @@ details.src summary{cursor:pointer}
 <script>
 const ROLES = ["Engineering","Analytics","Architecture","Science"];
 const REGIONS = [
-  ["India","India-based or India allowed","--india"],
-  ["APAC","APAC / Asia","--apac"],
+  ["India","India","--india"],
+  ["APAC","APAC","--apac"],
   ["Worldwide","Worldwide","--world"],
-  ["Unclear","Remote, region unclear","--unclear"],
+  ["Unclear","Region unclear","--unclear"],
   ["Locked","Region-locked","--locked"],
 ];
 const store = {
-  get(k,d){try{const v=localStorage.getItem("rdd:"+k);return v?JSON.parse(v):d}catch{return d}},
-  set(k,v){try{localStorage.setItem("rdd:"+k,JSON.stringify(v))}catch{}}
+  get(k,d){try{const v=localStorage.getItem("shoreless:"+k);return v?JSON.parse(v):d}catch{return d}},
+  set(k,v){try{localStorage.setItem("shoreless:"+k,JSON.stringify(v))}catch{}}
 };
 const S = Object.assign({
   roles:["Engineering","Analytics","Architecture"],
@@ -233,7 +249,8 @@ function render(){
   $("count").textContent=`${list.length} jobs`+(newCount?` · ${newCount} new`:"");
   if(!list.length){
     const li=document.createElement("li");li.className="empty";
-    li.textContent=jobs.length?"No jobs match these filters. Try widening the date range or regions.":"Fetching listings from all sources. The first load takes about a minute.";
+    li.textContent=jobs.length?"No jobs match these filters. Try widening the date range or regions."
+      :(lastUpdated?"No listings came back from the sources. Open Sources below to see which ones failed.":"Fetching listings from all sources. The first load takes about a minute.");
     feed.append(li);
   }
 }
@@ -254,7 +271,7 @@ async function load(){
     if(d.refreshing||!d.updated)setTimeout(load,6000);
     loadSources();
   }catch(e){
-    $("meta").textContent="Server is waking up…";setTimeout(load,5000);
+    $("meta").textContent="Server is waking up. This takes about a minute on the free plan.";setTimeout(load,5000);
   }
 }
 async function loadSources(){

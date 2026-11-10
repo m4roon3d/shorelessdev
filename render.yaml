@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: remote-data-desk
+    name: shoreless
     runtime: python
     plan: free
     region: singapore

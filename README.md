@@ -1,4 +1,6 @@
-# Remote Data Desk
+# shoreless.dev
+
+Remote data roles open to India, fresh from the source.
 
 A personal job feed for remote data engineering, analytics and architect roles that are open to candidates in India.
 

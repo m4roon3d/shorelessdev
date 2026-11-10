@@ -13,7 +13,7 @@ import sources
 REFRESH_EVERY = int(os.environ.get("REFRESH_HOURS", "6")) * 3600
 MANUAL_MIN_GAP = 30 * 60
 MAX_AGE_DAYS = int(os.environ.get("MAX_AGE_DAYS", "60"))
-CACHE_FILE = os.environ.get("CACHE_FILE", "/tmp/rdd_cache.json")
+CACHE_FILE = os.environ.get("CACHE_FILE", "/tmp/shoreless_cache.json")
 
 app = Flask(__name__, static_folder="static")
 
