@@ -24,15 +24,16 @@ lock = threading.Lock()
 def normalize(raw, source):
     title = (raw.get("title") or "").strip()
     body = raw.get("body") or ""
-    role = classify.role_of(title)
-    if not role and source == "HN Who's Hiring":
-        role = classify.role_of(body[:600])
+    desc = (raw.get("desc") or "")[:8000]
+    stack = classify.stack_of(title, desc)
+    vendor = "vendor" in (raw.get("tags") or [])
+    role = classify.role_of(title, stack, vendor)
     if not role:
         return None
 
     loc = raw.get("location") or ""
     region = classify.region_of(loc, raw.get("remote"), raw.get("restrictions"))
-    if source == "HN Who's Hiring" and region in ("Unclear", "Locked"):
+    if source == "HN Who's Hiring" and region in ("Unclear", "Locked") and not classify.LOCKED.search(title):
         r2 = classify.region_of(body[:800], True)
         if r2 in ("India", "APAC", "Worldwide"):
             region = r2
@@ -48,7 +49,7 @@ def normalize(raw, source):
 
     url = raw.get("url") or ""
     jid = hashlib.sha1((url or f"{raw.get('company')}|{title}").encode()).hexdigest()[:12]
-    supply = "supply" in (raw.get("tags") or []) or classify.is_supply(title, raw.get("company"), body[:1500])
+    supply = "supply" in (raw.get("tags") or []) or classify.is_supply(title, raw.get("company"), desc[:3000])
     if raw.get("restrictions"):
         loc = ", ".join(raw["restrictions"][:6])
     return dict(
@@ -56,6 +57,7 @@ def normalize(raw, source):
         location=(loc or ("Worldwide" if region == "Worldwide" else ""))[:160],
         region=region, remote=bool(remote_flag), role=role, level=classify.level_of(title),
         supply=supply, posted=posted, source=source,
+        stack=sorted(stack, key=lambda k: (k in ("Python", "SQL"), list(classify.STACK).index(k)))[:6],
     )
 
 

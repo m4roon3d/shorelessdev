@@ -40,13 +40,14 @@ def _strip(h):
 # ---------- company boards (ATS) ----------
 
 def greenhouse(slug, name, tags):
-    data = _get(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs").json()
+    data = _get(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs", params={"content": "true"}).json()
     out = []
     for j in data.get("jobs", []):
         out.append(dict(
             title=j.get("title"), company=name, url=j.get("absolute_url"),
             location=(j.get("location") or {}).get("name", ""), remote=None, restrictions=None,
             posted=_iso(j.get("first_published") or j.get("updated_at")), tags=tags,
+            desc=_strip(html.unescape(j.get("content") or "")),
         ))
     return out
 
@@ -63,6 +64,7 @@ def lever(slug, name, tags):
             title=j.get("text"), company=name, url=j.get("hostedUrl"), location=loc,
             remote=True if wt == "remote" else None, restrictions=None,
             posted=int(j["createdAt"] / 1000) if j.get("createdAt") else None, tags=tags,
+            desc=(j.get("descriptionPlain") or "") + " " + " ".join(_strip(l.get("content", "")) for l in j.get("lists") or []),
         ))
     return out
 
@@ -79,6 +81,7 @@ def ashby(slug, name, tags):
         out.append(dict(
             title=j.get("title"), company=name, url=j.get("jobUrl"), location=loc,
             remote=remote, restrictions=None, posted=_iso(j.get("publishedAt")), tags=tags,
+            desc=j.get("descriptionPlain") or _strip(j.get("descriptionHtml")),
         ))
     return out
 
@@ -113,6 +116,7 @@ def workable(slug, name, tags):
             title=j.get("title"), company=name, url=j.get("url") or j.get("application_url"),
             location=loc, remote=True if j.get("telecommuting") else None, restrictions=None,
             posted=_iso(j.get("published_on") or j.get("created_at")), tags=tags,
+            desc=_strip(j.get("description")),
         ))
     return out
 
@@ -136,19 +140,27 @@ def remotive():
             out.append(dict(
                 title=j.get("title"), company=j.get("company_name"), url=j.get("url"),
                 location=j.get("candidate_required_location") or "Worldwide", remote=True, restrictions=None,
-                posted=_iso(j.get("publication_date")), tags=[],
+                posted=_iso(j.get("publication_date")), tags=[], desc=_strip(j.get("description")),
             ))
     return out
 
 
 def remoteok():
-    data = _get("https://remoteok.com/api").json()
+    data = []
+    for params in ({}, {"tag": "data"}, {"tag": "analytics"}):
+        try:
+            d = _get("https://remoteok.com/api", params=params).json()
+            data += [j for j in d if "legal" not in j]
+        except requests.RequestException:
+            continue
+        time.sleep(1)
     out = []
-    for j in data[1:] if data and "legal" in data[0] else data:
+    for j in data:
         out.append(dict(
             title=j.get("position"), company=j.get("company"), url=j.get("url"),
             location=j.get("location") or "Worldwide", remote=True, restrictions=None,
             posted=int(j["epoch"]) if j.get("epoch") else _iso(j.get("date")), tags=[],
+            desc=_strip(j.get("description")) + " " + " ".join(j.get("tags") or []),
         ))
     return out
 
@@ -164,17 +176,32 @@ def himalayas():
                 url=j.get("applicationLink") or j.get("guid"), location="", remote=True,
                 restrictions=j.get("locationRestrictions") or [],
                 posted=int(j["pubDate"]) if isinstance(j.get("pubDate"), (int, float)) else _iso(j.get("pubDate")),
-                tags=[],
+                tags=[], desc=_strip(j.get("description") or j.get("excerpt")),
             ))
         if len(jobs) < 20:
             break
+        time.sleep(0.3)
+    for q in ("data engineer", "analytics engineer", "data architect", "data analyst", "etl", "snowflake"):
+        try:
+            data = _get("https://himalayas.app/jobs/api/search", params={"q": q, "limit": 20}).json()
+        except requests.RequestException:
+            continue
+        for j in data.get("jobs", []):
+            out.append(dict(
+                title=j.get("title"), company=j.get("companyName"),
+                url=j.get("applicationLink") or j.get("guid"), location="", remote=True,
+                restrictions=j.get("locationRestrictions") or [],
+                posted=int(j["pubDate"]) if isinstance(j.get("pubDate"), (int, float)) else _iso(j.get("pubDate")),
+                tags=[], desc=_strip(j.get("description") or j.get("excerpt")),
+            ))
         time.sleep(0.3)
     return out
 
 
 def jobicy():
     out = []
-    for params in ({"count": 100, "tag": "data"}, {"count": 100, "geo": "apac"}, {"count": 100, "geo": "india"}):
+    for params in ({"count": 100, "tag": "data engineer"}, {"count": 100, "tag": "data"}, {"count": 100, "tag": "analytics"},
+                   {"count": 100, "tag": "etl"}, {"count": 100, "geo": "apac"}, {"count": 100, "geo": "india"}):
         try:
             data = _get("https://jobicy.com/api/v2/remote-jobs", params=params).json()
         except requests.HTTPError:
@@ -183,7 +210,7 @@ def jobicy():
             out.append(dict(
                 title=_strip(j.get("jobTitle")), company=j.get("companyName"), url=j.get("url"),
                 location=j.get("jobGeo") or "", remote=True, restrictions=None,
-                posted=_iso(j.get("pubDate")), tags=[],
+                posted=_iso(j.get("pubDate")), tags=[], desc=_strip(j.get("jobDescription") or j.get("jobExcerpt")),
             ))
     return out
 
@@ -206,6 +233,7 @@ def weworkremotely():
             out.append(dict(
                 title=role or title, company=company if role else "", url=tag("link"),
                 location=tag("region") or "Anywhere", remote=True, restrictions=None, posted=posted, tags=[],
+                desc=_strip(tag("description")),
             ))
     return out
 
@@ -232,7 +260,7 @@ def hackernews():
             title=first[:200], company=company,
             url=f"https://news.ycombinator.com/item?id={c.get('id')}",
             location=first, remote=True, restrictions=None,
-            posted=c.get("created_at_i"), tags=[], body=body[:4000],
+            posted=c.get("created_at_i"), tags=[], body=body[:4000], desc=body[:6000],
         ))
     return out
 

@@ -82,6 +82,7 @@ ol.feed{list-style:none;margin:0;padding:0;display:grid;gap:8px;padding-bottom:2
 .t.r{color:var(--c);border-color:color-mix(in srgb,var(--c) 45%,transparent);background:color-mix(in srgb,var(--c) 10%,transparent)}
 .t.new{color:var(--new);background:var(--new-soft);border-color:transparent}
 .t.sc{color:var(--accent);border-color:var(--accent)}
+.t.stk{color:var(--ink);background:var(--accent-soft);border-color:transparent}
 .acts{margin-left:auto;display:flex;gap:4px}
 .ic{border:1px solid transparent;background:none;border-radius:6px;padding:3px 8px;font-size:12px;cursor:pointer;color:var(--muted)}
 .ic:hover{border-color:var(--line)}
@@ -111,7 +112,7 @@ details.src summary{cursor:pointer}
 
 <div class="bar" id="bar">
   <div class="search">
-    <input id="q" type="search" placeholder="Search title or company (e.g. snowflake, logistics)" autocomplete="off">
+    <input id="q" type="search" placeholder="Search title, company or stack" autocomplete="off">
     <div class="tabs" role="tablist">
       <button role="tab" id="tab-all" data-tab="all" aria-selected="true">All</button>
       <button role="tab" id="tab-saved" data-tab="saved" aria-selected="false">Saved</button>
@@ -120,6 +121,7 @@ details.src summary{cursor:pointer}
   </div>
   <div class="row" id="roles"><span class="lbl">Role</span></div>
   <div class="row" id="regions"><span class="lbl">Open to</span></div>
+  <div class="row" id="stacks"><span class="lbl">Stack</span></div>
   <div class="row">
     <span class="lbl">Show</span>
     <button class="chip" id="only-new" aria-pressed="false" type="button">New since last visit</button>
@@ -162,8 +164,9 @@ const store = {
 const S = Object.assign({
   roles:["Engineering","Analytics","Architecture"],
   regions:["India","APAC","Worldwide","Unclear"],
-  onlyNew:false, onlySupply:false, onlySenior:false, age:14, tab:"all"
+  onlyNew:false, onlySupply:false, onlySenior:false, age:14, tab:"all", stacks:[]
 }, store.get("filters",{}));
+if(!Array.isArray(S.stacks))S.stacks=[];
 const saved = new Set(store.get("saved",[]));
 const applied = new Set(store.get("applied",[]));
 let prevSeen = null, jobs = [], limit = 60, lastUpdated = null;
@@ -186,11 +189,12 @@ function filtered(ignore){
     if(S.tab==="all"&&applied.has(j.id))return false;
     if(ignore!=="role"&&!S.roles.includes(j.role))return false;
     if(ignore!=="region"&&!S.regions.includes(j.region))return false;
+    if(ignore!=="stack"&&S.stacks.length&&!S.stacks.some(x=>(j.stack||[]).includes(x)))return false;
     if(S.tab==="all"&&j.posted&&j.posted<cutoff)return false;
     if(S.onlyNew&&!j._new)return false;
     if(S.onlySupply&&!j.supply)return false;
     if(S.onlySenior&&j.level!=="Senior+")return false;
-    if(q&&!(j.title+" "+j.company+" "+j.location).toLowerCase().includes(q))return false;
+    if(q&&!(j.title+" "+j.company+" "+j.location+" "+(j.stack||[]).join(" ")).toLowerCase().includes(q))return false;
     return true;
   });
 }
@@ -203,6 +207,11 @@ function renderFilters(){
   ROLES.forEach(name=>r.append(chip(name,S.roles.includes(name),()=>{toggle(S.roles,name)},byRole[name]||0)));
   const g=$("regions");g.querySelectorAll(".chip").forEach(c=>c.remove());
   REGIONS.forEach(([name,label])=>g.append(chip(label,S.regions.includes(name),()=>{toggle(S.regions,name)},byRegion[name]||0)));
+  const byStack={};filtered("stack").forEach(j=>(j.stack||[]).forEach(x=>byStack[x]=(byStack[x]||0)+1));
+  const top=Object.entries(byStack).sort((a,b)=>b[1]-a[1]).map(e=>e[0]);
+  const shown=[...new Set([...S.stacks,...top.slice(0,14)])];
+  const st=$("stacks");st.querySelectorAll(".chip").forEach(c=>c.remove());
+  shown.forEach(name=>st.append(chip(name,S.stacks.includes(name),()=>{toggle(S.stacks,name)},byStack[name]||0)));
   $("only-new").setAttribute("aria-pressed",S.onlyNew);
   $("only-supply").setAttribute("aria-pressed",S.onlySupply);
   $("only-senior").setAttribute("aria-pressed",S.onlySenior);
@@ -226,6 +235,7 @@ function card(j){
   if(j._new)t("NEW","new");
   t(j.region==="India"&&!j.remote?"India · onsite/hybrid":reg[1],"r",reg[2]);
   t(j.role);
+  (j.stack||[]).slice(0,4).forEach(x=>t(x,"stk"));
   if(j.level==="Senior+")t("Senior+");
   if(j.supply)t("Supply chain","sc");
   t(j.source);
