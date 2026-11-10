@@ -63,12 +63,15 @@ EXCLUDE_TITLE = re.compile(
     r"kubernetes|security|devops|\bsre\b|frontend|front-end|mobile|ios|android",
     re.I,
 )
+HARD_EXCLUDE = re.compile(r"\bintern(ship)?\b|\btrainee\b|\btrainer\b|\btutor\b|\bfreelance trainer\b|\bteacher\b", re.I)
 DATA_IN_TITLE = re.compile(r"\bdata\b|analytics|\betl\b|warehouse|\bbi\b", re.I)
 
 
 def role_of(title: str, stack=None, data_vendor=False):
     """Return a role bucket, or None if this is not a data role."""
     if not title:
+        return None
+    if HARD_EXCLUDE.search(title):
         return None
     ex = EXCLUDE_TITLE.search(title)
     # allow e.g. "Machine Learning Data Engineer" or "Data Platform - Security Analytics" only if data is explicit
