@@ -21,6 +21,13 @@ state = {"jobs": [], "sources": [], "updated": None, "refreshing": False, "start
 lock = threading.Lock()
 
 
+def _pay(raw, desc):
+    t = classify.fmt_pay(raw.get("pay"))
+    if not t and raw.get("pay_text") and len(raw["pay_text"]) <= 40 and any(c.isdigit() for c in raw["pay_text"]):
+        t = raw["pay_text"].strip()
+    return t or classify.pay_from_text(desc)
+
+
 def normalize(raw, source):
     title = (raw.get("title") or "").strip()
     body = raw.get("body") or ""
@@ -59,6 +66,7 @@ def normalize(raw, source):
         location=(loc or ("Worldwide" if region == "Worldwide" else ""))[:160],
         region=region, remote=bool(remote_flag), role=role, level=classify.level_of(title),
         supply=supply, posted=posted, source=source,
+        pay=_pay(raw, desc), etype=(raw.get("etype") or "")[:20],
         stack=sorted(stack, key=lambda k: (k in ("Python", "SQL"), list(classify.STACK).index(k)))[:6],
     )
 

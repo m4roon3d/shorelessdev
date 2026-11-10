@@ -161,3 +161,61 @@ def is_supply(title, company, desc=""):
     if SUPPLY.search(title or "") or SUPPLY_STRONG.search(company or ""):
         return True
     return len(SUPPLY_STRONG.findall(desc or "")) >= 3
+
+
+# ---------- pay ----------
+SYM = {"USD": "$", "EUR": "\u20ac", "GBP": "\u00a3", "INR": "\u20b9", "CAD": "C$", "AUD": "A$", "SGD": "S$"}
+
+
+def _n(x, cur):
+    if cur == "INR" and x >= 1e5:
+        return f"{x / 1e5:.3g}L"
+    if x >= 1000:
+        return f"{x / 1000:.3g}k"
+    return f"{x:g}"
+
+
+def fmt_pay(pay):
+    """{'min','max','cur','per'} or {'text'} -> short display string."""
+    if not pay:
+        return ""
+    if pay.get("text"):
+        return pay["text"]
+    lo, hi, cur, per = pay["min"], pay["max"], pay.get("cur") or "USD", pay.get("per") or "yr"
+    if per == "yr" and hi < 500:
+        per = "hr"
+    sym = SYM.get(cur, cur + " ")
+    body = f"{sym}{_n(lo, cur)}" if lo == hi else f"{sym}{_n(lo, cur)}\u2013{_n(hi, cur)}"
+    return f"{body}/{per}"
+
+
+_CUR = r"(US\$|\$|USD|\u20ac|EUR|\u00a3|GBP|\u20b9|INR|Rs\.?)"
+_AMT = r"(\d{1,3}(?:,\d{3})+|\d{2,3}(?:\.\d)?\s?[kK])"
+_RANGE = re.compile(_CUR + r"\s?" + _AMT + r"\s?(?:-|\u2013|\u2014|to)\s?" + _CUR + r"?\s?" + _AMT)
+_LPA = re.compile(r"(\d{1,3}(?:\.\d+)?)\s?(?:-|\u2013|to)\s?(\d{1,3}(?:\.\d+)?)\s?(?:LPA|lakhs?\b|lacs?\b)", re.I)
+_CURMAP = {"$": "USD", "US$": "USD", "USD": "USD", "\u20ac": "EUR", "EUR": "EUR", "\u00a3": "GBP", "GBP": "GBP",
+           "\u20b9": "INR", "INR": "INR", "RS": "INR", "RS.": "INR"}
+
+
+def _amt(t):
+    t = t.replace(",", "").strip().lower()
+    return float(t[:-1]) * 1000 if t.endswith("k") else float(t)
+
+
+def pay_from_text(text):
+    """Find a stated pay range in a job description. Conservative: needs a currency and a range."""
+    if not text:
+        return ""
+    m = _LPA.search(text)
+    if m:
+        lo, hi = float(m.group(1)), float(m.group(2))
+        if 1 <= lo <= hi <= 200:
+            return fmt_pay({"min": lo * 1e5, "max": hi * 1e5, "cur": "INR", "per": "yr"})
+    m = _RANGE.search(text)
+    if m:
+        lo, hi = _amt(m.group(2)), _amt(m.group(4))
+        if 1000 <= lo <= hi <= lo * 4:
+            tail = text[m.end():m.end() + 40].lower()
+            per = "hr" if "hour" in tail else "mo" if "month" in tail else "yr"
+            return fmt_pay({"min": lo, "max": hi, "cur": _CURMAP.get(m.group(1).upper(), "USD"), "per": per})
+    return ""

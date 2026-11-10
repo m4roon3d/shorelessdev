@@ -17,8 +17,8 @@
    Pipeline tracks what you saved and applied to; Pulse reads the market from the same feed. */
 :root{
   --bg:#F4F4F6; --surface:#FFFFFF; --ink:#0D0D16; --muted:#5B5B6B; --line:#E1E1E8;
-  --accent:#3A2BFF; --accent-ink:#FFFFFF; --accent-soft:#ECEAFF;
-  --hot:#FF4D2E; --new:#C7300F; --new-soft:#FFE9E3;
+  --fill:#FF5A1F; --accent:#C2410C; --accent-ink:#0D0D16; --accent-soft:#FFEDE3;
+  --hot:#3A2BFF; --new:#3A2BFF; --new-soft:#ECEAFF;
   --apac:#0E7490; --world:#7C3AED; --locked:#BE123C;
   --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
   --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -40,7 +40,7 @@ header{padding-block:calc(16px + env(safe-area-inset-top,0px)) 0;display:flex;ga
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
 .brand svg{width:38px;height:38px;flex:none}
 .brand b{font:800 24px/1 var(--display);letter-spacing:-.035em}
-.brand b span{color:var(--accent)}
+.brand b span{color:var(--fill)}
 .meta{font:12px/1.4 var(--mono);color:var(--muted)}
 nav{display:flex;gap:2px;border:1px solid var(--line);border-radius:10px;padding:3px;background:var(--surface);margin-block:14px 6px;width:100%}
 nav a{flex:1;text-align:center;padding:8px 4px;border-radius:7px;font-size:14px;color:var(--muted);text-decoration:none;white-space:nowrap}
@@ -50,7 +50,7 @@ nav a .n{font:11px var(--mono);margin-left:4px;opacity:.8}
 /* shared bits */
 .btn{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:9px 14px;cursor:pointer;font-size:14px}
 .btn:hover{border-color:var(--accent)}
-.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.btn.pri{background:var(--fill);border-color:var(--fill);color:var(--accent-ink);font-weight:600}
 .btn.sm{padding:5px 10px;font-size:13px;border-radius:8px}
 .lbl{font:600 10.5px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .chips{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
@@ -59,7 +59,8 @@ nav a .n{font:11px var(--mono);margin-left:4px;opacity:.8}
 .chip .n{font:11px var(--mono);opacity:.75;margin-left:4px}
 .t{font:500 11px/1 var(--mono);padding:4px 7px;border-radius:6px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
 .t.who{color:var(--c);border-color:color-mix(in srgb,var(--c) 45%,transparent);background:color-mix(in srgb,var(--c) 10%,transparent)}
-.t.hit{color:var(--accent-ink);background:var(--accent);border-color:var(--accent)}
+.t.hit{color:var(--accent-ink);background:var(--fill);border-color:var(--fill)}
+.t.pay{color:var(--ink);border-color:var(--ink)}
 .t.new{color:var(--new);background:var(--new-soft);border-color:transparent}
 .t.warn{color:var(--new);border-color:var(--new)}
 .tags{display:flex;gap:5px;flex-wrap:wrap;align-items:center}
@@ -77,7 +78,7 @@ h2{font:700 22px/1.25 var(--display);letter-spacing:-.02em;margin:18px 0 4px;tex
 .prog{display:flex;gap:4px;margin:10px 0 14px}
 .prog i{flex:1;height:4px;border-radius:2px;background:var(--line)}
 .prog i.done{background:var(--accent)}
-.prog i.cur{background:var(--hot)}
+.prog i.cur{background:var(--fill)}
 .deck{position:relative;padding-bottom:14px}
 .deck::before,.deck::after{content:"";position:absolute;left:10px;right:10px;bottom:7px;height:20px;border:1px solid var(--line);border-top:0;border-radius:0 0 10px 10px;background:var(--surface)}
 .deck::after{left:20px;right:20px;bottom:0}
@@ -149,7 +150,7 @@ ol.feed{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .bar .nm{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .bar .nm.mine{font-weight:600;color:var(--accent)}
 .bar .tr{height:10px;border-radius:5px;background:var(--bg);overflow:hidden}
-.bar .tr i{display:block;height:100%;border-radius:5px;background:var(--accent)}
+.bar .tr i{display:block;height:100%;border-radius:5px;background:var(--fill)}
 .bar .v{font:12px var(--mono);color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}
 .split{display:flex;height:16px;border-radius:8px;overflow:hidden;gap:2px;margin-bottom:10px}
 .split i{display:block;background:var(--c);min-width:3px}
@@ -173,11 +174,11 @@ nav a[aria-current="page"]{background:var(--ink);color:#fff}
 .btn{border-radius:999px;font-weight:600;border-color:var(--ink)}
 .btn.sm{border-radius:999px}
 .btn:hover{border-color:var(--accent);color:var(--accent)}
-.btn.pri:hover{color:var(--accent-ink);background:var(--ink);border-color:var(--ink)}
+.btn.pri:hover{color:#fff;background:var(--ink);border-color:var(--ink)}
 .chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
 h2{font-weight:800;font-size:28px;letter-spacing:-.03em}
 .panel,.job,.pc{border-radius:14px}
-.card{border:2px solid var(--ink);border-radius:18px;box-shadow:6px 6px 0 var(--accent);padding:20px}
+.card{border:2px solid var(--ink);border-radius:18px;box-shadow:6px 6px 0 var(--fill);padding:20px}
 .card h3{font-weight:800;font-size:27px;letter-spacing:-.03em;line-height:1.1}
 .card .age{color:var(--accent);font-weight:500}
 .deck{padding:0 6px 6px 0}
@@ -185,7 +186,7 @@ h2{font-weight:800;font-size:28px;letter-spacing:-.03em}
 .acts{margin-top:18px}
 .prog i{height:6px;border-radius:3px}
 .prog i.done{background:var(--ink)}
-.stat b{color:var(--accent);font-size:34px}
+.stat b{color:var(--fill);font-size:34px}
 .out svg{width:84px}
 .out h3{font-weight:800;font-size:26px}
 .col h4{border-bottom-color:var(--ink)}
@@ -197,7 +198,7 @@ h2{font-weight:800;font-size:28px;letter-spacing:-.03em}
 <div class="wrap">
 <header>
   <a class="brand" href="#today">
-    <svg viewBox="0 0 64 64" aria-hidden="true"><clipPath id="in"><circle cx="29" cy="32" r="25"/></clipPath><circle cx="29" cy="32" r="25" fill="#3A2BFF"/><path d="M2 39 C12 21 23 21 31 33 S50 46 61 26" fill="none" stroke="#FF4D2E" stroke-width="7" stroke-linecap="round"/><path d="M2 39 C12 21 23 21 31 33 S50 46 61 26" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" clip-path="url(#in)"/></svg>
+    <svg viewBox="0 0 64 64" aria-hidden="true"><clipPath id="in"><circle cx="29" cy="32" r="25"/></clipPath><circle cx="29" cy="32" r="25" fill="#FF5A1F"/><path d="M2 39 C12 21 23 21 31 33 S50 46 61 26" fill="none" stroke="#3A2BFF" stroke-width="7" stroke-linecap="round"/><path d="M2 39 C12 21 23 21 31 33 S50 46 61 26" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" clip-path="url(#in)"/></svg>
     <b>shoreless<span>.dev</span></b>
   </a>
   <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
@@ -251,7 +252,7 @@ let batch=[],pos=0,undo=[],limit=60;
 const saveT=()=>store.set("triage",T);
 const saveP=()=>store.set("profile",P);
 const saveB=()=>store.set("browse",B);
-const snap=j=>({id:j.id,title:j.title,company:j.company,url:j.url,location:j.location,region:j.region,remote:j.remote,source:j.source});
+const snap=j=>({id:j.id,pay:j.pay,title:j.title,company:j.company,url:j.url,location:j.location,region:j.region,remote:j.remote,source:j.source});
 
 /* ---------- fit ---------- */
 function fit(j){
@@ -294,7 +295,7 @@ function undoLast(){const u=undo.pop();if(!u)return;if(u.prev)T[u.id]=u.prev;els
 function nextRefresh(){const d=new Date();const n=new Date(Date.UTC(d.getUTCFullYear(),d.getUTCMonth(),d.getUTCDate(),Math.floor(d.getUTCHours()/6)*6,20));
   while(n<=d)n.setUTCHours(n.getUTCHours()+6);const hrs=(n-d)/36e5;return hrs<1?Math.round(hrs*60)+" minutes":Math.round(hrs)+(Math.round(hrs)===1?" hour":" hours")}
 function horizon(){const s=document.createElementNS("http://www.w3.org/2000/svg","svg");s.setAttribute("viewBox","0 0 64 64");s.setAttribute("aria-hidden","true");
-  s.innerHTML='<clipPath id="in2"><circle cx="29" cy="32" r="25"/></clipPath><circle cx="29" cy="32" r="25" fill="#3A2BFF"/><path d="M2 39 C12 21 23 21 31 33 S50 46 61 26" fill="none" stroke="#FF4D2E" stroke-width="7" stroke-linecap="round"/><path d="M2 39 C12 21 23 21 31 33 S50 46 61 26" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" clip-path="url(#in2)"/>';return s}
+  s.innerHTML='<clipPath id="in2"><circle cx="29" cy="32" r="25"/></clipPath><circle cx="29" cy="32" r="25" fill="#FF5A1F"/><path d="M2 39 C12 21 23 21 31 33 S50 46 61 26" fill="none" stroke="#3A2BFF" stroke-width="7" stroke-linecap="round"/><path d="M2 39 C12 21 23 21 31 33 S50 46 61 26" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" clip-path="url(#in2)"/>';return s}
 
 function vToday(){
   const el=h("div",{class:"today"});
@@ -329,7 +330,8 @@ function vToday(){
       h("div",{},h("dt",{},"Where"),h("dd",{},j.location||(j.remote?"Remote":"—"))),
       h("div",{},h("dt",{},"Apply"),h("dd",{},direct(j)?"Direct to employer":"via "+j.source)),
       h("div",{},h("dt",{},"Posted"),h("dd",{},j.posted?ago(j.posted)+" ago":"Date not given")),
-      h("div",{},h("dt",{},"Role"),h("dd",{},j.role+(j.level==="Senior+"?" · Senior+":"")))),
+      h("div",{},h("dt",{},"Pay"),h("dd",{},j.pay||"Not listed")),
+      h("div",{},h("dt",{},"Role"),h("dd",{},j.role+(j.level==="Senior+"?" · Senior+":"")+(j.etype?" · "+j.etype:"")))),
     (j.stack||[]).length?h("div",{class:"tags"},stackTags(j,8)):null,
     h("p",{class:"why"},reasons.length?["Ranked here because it ",reasons.flatMap((r,i)=>[i?(i===reasons.length-1?" and ":", "):"",r]),"."]:"Ranked on role and region only. Its description names none of your stack."),
     h("a",{class:"open",href:j.url,target:"_blank",rel:"noopener"},"Read the full posting ↗"));
@@ -363,6 +365,7 @@ function browseList(ignore){
     if(ignore!=="stack"&&B.stacks.length&&!B.stacks.some(x=>(j.stack||[]).includes(x)))return false;
     if(B.direct&&!direct(j))return false;
     if(B.supply&&!j.supply)return false;
+    if(B.pay&&!j.pay)return false;
     if(B.senior&&j.level!=="Senior+")return false;
     if(j.posted&&j.posted<cut)return false;
     if(q&&!(j.title+" "+j.company+" "+j.location+" "+(j.stack||[]).join(" ")).toLowerCase().includes(q))return false;
@@ -392,7 +395,7 @@ function vBrowse(){
       return h("li",{class:"job"+(j._new?" is-new":"")+(st==="pass"?" dim":"")},
         h("div",{class:"top"},h("a",{class:"title",href:j.url,target:"_blank",rel:"noopener"},j.title),h("span",{class:"age"},ago(j.posted))),
         h("div",{class:"co"},j.company||"—",j.location&&h("span",{}," · "+j.location)),
-        h("div",{class:"tags"},j._new&&tag("NEW","new"),whoTag(j),tag(direct(j)?"Direct":"via "+j.source),stackTags(j,4),j.supply&&tag("Supply chain"),
+        h("div",{class:"tags"},j._new&&tag("NEW","new"),whoTag(j),j.pay&&tag(j.pay,"pay"),tag(direct(j)?"Direct":"via "+j.source),stackTags(j,4),j.supply&&tag("Supply chain"),
           h("span",{class:"ra"},
             st&&st!=="pass"&&st!=="saved"?tag(STAGES.find(s=>s[0]===st)[1]):
               h("button",{class:"ic",type:"button","aria-pressed":String(st==="saved"),onclick:()=>{setStage(j,st==="saved"?null:"saved");paintList()}},st==="saved"?"★ Saved":"☆ Save"),
@@ -408,7 +411,7 @@ function vBrowse(){
     h("div",{class:"line"},h("span",{class:"lbl"},"Role"),ROLES.map(r=>chip(r,R.includes(r),()=>{tog(R,r);re()},cr[r]||0))),
     h("div",{class:"line"},h("span",{class:"lbl"},"Stack"),topS.map(s=>chip(s,B.stacks.includes(s),()=>{tog(B.stacks,s);re()},cs[s]||0))),
     h("div",{class:"line"},h("span",{class:"lbl"},"Only"),
-      chip("Direct apply",B.direct,()=>{B.direct=!B.direct;re()}),chip("Supply chain",B.supply,()=>{B.supply=!B.supply;re()}),
+      chip("Shows pay",B.pay,()=>{B.pay=!B.pay;re()}),chip("Direct apply",B.direct,()=>{B.direct=!B.direct;re()}),chip("Supply chain",B.supply,()=>{B.supply=!B.supply;re()}),
       chip("Senior+",B.senior,()=>{B.senior=!B.senior;re()}),chip("Hide passed",B.hidePassed,()=>{B.hidePassed=!B.hidePassed;re()}))),
     count,list,more);
   paintList();return el;
@@ -452,7 +455,7 @@ function vPulse(){
       h("div",{class:"panel stat"},h("b",{},String(open.length)),h("span",{},"roles you can apply to")),
       h("div",{class:"panel stat"},h("b",{},String(wk.length)),h("span",{},"of them posted in the last 7 days")),
       h("div",{class:"panel stat"},h("b",{},pct(open.filter(direct).length,open.length)+"%"),h("span",{},"apply direct to the employer")),
-      h("div",{class:"panel stat"},h("b",{},pct(cw.locked||0,jobs.length)+"%"),h("span",{},"of all roles in the feed are region-locked"))));
+      h("div",{class:"panel stat"},h("b",{},pct(open.filter(j=>j.pay).length,open.length)+"%"),h("span",{},"state their pay"))));
   const cs={};open.forEach(j=>(j.stack||[]).forEach(x=>cs[x]=(cs[x]||0)+1));
   const top=Object.entries(cs).sort((a,b)=>b[1]-a[1]).slice(0,12);
   const core=P.stacks.filter(x=>!GENERIC.has(x));

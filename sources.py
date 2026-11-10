@@ -37,17 +37,51 @@ def _strip(h):
     return html.unescape(re.sub(r"<[^>]+>", " ", h or "")).strip()
 
 
+def _num(x):
+    try:
+        v = float(x)
+        return v if v > 0 else None
+    except (TypeError, ValueError):
+        return None
+
+
+def _rng(lo, hi, cur, per="yr"):
+    lo, hi = _num(lo), _num(hi)
+    if not lo and not hi:
+        return None
+    return {"min": lo or hi, "max": hi or lo, "cur": (cur or "USD").upper(), "per": per}
+
+
+def _gh_pay(j):
+    r = j.get("pay_input_ranges") or []
+    if not r:
+        return None
+    return _rng((r[0].get("min_cents") or 0) / 100, (r[0].get("max_cents") or 0) / 100, r[0].get("currency_type"))
+
+
+def _lever_pay(j):
+    sr = j.get("salaryRange") or {}
+    iv = (sr.get("interval") or "").lower()
+    return _rng(sr.get("min"), sr.get("max"), sr.get("currency"), "hr" if "hour" in iv else "mo" if "month" in iv else "yr")
+
+
+def _ashby_pay(j):
+    c = j.get("compensation") or {}
+    t = c.get("scrapeableCompensationSalarySummary") or c.get("compensationTierSummary")
+    return {"text": t.split(" \u2022 ")[0].strip()[:40]} if t else None
+
+
 # ---------- company boards (ATS) ----------
 
 def greenhouse(slug, name, tags):
-    data = _get(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs", params={"content": "true"}).json()
+    data = _get(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs", params={"content": "true", "pay_transparency": "true"}).json()
     out = []
     for j in data.get("jobs", []):
         out.append(dict(
             title=j.get("title"), company=name, url=j.get("absolute_url"),
             location=(j.get("location") or {}).get("name", ""), remote=None, restrictions=None,
             posted=_iso(j.get("first_published") or j.get("updated_at")), tags=tags,
-            desc=_strip(html.unescape(j.get("content") or "")),
+            desc=_strip(html.unescape(j.get("content") or "")), pay=_gh_pay(j),
         ))
     return out
 
@@ -65,12 +99,13 @@ def lever(slug, name, tags):
             remote=True if wt == "remote" else None, restrictions=None,
             posted=int(j["createdAt"] / 1000) if j.get("createdAt") else None, tags=tags,
             desc=(j.get("descriptionPlain") or "") + " " + " ".join(_strip(l.get("content", "")) for l in j.get("lists") or []),
+            pay=_lever_pay(j),
         ))
     return out
 
 
 def ashby(slug, name, tags):
-    data = _get(f"https://api.ashbyhq.com/posting-api/job-board/{slug}").json()
+    data = _get(f"https://api.ashbyhq.com/posting-api/job-board/{slug}", params={"includeCompensation": "true"}).json()
     out = []
     for j in data.get("jobs", []):
         locs = [j.get("location") or ""] + [s.get("location", "") for s in j.get("secondaryLocations") or []]
@@ -81,7 +116,7 @@ def ashby(slug, name, tags):
         out.append(dict(
             title=j.get("title"), company=name, url=j.get("jobUrl"), location=loc,
             remote=remote, restrictions=None, posted=_iso(j.get("publishedAt")), tags=tags,
-            desc=j.get("descriptionPlain") or _strip(j.get("descriptionHtml")),
+            desc=j.get("descriptionPlain") or _strip(j.get("descriptionHtml")), pay=_ashby_pay(j),
         ))
     return out
 
@@ -141,6 +176,7 @@ def remotive():
                 title=j.get("title"), company=j.get("company_name"), url=j.get("url"),
                 location=j.get("candidate_required_location") or "Worldwide", remote=True, restrictions=None,
                 posted=_iso(j.get("publication_date")), tags=[], desc=_strip(j.get("description")),
+                pay_text=j.get("salary"),
             ))
     return out
 
@@ -161,6 +197,7 @@ def remoteok():
             location=j.get("location") or "Worldwide", remote=True, restrictions=None,
             posted=int(j["epoch"]) if j.get("epoch") else _iso(j.get("date")), tags=[],
             desc=_strip(j.get("description")) + " " + " ".join(j.get("tags") or []),
+            pay=_rng(j.get("salary_min"), j.get("salary_max"), "USD"),
         ))
     return out
 
@@ -177,6 +214,8 @@ def himalayas():
                 restrictions=j.get("locationRestrictions") or [],
                 posted=int(j["pubDate"]) if isinstance(j.get("pubDate"), (int, float)) else _iso(j.get("pubDate")),
                 tags=[], desc=_strip(j.get("description") or j.get("excerpt")),
+                pay=_rng(j.get("minSalary"), j.get("maxSalary"), j.get("currency") or j.get("salaryCurrency")),
+                etype=j.get("employmentType"),
             ))
         if len(jobs) < 20:
             break
@@ -198,6 +237,8 @@ def himalayas():
                 restrictions=j.get("locationRestrictions") or [],
                 posted=int(j["pubDate"]) if isinstance(j.get("pubDate"), (int, float)) else _iso(j.get("pubDate")),
                 tags=[], desc=_strip(j.get("description") or j.get("excerpt")),
+                pay=_rng(j.get("minSalary"), j.get("maxSalary"), j.get("currency") or j.get("salaryCurrency")),
+                etype=j.get("employmentType"),
             ))
         time.sleep(0.25)
     return out
@@ -216,6 +257,7 @@ def jobicy():
                 title=_strip(j.get("jobTitle")), company=j.get("companyName"), url=j.get("url"),
                 location=j.get("jobGeo") or "", remote=True, restrictions=None,
                 posted=_iso(j.get("pubDate")), tags=[], desc=_strip(j.get("jobDescription") or j.get("jobExcerpt")),
+                pay=_rng(j.get("annualSalaryMin"), j.get("annualSalaryMax"), j.get("salaryCurrency")),
             ))
     return out
 
