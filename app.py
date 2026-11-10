@@ -43,6 +43,8 @@ def normalize(raw, source):
     remote_flag = raw.get("remote")
     if remote_flag is None:
         remote_flag = bool(classify.REMOTE.search(loc)) or raw.get("restrictions") is not None
+    if "allremote" in (raw.get("tags") or []):
+        remote_flag = True
     posted = raw.get("posted")
     if posted and time.time() - posted > MAX_AGE_DAYS * 86400:
         return None

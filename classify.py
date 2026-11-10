@@ -150,5 +150,14 @@ SUPPLY = re.compile(
 )
 
 
-def is_supply(*texts):
-    return any(SUPPLY.search(t or "") for t in texts)
+SUPPLY_STRONG = re.compile(
+    r"supply chain|logistics|freight|\btms\b|transportation management|warehouse management|\bwms\b|blue yonder|manhattan (associates|wms|active)",
+    re.I,
+)
+
+
+def is_supply(title, company, desc=""):
+    """True for supply-chain roles: named in the title or company, or mentioned repeatedly in the description."""
+    if SUPPLY.search(title or "") or SUPPLY_STRONG.search(company or ""):
+        return True
+    return len(SUPPLY_STRONG.findall(desc or "")) >= 3
