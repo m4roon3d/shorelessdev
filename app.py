@@ -108,6 +108,13 @@ def refresh():
         jobs, report = fetch_all()
         with lock:
             state.update(jobs=jobs, sources=report, updated=int(time.time()))
+        bad = [f"{r['key']}={r['error']}" for r in report if not r["ok"]]
+        by_region = {}
+        for j in jobs:
+            by_region[j["region"]] = by_region.get(j["region"], 0) + 1
+        print(f"[refresh] {len(jobs)} jobs in {time.time() - state['started']:.0f}s; "
+              f"{len(report) - len(bad)}/{len(report)} sources ok; regions={by_region}", flush=True)
+        print(f"[refresh] failed: {', '.join(sorted(bad))}", flush=True)
         try:
             with open(CACHE_FILE, "w") as fh:
                 json.dump({k: state[k] for k in ("jobs", "sources", "updated")}, fh)
