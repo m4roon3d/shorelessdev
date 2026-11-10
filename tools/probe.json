@@ -1,0 +1,558 @@
+{
+ "hits": [
+  {
+   "ats": "lever",
+   "slug": "acceldata",
+   "jobs": 38,
+   "data_jobs": 14
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "aftership",
+   "jobs": 9,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "airbyte",
+   "jobs": 10,
+   "data_jobs": 2
+  },
+  {
+   "ats": "ashby",
+   "slug": "andela",
+   "jobs": 8,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "anyscale",
+   "jobs": 24,
+   "data_jobs": 5
+  },
+  {
+   "ats": "ashby",
+   "slug": "astronomer",
+   "jobs": 18,
+   "data_jobs": 0
+  },
+  {
+   "ats": "lever",
+   "slug": "ataccama",
+   "jobs": 12,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "atlan",
+   "jobs": 7,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "celonis",
+   "jobs": 241,
+   "data_jobs": 11
+  },
+  {
+   "ats": "ashby",
+   "slug": "clickhouse",
+   "jobs": 202,
+   "data_jobs": 18
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "cockroachlabs",
+   "jobs": 11,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "collibra",
+   "jobs": 24,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "datafold",
+   "jobs": 2,
+   "data_jobs": 1
+  },
+  {
+   "ats": "workable",
+   "slug": "dlthub",
+   "jobs": 3,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "dremio",
+   "jobs": 7,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "fivetran",
+   "jobs": 171,
+   "data_jobs": 17
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "flexe",
+   "jobs": 2,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "flexport",
+   "jobs": 187,
+   "data_jobs": 3
+  },
+  {
+   "ats": "ashby",
+   "slug": "flock",
+   "jobs": 10,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "fourkites",
+   "jobs": 16,
+   "data_jobs": 0
+  },
+  {
+   "ats": "smartrecruiters",
+   "slug": "freshworks",
+   "jobs": 100,
+   "data_jobs": 1
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "gomotive",
+   "jobs": 184,
+   "data_jobs": 8
+  },
+  {
+   "ats": "ashby",
+   "slug": "gorgias",
+   "jobs": 16,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "grafanalabs",
+   "jobs": 138,
+   "data_jobs": 22
+  },
+  {
+   "ats": "lever",
+   "slug": "hevo",
+   "jobs": 1,
+   "data_jobs": 0
+  },
+  {
+   "ats": "lever",
+   "slug": "hevodata",
+   "jobs": 42,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "hightouch",
+   "jobs": 1,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "imply",
+   "jobs": 5,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "influxdata",
+   "jobs": 9,
+   "data_jobs": 1
+  },
+  {
+   "ats": "lever",
+   "slug": "kpler",
+   "jobs": 114,
+   "data_jobs": 10
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "labelbox",
+   "jobs": 10,
+   "data_jobs": 1
+  },
+  {
+   "ats": "ashby",
+   "slug": "lightdash",
+   "jobs": 3,
+   "data_jobs": 1
+  },
+  {
+   "ats": "ashby",
+   "slug": "materialize",
+   "jobs": 4,
+   "data_jobs": 1
+  },
+  {
+   "ats": "lever",
+   "slug": "matillion",
+   "jobs": 18,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "montecarlodata",
+   "jobs": 11,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "motherduck",
+   "jobs": 6,
+   "data_jobs": 3
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "motive",
+   "jobs": 4,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "multiverse",
+   "jobs": 26,
+   "data_jobs": 1
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "narvar",
+   "jobs": 1,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "neo4j",
+   "jobs": 60,
+   "data_jobs": 8
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "nexla",
+   "jobs": 6,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "omni",
+   "jobs": 33,
+   "data_jobs": 2
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "pallet",
+   "jobs": 25,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "pinecone",
+   "jobs": 6,
+   "data_jobs": 1
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "pingcap",
+   "jobs": 4,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "plaid",
+   "jobs": 140,
+   "data_jobs": 14
+  },
+  {
+   "ats": "ashby",
+   "slug": "prefect",
+   "jobs": 6,
+   "data_jobs": 1
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "project44",
+   "jobs": 26,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "route",
+   "jobs": 5,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "samsara",
+   "jobs": 314,
+   "data_jobs": 14
+  },
+  {
+   "ats": "ashby",
+   "slug": "sardine",
+   "jobs": 39,
+   "data_jobs": 1
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "scaleai",
+   "jobs": 169,
+   "data_jobs": 6
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "shipmonk",
+   "jobs": 64,
+   "data_jobs": 22
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "sigmacomputing",
+   "jobs": 80,
+   "data_jobs": 3
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "singlestore",
+   "jobs": 40,
+   "data_jobs": 1
+  },
+  {
+   "ats": "ashby",
+   "slug": "sisense",
+   "jobs": 4,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "snowflake",
+   "jobs": 371,
+   "data_jobs": 24
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "starburst",
+   "jobs": 38,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "startree",
+   "jobs": 4,
+   "data_jobs": 1
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "thoughtworks",
+   "jobs": 44,
+   "data_jobs": 0
+  },
+  {
+   "ats": "ashby",
+   "slug": "tigerdata",
+   "jobs": 5,
+   "data_jobs": 2
+  },
+  {
+   "ats": "lever",
+   "slug": "tinybird",
+   "jobs": 2,
+   "data_jobs": 0
+  },
+  {
+   "ats": "lever",
+   "slug": "toptal",
+   "jobs": 30,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "uberfreight",
+   "jobs": 93,
+   "data_jobs": 9
+  },
+  {
+   "ats": "ashby",
+   "slug": "weaviate",
+   "jobs": 2,
+   "data_jobs": 0
+  },
+  {
+   "ats": "greenhouse",
+   "slug": "yugabyte",
+   "jobs": 14,
+   "data_jobs": 1
+  }
+ ],
+ "tried": [
+  "fourkites",
+  "shipbob",
+  "shippo",
+  "stord",
+  "o9solutions",
+  "o9",
+  "transfix",
+  "shipwell",
+  "plaid",
+  "dbtlabs",
+  "dbt-labs",
+  "clickhouse",
+  "alation",
+  "informatica",
+  "matillion",
+  "thoughtspot",
+  "sisense",
+  "hashicorp",
+  "postman",
+  "toptal",
+  "andela",
+  "easypost",
+  "deliverr",
+  "altana",
+  "everstream",
+  "anvyl",
+  "parade",
+  "logixboard",
+  "terminal49",
+  "emerge",
+  "arc",
+  "dagster",
+  "dagsterlabs",
+  "dlthub",
+  "dlt-hub",
+  "tinybird",
+  "sourcegraph",
+  "augment",
+  "augmentcode",
+  "flockfreight",
+  "flock-freight",
+  "pallet",
+  "snowflake",
+  "snowflakecomputing",
+  "confluent",
+  "thoughtworks",
+  "atlan",
+  "hasura",
+  "browserstack",
+  "freshworks",
+  "razorpay",
+  "sigmacomputing",
+  "sigma",
+  "census",
+  "rudderstack",
+  "estuary",
+  "materialize",
+  "firebolt",
+  "imply",
+  "startree",
+  "onehouse",
+  "dremio",
+  "ataccama",
+  "secoda",
+  "metaplane",
+  "datafold",
+  "greatexpectations",
+  "great-expectations",
+  "elementary",
+  "hevodata",
+  "hevo",
+  "nexla",
+  "celonis",
+  "kpler",
+  "flexe",
+  "kinaxis",
+  "coupa",
+  "gorgias",
+  "velocityglobal",
+  "multiverse",
+  "sardine",
+  "chainalysis",
+  "anyscale",
+  "weaviate",
+  "pinecone",
+  "qdrant",
+  "labelbox",
+  "scale",
+  "scaleai",
+  "hightouch",
+  "tecton",
+  "fivetran",
+  "starburst",
+  "singlestore",
+  "cockroachlabs",
+  "grafanalabs",
+  "neo4j",
+  "redpanda",
+  "redpandadata",
+  "timescale",
+  "tigerdata",
+  "influxdata",
+  "couchbase",
+  "yugabyte",
+  "pingcap",
+  "aiven",
+  "instaclustr",
+  "cloudera",
+  "teradata",
+  "talend",
+  "qlik",
+  "domo",
+  "looker",
+  "mode",
+  "omni",
+  "lightdash",
+  "preset",
+  "astronomer",
+  "prefect",
+  "airbyte",
+  "motherduck",
+  "montecarlodata",
+  "bigeye",
+  "acceldata",
+  "soda",
+  "sodadata",
+  "collibra",
+  "flexport",
+  "project44",
+  "samsara",
+  "gomotive",
+  "motive",
+  "convoy",
+  "uberfreight",
+  "loadsmart",
+  "project-44",
+  "shipmonk",
+  "shiphero",
+  "deliverydotcom",
+  "route",
+  "parcelperform",
+  "shipup",
+  "narvar",
+  "aftership",
+  "locus",
+  "locusdotsh",
+  "fareye",
+  "shiprocket",
+  "delhivery",
+  "blueyonder",
+  "e2open",
+  "manhattanassociates",
+  "descartes",
+  "gocomet",
+  "freightify",
+  "flock"
+ ]
+}
