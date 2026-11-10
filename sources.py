@@ -181,10 +181,15 @@ def himalayas():
         if len(jobs) < 20:
             break
         time.sleep(0.3)
-    for q in ("data engineer", "analytics engineer", "data architect", "data analyst", "etl", "snowflake"):
+    queries = ("data engineer", "analytics engineer", "data architect", "data analyst", "etl", "snowflake",
+               "databricks", "dbt", "bi developer", "power bi", "data platform", "informatica", "azure data",
+               "big data", "data warehouse", "data integration", "spark", "airflow")
+    searches = [{"q": q, "limit": 20, "page": p} for q in queries for p in (1, 2)]
+    searches += [{"q": q, "limit": 20, "country": "India"} for q in queries]
+    for params in searches:
         try:
-            data = _get("https://himalayas.app/jobs/api/search", params={"q": q, "limit": 20}).json()
-        except requests.RequestException:
+            data = _get("https://himalayas.app/jobs/api/search", params=params).json()
+        except (requests.RequestException, ValueError):
             continue
         for j in data.get("jobs", []):
             out.append(dict(
@@ -194,7 +199,7 @@ def himalayas():
                 posted=int(j["pubDate"]) if isinstance(j.get("pubDate"), (int, float)) else _iso(j.get("pubDate")),
                 tags=[], desc=_strip(j.get("description") or j.get("excerpt")),
             ))
-        time.sleep(0.3)
+        time.sleep(0.25)
     return out
 
 
