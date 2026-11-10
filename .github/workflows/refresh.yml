@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths-ignore: ["static/jobs.json"]
+    paths-ignore: ["static/jobs.json", "tools/**"]
 permissions:
   contents: write
 concurrency: refresh
@@ -25,4 +25,5 @@ jobs:
           git config user.email "shoreless-bot@users.noreply.github.com"
           git add static/jobs.json
           git diff --cached --quiet || git commit -m "Refresh jobs"
+          git pull --rebase
           git push
