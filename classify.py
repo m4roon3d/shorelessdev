@@ -185,7 +185,7 @@ def fmt_pay(pay):
     if per == "yr" and hi < 500:
         per = "hr"
     sym = SYM.get(cur, cur + " ")
-    body = f"{sym}{_n(lo, cur)}" if lo == hi else f"{sym}{_n(lo, cur)}\u2013{_n(hi, cur)}"
+    body = f"{sym}{_n(lo, cur)}" if _n(lo, cur) == _n(hi, cur) else f"{sym}{_n(lo, cur)}\u2013{_n(hi, cur)}"
     return f"{body}/{per}"
 
 
