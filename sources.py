@@ -240,10 +240,18 @@ def himalayas():
                "big data", "data warehouse", "data integration", "spark", "airflow")
     searches = [{"q": q, "limit": 20, "page": p} for q in queries for p in (1, 2)]
     searches += [{"q": q, "limit": 20, "country": "India"} for q in queries]
+    missed = 0
     for params in searches:
-        try:
-            data = _get("https://himalayas.app/jobs/api/search", params=params).json()
-        except (requests.RequestException, ValueError):
+        data = None
+        for wait in (0, 8, 20):  # back off when rate-limited instead of silently losing the search
+            time.sleep(wait)
+            try:
+                data = _get("https://himalayas.app/jobs/api/search", params=params).json()
+                break
+            except (requests.RequestException, ValueError):
+                continue
+        if data is None:
+            missed += 1
             continue
         for j in data.get("jobs", []):
             out.append(dict(
@@ -255,7 +263,9 @@ def himalayas():
                 pay=_rng(j.get("minSalary"), j.get("maxSalary"), j.get("currency") or j.get("salaryCurrency")),
                 etype=j.get("employmentType"),
             ))
-        time.sleep(0.25)
+        time.sleep(0.6)
+    if missed:
+        print(f"[himalayas] {missed} of {len(searches)} searches failed", flush=True)
     return out
 
 

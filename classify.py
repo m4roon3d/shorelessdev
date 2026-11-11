@@ -114,6 +114,8 @@ LOCKED = re.compile(
 )
 REMOTE = re.compile(r"remote|distributed|work from home|wfh|anywhere|telecommut", re.I)
 
+_GENERIC_LOC = re.compile(r"remote|distributed|work from home|wfh|home[- ]?based|telecommut\w*|hybrid|fully|100%|flexible|n/?a|[\W_]+", re.I)
+
 REGION_ORDER = {"India": 0, "APAC": 1, "Worldwide": 2, "Unclear": 3, "Locked": 4}
 
 
@@ -138,7 +140,8 @@ def region_of(location_text: str, is_remote: bool | None = None, restrictions: l
         return "APAC"
     if WORLD.search(loc):
         return "Worldwide"
-    if LOCKED.search(loc):
+    # A named place that is not India, APAC or worldwide means the role is tied to that place.
+    if LOCKED.search(loc) or _GENERIC_LOC.sub(" ", loc).strip():
         return "Locked"
     return "Unclear"
 
