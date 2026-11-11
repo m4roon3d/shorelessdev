@@ -245,7 +245,8 @@ const STAGES=[["saved","Saved"],["applied","Applied"],["interview","Interviewing
 /* ---------- state ---------- */
 const P=Object.assign({stacks:["Informatica","SQL"],roles:["Engineering","Analytics","Architecture"],
   open:["in-remote","apac","world","unclear"],supply:true},store.get("profile",{}));
-const B=Object.assign({q:"",who:null,roles:null,stacks:[],direct:false,supply:false,senior:false,hidePassed:true,age:30,sort:"fit"},store.get("browse",{}));
+const B=Object.assign({q:"",who:null,roles:null,stacks:[],apply:"all",supply:false,senior:false,hidePassed:true,age:30,sort:"fit"},store.get("browse",{}));
+if(B.direct)B.apply="direct";delete B.direct;
 let T=store.get("triage",{});            // id -> {s, t, note, job}
 let jobs=[],byId={},feed=null,seenBefore=new Set(store.get("seen",[]));
 let batch=[],pos=0,undo=[],limit=60;
@@ -363,7 +364,7 @@ function browseList(ignore){
     if(ignore!=="who"&&!W.includes(who(j)))return false;
     if(ignore!=="role"&&!R.includes(j.role))return false;
     if(ignore!=="stack"&&B.stacks.length&&!B.stacks.some(x=>(j.stack||[]).includes(x)))return false;
-    if(B.direct&&!direct(j))return false;
+    if(ignore!=="apply"&&B.apply!=="all"&&direct(j)!==(B.apply==="direct"))return false;
     if(B.supply&&!j.supply)return false;
     if(B.pay&&!j.pay)return false;
     if(B.senior&&j.level!=="Senior+")return false;
@@ -381,6 +382,7 @@ function vBrowse(){
   browseList("who").forEach(j=>cw[who(j)]=(cw[who(j)]||0)+1);
   browseList("role").forEach(j=>cr[j.role]=(cr[j.role]||0)+1);
   browseList("stack").forEach(j=>(j.stack||[]).forEach(x=>cs[x]=(cs[x]||0)+1));
+  const ap=browseList("apply"),nd=ap.filter(direct).length,ca={all:ap.length,direct:nd,board:ap.length-nd};
   const topS=[...new Set([...B.stacks,...Object.entries(cs).sort((a,b)=>b[1]-a[1]).map(e=>e[0]).slice(0,14)])];
   const re=()=>{limit=60;saveB();render()};
   const search=h("input",{type:"search",id:"q",placeholder:"Search title, company or stack",value:B.q,autocomplete:"off"});
@@ -388,12 +390,17 @@ function vBrowse(){
   search.addEventListener("input",()=>{B.q=search.value;saveB();limit=60;paintList()});
   function paintList(){
     const L=browseList().map(j=>({j,f:fit(j)}));
-    L.sort(B.sort==="fit"?(a,b)=>b.f.s-a.f.s||(b.j.posted||0)-(a.j.posted||0):(a,b)=>(b.j.posted||0)-(a.j.posted||0));
+    const byPosted=(a,b)=>(b.j.posted||0)-(a.j.posted||0);
+    L.sort(({fit:(a,b)=>b.f.s-a.f.s||byPosted(a,b),
+      arrival:(a,b)=>(b.j.first_seen||0)-(a.j.first_seen||0)||byPosted(a,b),
+      new:byPosted,
+      pay:(a,b)=>(b.j.pay_n||0)-(a.j.pay_n||0)||b.f.s-a.f.s,
+      company:(a,b)=>(a.j.company||"~").localeCompare(b.j.company||"~")||byPosted(a,b)})[B.sort]||byPosted);
     const nw=L.filter(x=>x.j._new).length;
     count.textContent=`${L.length} jobs`+(nw?` · ${nw} new since last visit`:"");
     list.replaceChildren(...L.slice(0,limit).map(({j})=>{const st=T[j.id]?.s;
       return h("li",{class:"job"+(j._new?" is-new":"")+(st==="pass"?" dim":"")},
-        h("div",{class:"top"},h("a",{class:"title",href:j.url,target:"_blank",rel:"noopener"},j.title),h("span",{class:"age"},ago(j.posted))),
+        h("div",{class:"top"},h("a",{class:"title",href:j.url,target:"_blank",rel:"noopener"},j.title),h("span",{class:"age"},B.sort==="arrival"&&j.first_seen?"added "+ago(j.first_seen)+" ago":ago(j.posted))),
         h("div",{class:"co"},j.company||"—",j.location&&h("span",{}," · "+j.location)),
         h("div",{class:"tags"},j._new&&tag("NEW","new"),whoTag(j),j.pay&&tag(j.pay,"pay"),tag(direct(j)?"Direct":"via "+j.source),stackTags(j,4),j.supply&&tag("Supply chain"),
           h("span",{class:"ra"},
@@ -405,13 +412,15 @@ function vBrowse(){
   }
   el.append(h("div",{class:"filters"},
     h("div",{class:"line"},search,
-      h("select",{"aria-label":"Sort",id:"sort",onchange:e=>{B.sort=e.target.value;re()}},h("option",{value:"fit",selected:B.sort==="fit"},"Best fit first"),h("option",{value:"new",selected:B.sort==="new"},"Newest first")),
+      h("select",{"aria-label":"Sort",id:"sort",onchange:e=>{B.sort=e.target.value;re()}},[["fit","Best fit first"],["arrival","Latest arrival"],["new","Recently posted"],["pay","Highest pay"],["company","Company A–Z"]].map(([v,l])=>h("option",{value:v,selected:B.sort===v},l))),
       h("select",{"aria-label":"Posted within",id:"age",onchange:e=>{B.age=+e.target.value;re()}},[[3,"Past 3 days"],[7,"Past week"],[14,"Past 2 weeks"],[30,"Past month"],[60,"Past 2 months"]].map(([v,l])=>h("option",{value:v,selected:B.age===v},l)))),
     h("div",{class:"line"},h("span",{class:"lbl"},"Who can apply"),Object.keys(WHO).map(k=>chip(WHO[k][0],W.includes(k),()=>{tog(W,k);re()},cw[k]||0))),
     h("div",{class:"line"},h("span",{class:"lbl"},"Role"),ROLES.map(r=>chip(r,R.includes(r),()=>{tog(R,r);re()},cr[r]||0))),
     h("div",{class:"line"},h("span",{class:"lbl"},"Stack"),topS.map(s=>chip(s,B.stacks.includes(s),()=>{tog(B.stacks,s);re()},cs[s]||0))),
+    h("div",{class:"line"},h("span",{class:"lbl"},"Apply"),
+      [["all","All"],["direct","Direct to employer"],["board","Via job boards"]].map(([k,l])=>chip(l,B.apply===k,()=>{B.apply=k;re()},ca[k]))),
     h("div",{class:"line"},h("span",{class:"lbl"},"Only"),
-      chip("Shows pay",B.pay,()=>{B.pay=!B.pay;re()}),chip("Direct apply",B.direct,()=>{B.direct=!B.direct;re()}),chip("Supply chain",B.supply,()=>{B.supply=!B.supply;re()}),
+      chip("Shows pay",B.pay,()=>{B.pay=!B.pay;re()}),chip("Supply chain",B.supply,()=>{B.supply=!B.supply;re()}),
       chip("Senior+",B.senior,()=>{B.senior=!B.senior;re()}),chip("Hide passed",B.hidePassed,()=>{B.hidePassed=!B.hidePassed;re()}))),
     count,list,more);
   paintList();return el;

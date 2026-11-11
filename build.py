@@ -8,6 +8,16 @@ import app  # noqa: E402
 
 t0 = time.time()
 jobs, report = app.fetch_all()
+
+# first_seen = when a job first appeared in this feed, carried over from the previous file
+try:
+    with open("static/jobs.json") as fh:
+        prev = {j["id"]: j.get("first_seen") for j in json.load(fh).get("jobs", [])}
+except (OSError, ValueError):
+    prev = {}
+now = int(time.time())
+for j in jobs:
+    j["first_seen"] = prev.get(j["id"]) or (now if prev and j["id"] not in prev else (j.get("posted") or now))
 out = {"jobs": jobs, "sources": report, "updated": int(time.time())}
 os.makedirs("static", exist_ok=True)
 with open("static/jobs.json", "w") as fh:

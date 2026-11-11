@@ -219,3 +219,62 @@ def pay_from_text(text):
             per = "hr" if "hour" in tail else "mo" if "month" in tail else "yr"
             return fmt_pay({"min": lo, "max": hi, "cur": _CURMAP.get(m.group(1).upper(), "USD"), "per": per})
     return ""
+
+
+# ---------- region hints in the description ----------
+_INDIA_DESC = re.compile(
+    r"(remote|anywhere)\s*[\(\-\u2013,]?\s*(in|from|within)?\s*india\b|\bindia\s*\(?\s*remote|"
+    r"(based|located|reside|residing|candidates?|applicants?) (in|from) india\b|work(ing)? from india\b|\bindia[- ]based\b|"
+    r"open to (candidates|applicants|talent)[^.]{0,60}\bindia\b|(hire|hiring|employ)[^.]{0,20} in[^.]{0,80}\bindia\b|"
+    r"\b(ist|indian standard time)\b[^.]{0,30}(hours|time ?zone|overlap)",
+    re.I,
+)
+_WORLD_DESC = re.compile(
+    r"work from anywhere|anywhere in the world|from anywhere\b|worldwide|globally distributed|fully distributed|"
+    r"any (country|time ?zone|location)|hire (globally|internationally|anywhere)|location[- ]agnostic|remote[- ]first[^.]{0,40}(global|world)",
+    re.I,
+)
+_LOCK_DESC = re.compile(
+    r"(authori[sz]ed|eligible|right|legally (able|permitted)) to work in (the )?(u\.?s\.?a?\b|united states|uk\b|united kingdom|canada|eu\b|europe|germany|australia)|"
+    r"must (be|reside|live|be located|be based)[^.]{0,30}(in|within) (the )?(u\.?s\.?a?\b|united states|uk\b|united kingdom|canada|eu\b|europe|emea|americas|latam|australia)|"
+    r"\b(us|u\.s\.|uk|eu|canada)[- ](only|based (candidates|applicants))|(us|u\.s\.) citizens?|security clearance|"
+    r"(based|located|residing) in (the )?(united states|u\.s\.|usa|uk|united kingdom|canada|europe|european union|emea|latam|latin america)",
+    re.I,
+)
+
+
+def region_from_desc(desc):
+    """For remote roles whose location field says nothing useful: look for a clear statement in the description."""
+    d = (desc or "")[:8000]
+    if _INDIA_DESC.search(d):
+        return "India"
+    if _LOCK_DESC.search(d):
+        return "Locked"
+    if _WORLD_DESC.search(d):
+        return "Worldwide"
+    return None
+
+
+_FX = {"USD": 1, "EUR": 1.08, "GBP": 1.27, "INR": 0.012, "CAD": 0.73, "AUD": 0.66, "SGD": 0.75}
+_PER = {"yr": 1, "mo": 12, "hr": 2000}
+
+
+def pay_usd(pay, text=""):
+    """Rough annual USD figure (top of range) used only for sorting. 0 when unknown."""
+    if pay and not pay.get("text"):
+        per = pay.get("per") or "yr"
+        if per == "yr" and pay["max"] < 500:
+            per = "hr"
+        return int(pay["max"] * _FX.get(pay.get("cur") or "USD", 1) * _PER[per])
+    t = (pay or {}).get("text") or text or ""
+    lakh = re.search(r"\u20b9\s?[\d.]+L?\u2013?([\d.]+)L", t) or re.search(r"\u20b9\s?([\d.]+)L", t)
+    if lakh:
+        return int(float(lakh.group(1)) * 1e5 * _FX["INR"])
+    nums = re.findall(r"(\d+(?:[.,]\d+)?)\s?([kK])?", t.replace(",", ""))
+    vals = [float(n) * (1000 if k else 1) for n, k in nums if n]
+    if not vals:
+        return 0
+    v = max(vals)
+    cur = "EUR" if "\u20ac" in t else "GBP" if "\u00a3" in t else "INR" if "\u20b9" in t else "USD"
+    per = "hr" if "/hr" in t else "mo" if "/mo" in t else "yr"
+    return int(v * _FX[cur] * _PER[per])

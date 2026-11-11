@@ -44,6 +44,8 @@ def normalize(raw, source):
         r2 = classify.region_of(body[:800], True)
         if r2 in ("India", "APAC", "Worldwide"):
             region = r2
+    if region == "Unclear":
+        region = classify.region_from_desc(desc) or region
     if region is None:
         return None
 
@@ -61,12 +63,13 @@ def normalize(raw, source):
     supply = "supply" in (raw.get("tags") or []) or classify.is_supply(title, raw.get("company"), desc[:3000])
     if raw.get("restrictions"):
         loc = ", ".join(raw["restrictions"][:6])
+    pay = _pay(raw, desc)
     return dict(
         id=jid, title=title[:200], company=(raw.get("company") or "").strip(), url=url,
         location=(loc or ("Worldwide" if region == "Worldwide" else ""))[:160],
         region=region, remote=bool(remote_flag), role=role, level=classify.level_of(title),
         supply=supply, posted=posted, source=source,
-        pay=_pay(raw, desc), etype=(raw.get("etype") or "")[:20],
+        pay=pay, pay_n=classify.pay_usd(raw.get("pay"), pay) if pay else 0, etype=(raw.get("etype") or "")[:20],
         stack=sorted(stack, key=lambda k: (k in ("Python", "SQL"), list(classify.STACK).index(k)))[:6],
     )
 

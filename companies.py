@@ -54,6 +54,23 @@ GREENHOUSE = [
     ("route", "Route", ["supply"]),
     ("pallet", "Pallet", ["supply"]),
     ("aftership", "AfterShip", ["supply"]),
+    # added from the board probe
+    ('agoda', 'Agoda', []),
+    ('sigmoid', 'Sigmoid', []),
+    ('monzo', 'Monzo', []),
+    ('invisibletech', 'Invisible Technologies', ['allremote']),
+    ('scaleai', 'Scale AI', []),
+    ('mozilla', 'Mozilla', []),
+    ('n26', 'N26', []),
+    ('mixpanel', 'Mixpanel', ['vendor']),
+    ('databento', 'Databento', ['vendor']),
+    ('wikimedia', 'Wikimedia Foundation', ['allremote']),
+    ('wolt', 'Wolt', []),
+    ('dataiku', 'Dataiku', ['vendor']),
+    ('druva', 'Druva', []),
+    ('netlify', 'Netlify', []),
+    ('outrider', 'Outrider', ['supply']),
+    ('platformscience', 'Platform Science', ['supply']),
 ]
 
 LEVER = [
@@ -69,6 +86,13 @@ LEVER = [
     ("toptal", "Toptal", ["allremote", ]),
     ("kpler", "Kpler", ["supply"]),
     ("loadsmart", "Loadsmart", ["supply"]),
+    # added from the board probe
+    ('coupa', 'Coupa', ['supply']),
+    ('metabase', 'Metabase', ['vendor', 'allremote']),
+    ('portcast', 'Portcast', ['supply']),
+    ('zeta', 'Zeta', []),
+    ('keboola', 'Keboola', ['vendor']),
+    ('turvo', 'Turvo', ['supply']),
 ]
 
 ASHBY = [
@@ -104,6 +128,16 @@ ASHBY = [
     ("oyster", "Oyster HR", ["allremote", ]),
     ("multiverse", "Multiverse", []),
     ("andela", "Andela", []),
+    # added from the board probe
+    ('arrive', 'Arrive', []),
+    ('mercor', 'Mercor', []),
+    ('amplitude', 'Amplitude', ['vendor']),
+    ('1password', '1Password', []),
+    ('braintrust', 'Braintrust', []),
+    ('clickup', 'ClickUp', []),
+    ('close', 'Close', ['allremote']),
+    ('gooddata', 'GoodData', ['vendor']),
+    ('sentry', 'Sentry', []),
 ]
 
 SMARTRECRUITERS = [
@@ -112,6 +146,10 @@ SMARTRECRUITERS = [
     ("Bosch", "Bosch", []),
     ("DHLGlobalForwarding", "DHL Global Forwarding", ["supply"]),
     ("Maersk", "Maersk", ["supply"]),
+    # added from the board probe
+    ('wise', 'Wise', []),
+    ('grab', 'Grab', []),
+    ('deliveryhero', 'Delivery Hero', []),
 ]
 
 WORKABLE = [

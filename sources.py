@@ -156,7 +156,22 @@ def workable(slug, name, tags):
     return out
 
 
+def recruitee(slug, name, tags):
+    data = _get(f"https://{slug}.recruitee.com/api/offers/").json()
+    out = []
+    for j in data.get("offers", []):
+        loc = j.get("location") or ", ".join(filter(None, [j.get("city"), j.get("country")]))
+        out.append(dict(
+            title=j.get("title"), company=name, url=j.get("careers_url"), location=loc,
+            remote=True if j.get("remote") else None, restrictions=None,
+            posted=_iso((j.get("published_at") or "").replace(" UTC", "+00:00").replace(" ", "T", 1)), tags=tags,
+            desc=_strip(j.get("description")) + " " + _strip(j.get("requirements")),
+        ))
+    return out
+
+
 ATS = {
+    "Recruitee": (recruitee, getattr(companies, "RECRUITEE", [])),
     "Greenhouse": (greenhouse, companies.GREENHOUSE),
     "Lever": (lever, companies.LEVER),
     "Ashby": (ashby, companies.ASHBY),
@@ -312,7 +327,21 @@ def hackernews():
     return out
 
 
+def workingnomads():
+    data = _get("https://www.workingnomads.com/api/exposed_jobs/").json()
+    out = []
+    for j in data:
+        out.append(dict(
+            title=j.get("title"), company=j.get("company_name"), url=j.get("url"),
+            location=j.get("location") or "Anywhere", remote=True, restrictions=None,
+            posted=_iso(j.get("pub_date")), tags=[],
+            desc=_strip(j.get("description")) + " " + (j.get("tags") or ""),
+        ))
+    return out
+
+
 FEEDS = {
+    "Working Nomads": workingnomads,
     "HN Who's Hiring": hackernews,
     "Remotive": remotive,
     "RemoteOK": remoteok,
