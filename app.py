@@ -29,7 +29,7 @@ def _pay(raw, desc):
 
 
 def normalize(raw, source):
-    title = (raw.get("title") or "").strip()
+    title = " ".join((raw.get("title") or "").split())
     body = raw.get("body") or ""
     desc = (raw.get("desc") or "")[:8000]
     stack = classify.stack_of(title, desc)
