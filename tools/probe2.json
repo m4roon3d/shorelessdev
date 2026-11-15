@@ -1,0 +1,1927 @@
+{
+ "boards": [
+  {
+   "company": "Veeva Systems",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "veeva",
+   "jobs": 861,
+   "data_jobs": 106,
+   "sample": [
+    "Account\u00a0Partner - Data Cloud",
+    "Account\u00a0Partner - Data Cloud",
+    "Account\u00a0Partner - Data Cloud",
+    "Account Partner - Marketing Analytics"
+   ]
+  },
+  {
+   "company": "Ebury",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "ebury",
+   "jobs": 151,
+   "data_jobs": 10,
+   "sample": [
+    "Data Analyst - Fincrime Reporting",
+    "Data Analyst - Fincrime Reporting",
+    "Head of Model Risk & Data Quality",
+    "Senior Analytics Engineer"
+   ]
+  },
+  {
+   "company": "Inter.link",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "inter",
+   "jobs": 114,
+   "data_jobs": 9,
+   "sample": [
+    "DATA ANALYST II | DIGITAL CREDIT MG",
+    "DATA ENGINEER II | BANKING, FINANCE & GROWTH MG",
+    "DATA ENGINEER III ",
+    "DATA ENGINEER III | DATA & AI PLATFORM GLOBAL MG"
+   ]
+  },
+  {
+   "company": "Spotify",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "spotify",
+   "jobs": 87,
+   "data_jobs": 9,
+   "sample": [
+    "Backend Engineer - Data Platform",
+    "Backend Engineer - Data Platform",
+    "Data Scientist  - Business Analytics",
+    "Data Scientist - Music Mission"
+   ]
+  },
+  {
+   "company": "Extreme Networks",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "extremenetworks",
+   "jobs": 76,
+   "data_jobs": 9,
+   "sample": [
+    "AI-Staff/Principal Software Systems Engineer-Gen AI, Machine Learning, Graph ML, Big Data - 10030",
+    "PRINCIPAL QA SW ENGINEER 10379-  Layer2/Layer3 Protocol Testing- Python |Data Center Networking",
+    "PRINCIPAL QA SW ENGINEER 10380-  Layer2/Layer3 Protocol Testing- Python |Data Center Networking",
+    "Principal Solution Test Engineer 10383 -  Layer2/Layer3 Protocol Testing- Python |Data Center Networking"
+   ]
+  },
+  {
+   "company": "Okta",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "okta",
+   "jobs": 362,
+   "data_jobs": 8,
+   "sample": [
+    "Marketing Analytics Manager",
+    "Senior Data Analyst (Auth0)",
+    "Senior Data Analyst (Auth0)",
+    "Senior Data Engineer"
+   ]
+  },
+  {
+   "company": "Klaviyo",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "klaviyo",
+   "jobs": 148,
+   "data_jobs": 6,
+   "sample": [
+    "Lead Product Manager, Core Data",
+    "Senior Lead Software Engineer - Data Platform",
+    "Senior Software Engineer - Data Automation",
+    "Lead Product Data Scientist, Forecasting"
+   ]
+  },
+  {
+   "company": "Klaviyo",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "klaviyo",
+   "jobs": 146,
+   "data_jobs": 6,
+   "sample": [
+    "Lead Analyst, Strategic Finance & Analytics",
+    "Lead Product Data Scientist, Agents",
+    "Lead Product Data Scientist, Forecasting",
+    "Lead Product Manager, Core Data"
+   ]
+  },
+  {
+   "company": "Wizeline",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "wizeline",
+   "jobs": 37,
+   "data_jobs": 6,
+   "sample": [
+    "Data Scientist",
+    "Data Scientist",
+    "Data Scientist - ML Engineering",
+    "Mid Data Engineer (Barcelona hybrid)"
+   ]
+  },
+  {
+   "company": "WebFX",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "webfx",
+   "jobs": 35,
+   "data_jobs": 6,
+   "sample": [
+    "Jr. Business Data Analyst",
+    "Jr. Web Marketing Specialist - Analytics Track",
+    "Jr. Customer Success Analyst (Data Focus)",
+    "Jr. Social Media Ads and Analytics Specialist"
+   ]
+  },
+  {
+   "company": "Bounteous",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "bounteous",
+   "jobs": 33,
+   "data_jobs": 5,
+   "sample": [
+    "Director, Analytics",
+    "Engagement Lead - Enterprise Data Warehouse",
+    "Lead Analytics Consultant (CJA)",
+    "Lead Analytics Consultant (CJA)"
+   ]
+  },
+  {
+   "company": "Lightspeed",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "lightspeedhq",
+   "jobs": 134,
+   "data_jobs": 4,
+   "sample": [
+    "Senior Analytics Engineer",
+    "Ing\u00e9nieur(e) Analytics S\u00e9nior",
+    "Lead Data Analyst, Growth Marketing",
+    "Lead Data Analyst, Growth Marketing"
+   ]
+  },
+  {
+   "company": "Asana",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "asana",
+   "jobs": 109,
+   "data_jobs": 4,
+   "sample": [
+    "Data Engineer ",
+    "Senior Analytics Engineer",
+    "Senior Data Scientist",
+    "Senior Product Data Scientist (Analyst)"
+   ]
+  },
+  {
+   "company": "PayPay Corporation",
+   "region": "asia-pacific",
+   "ats": "greenhouse",
+   "slug": "paypay",
+   "jobs": 87,
+   "data_jobs": 4,
+   "sample": [
+    "Data Analyst",
+    "Data Infrastructure Engineer",
+    "Senior Data Science Engineer / Senior Machine Learning Engineer (Applied Insights)",
+    "Senior Data Scientist, Credit Modeling"
+   ]
+  },
+  {
+   "company": "Epic Games",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "epicgames",
+   "jobs": 142,
+   "data_jobs": 3,
+   "sample": [
+    "Data Science Intern",
+    "Senior Data Scientist, Transparency & Regulatory",
+    "Senior Data Scientist, Transparency & Regulatory"
+   ]
+  },
+  {
+   "company": "Temporal",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "temporal",
+   "jobs": 84,
+   "data_jobs": 3,
+   "sample": [
+    "Senior Software Engineer, Cloud Data Storage",
+    "Senior Data Scientist ",
+    "Senior Analytics Engineer"
+   ]
+  },
+  {
+   "company": "SeatGeek",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "seatgeek",
+   "jobs": 41,
+   "data_jobs": 3,
+   "sample": [
+    "Data Analyst - Internship",
+    "Senior Data Analyst, Supply",
+    "Senior Data Analyst, Supply"
+   ]
+  },
+  {
+   "company": "GoDaddy",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "godaddy",
+   "jobs": 28,
+   "data_jobs": 3,
+   "sample": [
+    "Manager, Data Centers",
+    "Senior Manager, Business Analytics - Strategic Modeling",
+    "Supervisor, Data Center"
+   ]
+  },
+  {
+   "company": "General Assembly",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "generalassembly",
+   "jobs": 27,
+   "data_jobs": 3,
+   "sample": [
+    "Data Analytics Instructor",
+    "Data Analytics Instructor Part-Time",
+    "Data Analytics Instructor - PT"
+   ]
+  },
+  {
+   "company": "Udacity",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "udacity",
+   "jobs": 23,
+   "data_jobs": 3,
+   "sample": [
+    "Data Technical Mentor - Independent Contractor (US Canada, Europe, MENA, India & APAC Timezones)",
+    "External Contractor - Mentor role for Data Product Manager track",
+    "On-Call Maintenance Specialist, Data Science - Contract Role (India)"
+   ]
+  },
+  {
+   "company": "Swiggy",
+   "region": "other",
+   "ats": "smartrecruiters",
+   "slug": "swiggy",
+   "jobs": 100,
+   "data_jobs": 2,
+   "sample": [
+    "Senior Executive Warehouse",
+    "Manager - Warehouse "
+   ]
+  },
+  {
+   "company": "Cabify",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "cabify",
+   "jobs": 48,
+   "data_jobs": 2,
+   "sample": [
+    "Data Scientist, Applied Science",
+    "Senior Data Scientist"
+   ]
+  },
+  {
+   "company": "Fingerprint",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "fingerprint",
+   "jobs": 21,
+   "data_jobs": 2,
+   "sample": [
+    "Senior Data Scientist",
+    "Senior Data Warehouse Engineer"
+   ]
+  },
+  {
+   "company": "RevenueCat",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "revenuecat",
+   "jobs": 10,
+   "data_jobs": 2,
+   "sample": [
+    "Senior Data Scientist, Product",
+    "Senior Product Manager, Analytics Features"
+   ]
+  },
+  {
+   "company": "CareMessage",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "caremessage",
+   "jobs": 5,
+   "data_jobs": 2,
+   "sample": [
+    "Engineering Manager, Data & Clinical Integration Teams",
+    "Senior Data Platform Engineer"
+   ]
+  },
+  {
+   "company": "Conversio",
+   "region": "worldwide",
+   "ats": "personio",
+   "slug": "conversio",
+   "jobs": 58,
+   "data_jobs": 1,
+   "sample": [
+    "Data &amp; tracking praktikant"
+   ]
+  },
+  {
+   "company": "Fastly",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "fastly",
+   "jobs": 54,
+   "data_jobs": 1,
+   "sample": [
+    "Staff Product Manager, Storage & Edge Data"
+   ]
+  },
+  {
+   "company": "Modern Tribe",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "tri",
+   "jobs": 42,
+   "data_jobs": 1,
+   "sample": [
+    "Senior Data Engineer, Large Behavior Models"
+   ]
+  },
+  {
+   "company": "Sardine.ai",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "sardine",
+   "jobs": 40,
+   "data_jobs": 1,
+   "sample": [
+    "Senior Data Scientist  "
+   ]
+  },
+  {
+   "company": "Nearform",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "nearform",
+   "jobs": 27,
+   "data_jobs": 1,
+   "sample": [
+    "Senior Data Analyst "
+   ]
+  },
+  {
+   "company": "Customer.io",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "customerio",
+   "jobs": 26,
+   "data_jobs": 1,
+   "sample": [
+    "Senior Data Scientist"
+   ]
+  },
+  {
+   "company": "fleetio",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "fleetio",
+   "jobs": 21,
+   "data_jobs": 1,
+   "sample": [
+    "Senior Applied Data Scientist, Fleet Intelligence"
+   ]
+  },
+  {
+   "company": "Sonatype",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "sonatype",
+   "jobs": 14,
+   "data_jobs": 1,
+   "sample": [
+    "Senior Data Analyst"
+   ]
+  },
+  {
+   "company": "Basecamp",
+   "region": "worldwide",
+   "ats": "personio",
+   "slug": "basecamp",
+   "jobs": 12,
+   "data_jobs": 1,
+   "sample": [
+    "Data Analyst / Business Intelligence Analyst (m/w/d)"
+   ]
+  },
+  {
+   "company": "Karat",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "karat",
+   "jobs": 12,
+   "data_jobs": 1,
+   "sample": [
+    "Senior Data Engineer (India)"
+   ]
+  },
+  {
+   "company": "Launch Potato",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "launchpotato",
+   "jobs": 12,
+   "data_jobs": 1,
+   "sample": [
+    "Lead BI Developer"
+   ]
+  },
+  {
+   "company": "Labelbox",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "labelbox",
+   "jobs": 11,
+   "data_jobs": 1,
+   "sample": [
+    "Frontier Data Lead"
+   ]
+  },
+  {
+   "company": "Muck Rack",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "muckrack",
+   "jobs": 10,
+   "data_jobs": 1,
+   "sample": [
+    "Business Analytics Architect "
+   ]
+  },
+  {
+   "company": "Skyrocket Ventures",
+   "region": "worldwide",
+   "ats": "smartrecruiters",
+   "slug": "skyrocketventures",
+   "jobs": 5,
+   "data_jobs": 1,
+   "sample": [
+    "Data Entry Clerk"
+   ]
+  },
+  {
+   "company": "Chainguard",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "chainguard",
+   "jobs": 113,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "AlphaSights>",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "alphasights",
+   "jobs": 65,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Bitwarden",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "bitwarden",
+   "jobs": 36,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Capmo",
+   "region": "other",
+   "ats": "personio",
+   "slug": "capmo",
+   "jobs": 31,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Replit",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "replit",
+   "jobs": 30,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Uhuru",
+   "region": "worldwide",
+   "ats": "personio",
+   "slug": "uhuru",
+   "jobs": 20,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "VGS",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "verygoodsecurity",
+   "jobs": 18,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Rakuten Travel Xchange",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "solutions",
+   "jobs": 16,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Dashlane",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "dashlane",
+   "jobs": 16,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Glitch",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "glitch",
+   "jobs": 15,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Primer",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "primer",
+   "jobs": 15,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "CircleCI",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "circleci",
+   "jobs": 15,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "IQVIA",
+   "region": "worldwide",
+   "ats": "recruitee",
+   "slug": "jobs",
+   "jobs": 13,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Percona",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "percona",
+   "jobs": 13,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "ConsenSys Inc",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "consensys",
+   "jobs": 12,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "SearchApi",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "searchapi",
+   "jobs": 12,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Brave",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "brave",
+   "jobs": 12,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Amazon",
+   "region": "worldwide",
+   "ats": "personio",
+   "slug": "amazon",
+   "jobs": 12,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "MetaMask",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "consensys",
+   "jobs": 12,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Scandit",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "scandit",
+   "jobs": 10,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Mattermost",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "mattermost",
+   "jobs": 10,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "90 Seconds",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "90seconds",
+   "jobs": 8,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Quora",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "quora",
+   "jobs": 8,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Yonder",
+   "region": "worldwide",
+   "ats": "teamtailor",
+   "slug": "yonder",
+   "jobs": 7,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Locus Robotics",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "locusrobotics",
+   "jobs": 7,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Railway",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "railway",
+   "jobs": 7,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Capchase",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "capchase",
+   "jobs": 7,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "ConsenSys Inc",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "consensys",
+   "jobs": 6,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Help Scout",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "helpscout",
+   "jobs": 6,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Octopus Deploy",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "octopusdeploy",
+   "jobs": 6,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "OpenZeppelin",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "openzeppelin",
+   "jobs": 6,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Chroma",
+   "region": "asia-pacific",
+   "ats": "ashby",
+   "slug": "chromatic",
+   "jobs": 6,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Kestra",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "kestra",
+   "jobs": 5,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Ghost",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "ghost",
+   "jobs": 5,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Acquia",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "acquia",
+   "jobs": 4,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Varnish Software",
+   "region": "worldwide",
+   "ats": "teamtailor",
+   "slug": "varnish-software",
+   "jobs": 4,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Ghost",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "ghost",
+   "jobs": 4,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "GoHiring",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "gohiring",
+   "jobs": 4,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Luxor Technology",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "luxor",
+   "jobs": 4,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Khan Academy",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "khanacademy",
+   "jobs": 3,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Kinsta",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "kinsta",
+   "jobs": 3,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "RenoFi",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "renofi",
+   "jobs": 3,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "StreamNative",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "streamnative",
+   "jobs": 3,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Sticker Mule",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "stickermule",
+   "jobs": 3,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Calibre",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "calibre",
+   "jobs": 2,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "ZenRows",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "zenrows",
+   "jobs": 2,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Fly.io",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "fly",
+   "jobs": 2,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Time Doctor",
+   "region": "worldwide",
+   "ats": "smartrecruiters",
+   "slug": "timedoctor",
+   "jobs": 2,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Adaface",
+   "region": "asia-pacific",
+   "ats": "smartrecruiters",
+   "slug": "adaface",
+   "jobs": 2,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Mixmax",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "mixmax",
+   "jobs": 2,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Collabora",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "collabora",
+   "jobs": 2,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Buffer",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "buffer",
+   "jobs": 2,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Zignaly",
+   "region": "worldwide",
+   "ats": "recruitee",
+   "slug": "zignaly",
+   "jobs": 2,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Akka",
+   "region": "worldwide",
+   "ats": "teamtailor",
+   "slug": "akka",
+   "jobs": 2,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "First Point",
+   "region": "worldwide",
+   "ats": "smartrecruiters",
+   "slug": "firstpoint",
+   "jobs": 2,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Clootrack",
+   "region": "asia-pacific",
+   "ats": "smartrecruiters",
+   "slug": "clootrack",
+   "jobs": 1,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Nearform",
+   "region": "worldwide",
+   "ats": "smartrecruiters",
+   "slug": "nearform",
+   "jobs": 1,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Hubstaff",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "hubstaff",
+   "jobs": 1,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Ergeon",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "ergeon",
+   "jobs": 1,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Kinsta",
+   "region": "worldwide",
+   "ats": "smartrecruiters",
+   "slug": "kinsta",
+   "jobs": 1,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Turtlemint",
+   "region": "asia-pacific",
+   "ats": "smartrecruiters",
+   "slug": "turtlemint",
+   "jobs": 1,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "CloudBees",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "cloudbees",
+   "jobs": 1,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "ReCharge Payments",
+   "region": "worldwide",
+   "ats": "ashby",
+   "slug": "recharge",
+   "jobs": 1,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Rocket.Chat",
+   "region": "worldwide",
+   "ats": "greenhouse",
+   "slug": "rocketchat",
+   "jobs": 1,
+   "data_jobs": 0,
+   "sample": []
+  },
+  {
+   "company": "Articulate",
+   "region": "worldwide",
+   "ats": "lever",
+   "slug": "articulate",
+   "jobs": 1,
+   "data_jobs": 0,
+   "sample": []
+  }
+ ],
+ "workday": [
+  {
+   "tenant": "nvidia",
+   "wd": 5,
+   "site": "NVIDIAExternalCareerSite",
+   "data_total": 1593,
+   "india_data_sample": 3,
+   "sample": [
+    "Manager, AI/HPC Infrastructure Technical Delivery \u2014 India | India, Pune",
+    "Solutions Architect, Data Center MEP | India, Bengaluru",
+    "Senior Developer Relations Manager | India, Bengaluru"
+   ]
+  },
+  {
+   "tenant": "salesforce",
+   "wd": 12,
+   "site": "External_Career_Site",
+   "data_total": 932,
+   "india_data_sample": 7,
+   "sample": [
+    "Business Development Representative | India - Bangalore",
+    "Lead Employee Success People Consultant | India - Hyderabad",
+    "LMTS Agentic AP/Invoicing | India - Hyderabad",
+    "Agentforce Technical Manager (Salesforce experience mandatory) | India - Hyderabad",
+    "Business Development Representative- Enterprise account | India - Bangalore"
+   ]
+  },
+  {
+   "tenant": "adobe",
+   "wd": 5,
+   "site": "external_experienced",
+   "data_total": 166,
+   "india_data_sample": 12,
+   "sample": [
+    "Customer Success Account Manager | Remote India",
+    "Sr. Manager, Data Engineering | Bangalore",
+    "Solution Architect - Presales | Bangalore",
+    "ERC Generalist 2 | Bangalore",
+    "Enterprise Architect | Noida"
+   ]
+  },
+  {
+   "tenant": "intel",
+   "wd": 1,
+   "site": "External",
+   "data_total": 735,
+   "india_data_sample": 20,
+   "sample": [
+    "Senior Director , Data and Intelligence | India, Bangalore",
+    "Analog Design Flow and Infrastructure Design Automation Manager | India, Bangalore",
+    "Silicon Domain Architect | India, Bangalore",
+    "AI Platform and Agentic Engineer | India, Bangalore",
+    "Diagnostics Firmware Engineer | India, Bangalore"
+   ]
+  },
+  {
+   "tenant": "walmart",
+   "found": false
+  },
+  {
+   "tenant": "target",
+   "wd": 5,
+   "site": "targetcareers",
+   "data_total": 144,
+   "india_data_sample": 19,
+   "sample": [
+    "Product Manager | Bangalore,India",
+    "Lead Engineer- Backend | Tower 02, Manyata Embassy Business Park, Racenahali & Nagawara Villages. Outer Ring Rd, Bangalore 540065",
+    "Lead Specialist CRE Corp Ops | Bangalore,India",
+    "Senior Analyst \u2013 Facility Engineering & Asset Management | Bangalore,India",
+    "Sr Procurement Ops Professnl | Bangalore,India"
+   ]
+  },
+  {
+   "tenant": "mastercard",
+   "wd": 1,
+   "site": "CorporateCareers",
+   "data_total": 369,
+   "india_data_sample": 20,
+   "sample": [
+    "Senior Software Engineer | Pune, India",
+    "Graphic Designer (Consultant)-1 | Gurgaon, India",
+    "Manager, Product Marketing, Merchant Cloud - Global Acceptance and Merchant Solutions | Gurgaon, India",
+    "Senior Accountant-2 | Pune, India",
+    "Associate Analyst, Customer Operational Excellence | Gurgaon, India"
+   ]
+  },
+  {
+   "tenant": "paypal",
+   "wd": 1,
+   "site": "jobs",
+   "data_total": 158,
+   "india_data_sample": 13,
+   "sample": [
+    "Senior Manager, Operational Excellence & AI Operations | Bangalore, Karnataka, India",
+    "Regulatory Reporting Senior Manager | Bangalore, Karnataka, India",
+    "Regulatory Reporting Specialist | Bangalore, Karnataka, India",
+    "Regulatory Reporting Specialist | Bangalore, Karnataka, India",
+    "Senior Manager, Program Mgmt, Strategy & AI-Enabled Delivery | Bangalore, Karnataka, India"
+   ]
+  },
+  {
+   "tenant": "dell",
+   "found": false
+  },
+  {
+   "tenant": "hp",
+   "wd": 5,
+   "site": "ExternalCareerSite",
+   "data_total": 365,
+   "india_data_sample": 12,
+   "sample": [
+    "Credit Analyst | Bengaluru, Karnataka, India",
+    "Data Scientist - AI Developer | Bengaluru, Karnataka, India",
+    "AI and Automation Developer | Bengaluru, Karnataka, India",
+    "Supply Chain Integrated Business Planning | Bengaluru, Karnataka, India",
+    "Agentic AI Engineer | Bengaluru, Karnataka, India"
+   ]
+  },
+  {
+   "tenant": "autodesk",
+   "wd": 1,
+   "site": "Ext",
+   "data_total": 1,
+   "india_data_sample": 1,
+   "sample": [
+    "Apprentice, Talent Acquisition & People Experience | Bengaluru, IND"
+   ]
+  },
+  {
+   "tenant": "workday",
+   "wd": 5,
+   "site": "Workday",
+   "data_total": 215,
+   "india_data_sample": 15,
+   "sample": [
+    "Enterprise Account Executive - Large Enterprise | India, Mumbai",
+    "Principal Functional Consultant | India, Mumbai",
+    "Sr Associate Paradox Technical Support Engineer | IND.Pune",
+    "Sr Associate Support Engineer, Adaptive Planning AI, ML & Platform Operations | IND.Pune",
+    "Sr/Consultant - Workday Financials | IND.Pune"
+   ]
+  },
+  {
+   "tenant": "broadcom",
+   "wd": 1,
+   "site": "External_Career",
+   "data_total": 184,
+   "india_data_sample": 3,
+   "sample": [
+    "Identity and Cyber Security Services | IND-Bangalore Electronic City - S1",
+    "Senior UX Product Designer | IND-Hyderabad 115 IT Park Area (Chennai Service Office)",
+    "Staff Software Architect | IND-Hyderabad 115 IT Park Area"
+   ]
+  },
+  {
+   "tenant": "micron",
+   "wd": 1,
+   "site": "External",
+   "data_total": 2392,
+   "india_data_sample": 20,
+   "sample": [
+    "Senior/Staff Engineer, Product Engineering | Hyderabad - Phoenix Aquila, India",
+    "Staff /Senior Mechanical Design & Thermal Engineer | Bengaluru, India",
+    "Principal Engineer, EDG SSD Hardware | Bengaluru, India",
+    "Engineer, IP Dev Layout | Hyderabad - Phoenix Aquila, India",
+    "Senior Engineer, CAD Layout Automation | Hyderabad - Phoenix Aquila, India"
+   ]
+  },
+  {
+   "tenant": "amgen",
+   "wd": 1,
+   "site": "Careers",
+   "data_total": 576,
+   "india_data_sample": 18,
+   "sample": [
+    "Director - Corporate Affairs, Amgen India | India - Hyderabad",
+    "Medical Science Liaison, Cardiovascular Metabolic - Indiana | US - Indiana - Indianapolis",
+    "Data Scientist - Data Modeling/analytics | India - Hyderabad",
+    "Data Management Manager | India - Hyderabad",
+    "Lead Medical Data Reviewer | India - Hyderabad"
+   ]
+  },
+  {
+   "tenant": "blueyonder",
+   "found": false
+  },
+  {
+   "tenant": "jda",
+   "wd": 5,
+   "site": "Jda_Careers",
+   "data_total": 100,
+   "india_data_sample": 9,
+   "sample": [
+    "Sr. Data Science Consultant - Machine Learning/ Data Science | Bangalore",
+    "Sr. Data Science Consultant - Data Science / Machine Learning | Bangalore",
+    "Sr. Data Science Consultant 2 - Data Science, Machine Learning Algorithms, Python, SQL | Bangalore",
+    "Sr Software Engineer - ReactJS, TypeScript & SQL/NoSQL | Hyderabad",
+    "Senior QA Engineer (Selenium, Java, API/UI Automation) | Hyderabad"
+   ]
+  },
+  {
+   "tenant": "maersk",
+   "wd": 3,
+   "site": "Maersk_Careers",
+   "data_total": 97,
+   "india_data_sample": 11,
+   "sample": [
+    "Senior Specialist - Indirect Tax Operations | India, Mumbai, 400079",
+    "Specialist - Indirect Tax Operations | India, Pune, 411014",
+    "Senior Data Engineer | IN - Pune",
+    "Assistant Manager - Operations | India, Bengaluru, 562114",
+    "CX Manager - Claims | India, Mumbai, 400079"
+   ]
+  },
+  {
+   "tenant": "thomsonreuters",
+   "wd": 5,
+   "site": "External_Career_Site",
+   "data_total": 232,
+   "india_data_sample": 0,
+   "sample": [
+    "Senior Software Engineer AI | None",
+    "Legal AI Engineer, Strategic Accounts - Mid Law | None",
+    "Data Engineer | None",
+    "Data Scientist | None",
+    "Sr. Manager, Sales Operations | None"
+   ]
+  },
+  {
+   "tenant": "3m",
+   "wd": 1,
+   "site": "Search",
+   "data_total": 247,
+   "india_data_sample": 18,
+   "sample": [
+    "Data Center Vertical - Business Development Manager (India) | IN, Bangalore Kar",
+    "Data Engineer | IN, BANGALORE",
+    "Sr. Specialist - Supplier Performance Management 3M India | IN, Bangalore Kar",
+    "Sr. Specialist - Supplier Performance Management 3M India | IN, Maharashtra, Pune",
+    "3M Packaging Specialist \u2013 Indiana & Michigan | Remote - Indiana"
+   ]
+  },
+  {
+   "tenant": "zebra",
+   "found": false
+  },
+  {
+   "tenant": "wk",
+   "wd": 3,
+   "site": "External",
+   "data_total": 168,
+   "india_data_sample": 10,
+   "sample": [
+    "Data Scientist | IND-Pune-Smartworks",
+    "Data Analytics/Engineer (Python and MS Fabric exp) | IND-Pune-Smartworks",
+    "Business Analysis Manager - Semantic Data | IND-Pune-Smartworks",
+    "Regional Sales Manager \u2013 Uptodate (Bangalore) | IND - Gurgaon",
+    "Financial Systems Analyst | IND-Pune-Smartworks"
+   ]
+  },
+  {
+   "tenant": "astrazeneca",
+   "wd": 3,
+   "site": "Careers",
+   "data_total": 207,
+   "india_data_sample": 0,
+   "sample": [
+    "Senior Scientist Bioconjugation | UK - Cambridge",
+    "Director, Portfolio Management | US - Gaithersburg - MD",
+    "Senior Director, CMC, Analytical Stewardship, and Stats Excellence | US - Gaithersburg - MD",
+    "Associate Director, Global Analytical Lifecycle Management | US - Gaithersburg - MD",
+    "Strategy & Business Operations Head \u2013 CAMCAR | Costa Rica - San Jose"
+   ]
+  },
+  {
+   "tenant": "novartis",
+   "wd": 3,
+   "site": "Novartis_Careers",
+   "data_total": 200,
+   "india_data_sample": 14,
+   "sample": [
+    "Senior Data Engineer \u2013 Data & AI Platforms | Hyderabad (Office)",
+    "RLT Dosimetry data flow expert | Hyderabad (Office)",
+    "Senior Semantic Data & Knowledge Engineer | Hyderabad (Office)",
+    "Associate Director, Semantic Data & Knowledge Strategy | Hyderabad (Office)",
+    "Associate Director & Senior Principal Data Science, AI for Biologics | Hyderabad (Office)"
+   ]
+  },
+  {
+   "tenant": "gsk",
+   "wd": 5,
+   "site": "GSKCareers",
+   "data_total": 247,
+   "india_data_sample": 13,
+   "sample": [
+    "Senior Principal - Principal RE, Cloud & Hosting | Bengaluru Luxor North Tower",
+    "Senior Principal - Service Owner - DWE - P&C | Bengaluru Luxor North Tower",
+    "Senior Principal - Principal, RE \u2013 P&C | Bengaluru Luxor North Tower",
+    "Principal Developer (Siemens OpCenter) | Bengaluru Luxor North Tower",
+    "Principal Developer - Mendix | Bengaluru Luxor North Tower"
+   ]
+  },
+  {
+   "tenant": "pfizer",
+   "wd": 1,
+   "site": "PfizerCareers",
+   "data_total": 97,
+   "india_data_sample": 11,
+   "sample": [
+    "Senior Associate, Data Manager, Clinical Data Sciences | India - Mumbai",
+    "Senior Associate, Senior Data Manager, Clinical Data Sciences | India - Chennai",
+    "Senior Associate, Central Monitor, Data Surveillance, Clinical Data Sciences | India - Chennai",
+    "Director, Analytics Engineering & AI\u200b | India - Mumbai",
+    "Sr Manager, Full-Stack Engineering | India - Mumbai"
+   ]
+  },
+  {
+   "tenant": "philips",
+   "wd": 3,
+   "site": "jobs-and-careers",
+   "data_total": 195,
+   "india_data_sample": 15,
+   "sample": [
+    "Field Service Engineer -Pan India | India - Remote Based",
+    "Associate Data Scientist | Bangalore",
+    "Lead Data Scientist | Bangalore",
+    "Principal Data Scientist | Bangalore",
+    "Field Service Engineer | India - Remote Based"
+   ]
+  },
+  {
+   "tenant": "chevron",
+   "wd": 5,
+   "site": "jobs",
+   "data_total": 56,
+   "india_data_sample": 20,
+   "sample": [
+    "Wells Engineer | Bengaluru, Karnataka, India",
+    "Full stack Software Engineer | Bengaluru, Karnataka, India",
+    "Data Solution Architect | Bangalore, Karnataka, India",
+    "3D Modeling Engineer | Bengaluru, Karnataka, India",
+    "AI Ops- Data Analyst | Bengaluru, Karnataka, India"
+   ]
+  },
+  {
+   "tenant": "nike",
+   "wd": 1,
+   "site": "nke",
+   "data_total": 111,
+   "india_data_sample": 14,
+   "sample": [
+    "Lead Sales Representative \u2013 Team Sales, India | Karnataka, India",
+    "Senior Principal Software Engineer, ITC | Karnataka, India",
+    "Director Software Engineering - Design, ITC | Karnataka, India",
+    "Senior Software Engineer, ITC | Karnataka, India",
+    "Senior Information Security Engineer, ITC | Karnataka, India"
+   ]
+  },
+  {
+   "tenant": "disney",
+   "wd": 5,
+   "site": "disneycareer",
+   "data_total": 12,
+   "india_data_sample": 1,
+   "sample": [
+    "Sr Recruiter, Talent Acquisition | Bangalore, India"
+   ]
+  },
+  {
+   "tenant": "comcast",
+   "found": false
+  },
+  {
+   "tenant": "capitalone",
+   "wd": 12,
+   "site": "Capital_One",
+   "data_total": 1166,
+   "india_data_sample": 13,
+   "sample": [
+    "Lead Software Engineer | Bangalore, In",
+    "Accounting, Audit and Tax Manager | Bangalore, In",
+    "Senior Manager- AI Engineer | Bangalore, In",
+    "Sr. Director Product Management | Bangalore, In",
+    "Sr. Lead Software Engineer | Bangalore, In"
+   ]
+  },
+  {
+   "tenant": "ms",
+   "wd": 5,
+   "site": "External",
+   "data_total": 210,
+   "india_data_sample": 17,
+   "sample": [
+    "Fund Accounting_Director_Product Support & Services IM | Bengaluru, India",
+    "Employee Relations Advisor_Vice President_Employee Relations | Bengaluru, India",
+    "Lead Software Engineer(Java/AI)_Vice President_Software Engineering | Bengaluru, India",
+    "Operations, Executive Director, Equity OTC Confirmations, Mumbai | Mumbai, India",
+    "Business Analyst, Director, Portfolio & Change Management | Mumbai, India"
+   ]
+  },
+  {
+   "tenant": "statestreet",
+   "wd": 1,
+   "site": "Global",
+   "data_total": 404,
+   "india_data_sample": 18,
+   "sample": [
+    "Vice President, Finance Data Product Management \u2013 P&L | Bangalore, India",
+    "Loan Operations Vice President, India | Bangalore, India",
+    "Workforce Planning and Insights - Manager | Bangalore, India",
+    "India Program Office, Vice President - State Street Investment Management | Bangalore, India",
+    "Managing Director, Head of Finance Platform Centers of Excellence | Bangalore, India"
+   ]
+  },
+  {
+   "tenant": "bnymellon",
+   "found": false
+  },
+  {
+   "tenant": "citi",
+   "wd": 5,
+   "site": "2",
+   "data_total": 944,
+   "india_data_sample": 19,
+   "sample": [
+    "Citi India Apprenticeship Program | Mumbai Maharashtra India",
+    "Citi India Apprenticeship Program - Corporate Banking | Mumbai Maharashtra India",
+    "Citi - Markets, Summer Analyst, India \u2013 APAC, 2027 | Mumbai Maharashtra India",
+    "Officer - Data Engineer (Big Data, Python, PySpark) | Pune Maharashtra India",
+    "Data Engineer | Pune Maharashtra India"
+   ]
+  },
+  {
+   "tenant": "amat",
+   "wd": 1,
+   "site": "External",
+   "data_total": 1138,
+   "india_data_sample": 15,
+   "sample": [
+    "Sr Data Scientist | Bangalore,IND",
+    "Senior Manager Talent Acquisition(Country Lead) | Home / Mobile,India",
+    "Supplier Account Manager -Machining | Bangalore,IND",
+    "Regional Category Manager, Capital Construction (APAC) | Bangalore,IND",
+    "Supplier Account Management - Integration | Bangalore,IND"
+   ]
+  },
+  {
+   "tenant": "kyndryl",
+   "wd": 5,
+   "site": "KyndrylProfessionalCareers",
+   "data_total": 619,
+   "india_data_sample": 5,
+   "sample": [
+    "Director - Design Leader, Kyndryl Vital India | Bangalore, Karnataka, India",
+    "Data Scientist | Mumbai, Maharashtra, India",
+    "Associate Director - Marketing Data | Bangalore, Karnataka, India",
+    "SAP Business Data Cloud Architect | Bangalore, Karnataka, India",
+    "Solution Architect \u2013 Shared Data Migration (Tenant-to-Tenant ODSP & Teams files) | Bangalore, Karnataka, India"
+   ]
+  },
+  {
+   "tenant": "lowes",
+   "wd": 5,
+   "site": "LWS_External_CS",
+   "data_total": 74,
+   "india_data_sample": 20,
+   "sample": [
+    "Senior Analyst, Pricing Analytics | Bengaluru",
+    "Associate Analyst - UGC | Bengaluru",
+    "Engineer - Information Security_Network Security | Bengaluru",
+    "Senior Manager, Operational Excellence | Bengaluru",
+    "Manager, Vendor Performance | Bengaluru"
+   ]
+  },
+  {
+   "tenant": "fedex",
+   "wd": 1,
+   "site": "FXE-LAC_External_Career_Site",
+   "data_total": 1,
+   "india_data_sample": 0,
+   "sample": [
+    "LM362: Sourcing & Procurement Specialist Senior | FXE-LAC/MXMEXGC/MEXGC GBS Mexico"
+   ]
+  },
+  {
+   "tenant": "ups",
+   "found": false
+  },
+  {
+   "tenant": "honeywell",
+   "found": false
+  },
+  {
+   "tenant": "carrier",
+   "wd": 5,
+   "site": "jobs",
+   "data_total": 528,
+   "india_data_sample": 16,
+   "sample": [
+    "Senior Data Scientist | Building No: 12C, Floor 9,10,11, Building No: 12B -Stilt floor, Raheja Mindspace, Cyberabad, Madhapur, Hyderabad - 500081, Telangana, India",
+    "Sr. Controls Sales Executive- Indianapolis | CAI31: ALC - Indiana, 117 North High Street, Muncie, IN, 47305 USA",
+    "BAS Construction Sales Representative - Indianapolis | CAI31: ALC - Indiana, 117 North High Street, Muncie, IN, 47305 USA",
+    "Data Analytics Intern - Summer | CAI23: Carrier-Indianapolis, 7310 West Morris Street, Indianapolis, IN, 46231 USA",
+    "HVAC- Data Center Service Operations Manager | No. 7-1-617 /A, 615 and 616 in Sy. No. 238 (p) and Sy. No. 242 (p), Ameerpet Village, Floor 2, Unit 1 & 2, Imperial Tower, Hyderabad, Telangana, India"
+   ]
+  },
+  {
+   "tenant": "gartner",
+   "wd": 5,
+   "site": "EXT",
+   "data_total": 68,
+   "india_data_sample": 17,
+   "sample": [
+    "Specialist Analyst (Technology market, market sizing, revenue analysis) | Remote - India",
+    "Principal Analyst (Physical AI Semiconductors, IOT, Market Intelligence, Forecast/ Market Sizing models) | Remote - India",
+    "Sr Director Analyst, HR Technology \u2013 Talent & Learning | Remote - India",
+    "Sr Principal, Analyst (Semiconductor Memory \u2013 NAND Flash/DRAM) | Remote - India",
+    "Lead Data Scientist (Agentic AI, RAG, GenAI/LLM, Classical ML) | Gurgaon"
+   ]
+  },
+  {
+   "tenant": "marriott",
+   "found": false
+  },
+  {
+   "tenant": "expedia",
+   "found": false
+  },
+  {
+   "tenant": "unilever",
+   "found": false
+  },
+  {
+   "tenant": "sanofi",
+   "wd": 3,
+   "site": "SanofiCareers",
+   "data_total": 193,
+   "india_data_sample": 19,
+   "sample": [
+    "Talent Acquisition Partner-Early Careers | Hyderabad",
+    "Clinical Data Specialist | Hyderabad",
+    "System Engineering | Hyderabad",
+    "Senior Analyst \u2013 Business Analytics | Hyderabad",
+    "Senior Data Integration Analyst | Hyderabad"
+   ]
+  },
+  {
+   "tenant": "bayer",
+   "found": false
+  },
+  {
+   "tenant": "mondelez",
+   "found": false
+  },
+  {
+   "tenant": "kenvue",
+   "wd": 5,
+   "site": "Kenvue",
+   "data_total": 31,
+   "india_data_sample": 3,
+   "sample": [
+    "Pharmacovigilance Audit Manager | Asia Pacific, India, Karnataka, Bangalore",
+    "Employee and Labour Relations Leader (Fixed Term Employment - 1 year) | Asia Pacific, India, Maharashtra, Greater Mumbai",
+    "Indirect Tax Operations-Senior Analyst | Asia Pacific, India, Karnataka, Bangalore"
+   ]
+  },
+  {
+   "tenant": "manh",
+   "wd": 5,
+   "site": "External",
+   "data_total": 13,
+   "india_data_sample": 5,
+   "sample": [
+    "Consultant - MAWM / WMS | Bangalore",
+    "Senior Consultant - MAWM / WMS | Bangalore",
+    "Lead Consultant - MAWM / WMS | Bangalore",
+    "Senior Manager - Engineering Excellence | Bangalore",
+    "Finance Administrator - Travel & Expense (T&E) | Bangalore"
+   ]
+  },
+  {
+   "tenant": "manhattanassociates",
+   "found": false
+  },
+  {
+   "tenant": "kinaxis",
+   "found": false
+  },
+  {
+   "tenant": "e2open",
+   "found": false
+  },
+  {
+   "tenant": "descartes",
+   "found": false
+  },
+  {
+   "tenant": "zf",
+   "found": false
+  },
+  {
+   "tenant": "dhl",
+   "found": false
+  },
+  {
+   "tenant": "db",
+   "wd": 3,
+   "site": "DBWebsite",
+   "data_total": 331,
+   "india_data_sample": 17,
+   "sample": [
+    "Director - India Head of Architecture | Pune - Business Bay",
+    "India Payroll Processor - Payroll Control | Bangalore Velankani ISC",
+    "AVP \u2013 Data Engineer | Bangalore Velankani ISC",
+    "Divisional Data Office / Data Stewardship (DDO/DDS)- VP | Mumbai, Nirlon Knowledge Park",
+    "AFC Technology \u2013 Data and/or Records Team Lead, VP | Bangalore Velankani ISC"
+   ]
+  },
+  {
+   "tenant": "barclays",
+   "wd": 3,
+   "site": "External_Career_Site_Barclays",
+   "data_total": 262,
+   "india_data_sample": 18,
+   "sample": [
+    "Analyst- DMT Operations | Mumbai, Nirlon Knowledge Park (IB) , 9th floor",
+    "FCE Data and Assurance Analyst (BA3) | Gurugram, DLF Downtown",
+    "BUK TESCO Bank IN- Platforms-API Technical Product Owner - VP | Bengaluru, Maruthi Onyx - TESCO TSA",
+    "Financial Crime Agile Testing Team Lead | Pune, Gera Commerzone SEZ",
+    "Product Owner AVP | Bengaluru, Maruthi Onyx - TESCO TSA"
+   ]
+  },
+  {
+   "tenant": "hsbc",
+   "found": false
+  },
+  {
+   "tenant": "wellsfargo",
+   "found": false
+  },
+  {
+   "tenant": "fidelity",
+   "found": false
+  },
+  {
+   "tenant": "equinix",
+   "wd": 1,
+   "site": "External",
+   "data_total": 184,
+   "india_data_sample": 20,
+   "sample": [
+    "Senior Staff Data Scientist | Bangalore Office BLS2",
+    "Staff - GCP Data Engineer | Bangalore Office BLS2",
+    "Manager, Data Center Critical Facilities | Mumbai",
+    "Manager - Network API & Observability | Bangalore Office BLS2",
+    "Data Center Critical Facilities V | Mumbai"
+   ]
+  },
+  {
+   "tenant": "rakuten",
+   "found": false
+  },
+  {
+   "tenant": "flex",
+   "found": false
+  },
+  {
+   "tenant": "ti",
+   "found": false
+  },
+  {
+   "tenant": "lamresearch",
+   "found": false
+  },
+  {
+   "tenant": "synopsys",
+   "found": false
+  },
+  {
+   "tenant": "cadence",
+   "wd": 1,
+   "site": "External_Careers",
+   "data_total": 227,
+   "india_data_sample": 12,
+   "sample": [
+    "Configuration Management Engineer II | BANGALORE",
+    "Principal Design Engineer | PUNE",
+    "Lead Procurement Specialist | NOIDA",
+    "Lead FrontEnd Methodology Engineer | BANGALORE",
+    "Associate Talent Acquisition Partner | BANGALORE"
+   ]
+  },
+  {
+   "tenant": "servicenow",
+   "found": false
+  },
+  {
+   "tenant": "athenahealth",
+   "wd": 1,
+   "site": "External",
+   "data_total": 48,
+   "india_data_sample": 19,
+   "sample": [
+    "Junior Anaplan Model Builder | Bangalore - Whitefield India",
+    "Implementation Senior Analyst | Chennai India",
+    "Procurement Manager | Chennai India",
+    "Senior Operations Analyst | Chennai India",
+    "Product Support Analyst | Chennai India"
+   ]
+  },
+  {
+   "tenant": "optum",
+   "found": false
+  },
+  {
+   "tenant": "elevancehealth",
+   "wd": 1,
+   "site": "ANT",
+   "data_total": 30,
+   "india_data_sample": 2,
+   "sample": [
+    "Data Scientist Senior | IN-INDIANAPOLIS, 220 VIRGINIA AVE",
+    "Oncology Regional Account Liaison - BioPlus Specialty Pharmacy - Indiana | IN-INDIANAPOLIS, 220 VIRGINIA AVE"
+   ]
+  },
+  {
+   "tenant": "cvshealth",
+   "wd": 1,
+   "site": "CVS_Health_Careers",
+   "data_total": 129,
+   "india_data_sample": 1,
+   "sample": [
+    "Primary Care Physician | IN - Indianapolis"
+   ]
+  },
+  {
+   "tenant": "pg",
+   "wd": 5,
+   "site": "1000",
+   "data_total": 227,
+   "india_data_sample": 14,
+   "sample": [
+    "Data Engineer (Databricks) | HYDERABAD OFFICE INDIA PSC PGH",
+    "Artwork Planner \u2013 Consumer Health (APAC, Middle East & India) | HYDERABAD OFFICE APAC PSC GDOP",
+    "Brand Director (Beauty Care) | MUMBAI GENERAL OFFICE",
+    "Senior Data Engineer | HYDERABAD OFFICE APAC PSC GDOP",
+    "Senior Data Engineer | MUMBAI GENERAL OFFICE"
+   ]
+  },
+  {
+   "tenant": "pepsico",
+   "found": false
+  },
+  {
+   "tenant": "loreal",
+   "found": false
+  },
+  {
+   "tenant": "abbott",
+   "wd": 5,
+   "site": "abbottcareers",
+   "data_total": 521,
+   "india_data_sample": 18,
+   "sample": [
+    "Associate Marketing Director, ADC India | India - Mumbai",
+    "Account Executive - Indianapolis | United States - Indiana - Indianapolis",
+    "Territory Manager CardioMEMS - Indianapolis | United States - Indiana - Indianapolis",
+    "Key Account Manager  - Delhi | INDIA - DELHI - DELHI",
+    "Executive - Commercial Enablement | India - Mumbai"
+   ]
+  },
+  {
+   "tenant": "medtronic",
+   "wd": 1,
+   "site": "MedtronicCareers",
+   "data_total": 564,
+   "india_data_sample": 16,
+   "sample": [
+    "Senior AI Data Science Engineer | Nanakramguda, Hyderabad, India",
+    "Principal IT Data Architect - Snowflake, Data Governance & AI Platforms | Nanakramguda, Hyderabad, India",
+    "Senior Principal AI/Data Science Engineer | Nanakramguda, Hyderabad, India",
+    "AI/Data Science Engineer II | Nanakramguda, Hyderabad, India",
+    "Senior IT Supervisor - Data Engineering | Nanakramguda, Hyderabad, India"
+   ]
+  },
+  {
+   "tenant": "ge",
+   "found": false
+  },
+  {
+   "tenant": "gehealthcare",
+   "found": false
+  },
+  {
+   "tenant": "siemens",
+   "found": false
+  },
+  {
+   "tenant": "bosch",
+   "found": false
+  },
+  {
+   "tenant": "shell",
+   "wd": 3,
+   "site": "ShellCareers",
+   "data_total": 85,
+   "india_data_sample": 17,
+   "sample": [
+    "Data Scientist | Chennai - RMZ Millenia",
+    "Data Science Engagement Lead | SHELL CENTRE \u2013 CHENNAI",
+    "Project and Control Systems Engineer | Indiana - Michigan City Catalyst Plant",
+    "Maintenance & Engineering Manager | Indiana - Michigan City Catalyst Plant",
+    "Engineer - Environment Reporting | SHELL CENTRE \u2013 CHENNAI"
+   ]
+  },
+  {
+   "tenant": "bp",
+   "found": false
+  },
+  {
+   "tenant": "accenture",
+   "wd": 103,
+   "site": "AccentureCareers",
+   "data_total": 2000,
+   "india_data_sample": 0,
+   "sample": [
+    "Data Engineer | None",
+    "Data Engineer | None",
+    "Data Engineer | None",
+    "None | None",
+    "Data Engineer | None"
+   ]
+  },
+  {
+   "tenant": "ey",
+   "found": false
+  },
+  {
+   "tenant": "kpmg",
+   "found": false
+  },
+  {
+   "tenant": "deloitte",
+   "found": false
+  }
+ ],
+ "companies": 435,
+ "checks": 5092,
+ "seconds": 167
+}
