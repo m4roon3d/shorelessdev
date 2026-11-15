@@ -170,8 +170,119 @@ def recruitee(slug, name, tags):
     return out
 
 
+def personio(slug, name, tags):
+    r = None
+    for tld in ("de", "com"):
+        r = requests.get(f"https://{slug}.jobs.personio.{tld}/xml", headers=UA, timeout=TIMEOUT)
+        if r.status_code == 200 and "<position" in r.text:
+            break
+    r.raise_for_status()
+    out = []
+    for p in re.findall(r"<position>(.*?)</position>", r.text, re.S):
+        def tag(t):
+            m = re.search(rf"<{t}>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</{t}>", p, re.S)
+            return html.unescape(m.group(1)).strip() if m else ""
+        offices = ", ".join(dict.fromkeys([tag("office")] + re.findall(r"<additionalOffice>(.*?)</additionalOffice>", p)))
+        desc = " ".join(_strip(html.unescape(v)) for v in re.findall(r"<value>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</value>", p, re.S))
+        out.append(dict(
+            title=tag("name"), company=name, url=f"https://{slug}.jobs.personio.{tld}/job/{tag('id')}",
+            location=offices.strip(", "), remote=True if re.search(r"remote", offices, re.I) else None, restrictions=None,
+            posted=_iso(tag("createdAt")), tags=tags, desc=desc, etype=tag("employmentType").replace("permanent", "Full Time"),
+        ))
+    return out
+
+
+def teamtailor(slug, name, tags):
+    xml = _get(f"https://{slug}.teamtailor.com/jobs.rss").text
+    out = []
+    for item in re.findall(r"<item>(.*?)</item>", xml, re.S):
+        def tag(t):
+            m = re.search(rf"<{t}[^>]*>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</{t}>", item, re.S)
+            return html.unescape(m.group(1)).strip() if m else ""
+        locs = [html.unescape(x) for x in re.findall(r"<tt:(?:city|country|name)>(.*?)</tt:(?:city|country|name)>", item)]
+        remote_status = tag("tt:remoteStatus") or tag("remoteStatus")
+        desc = _strip(tag("description"))
+        try:
+            posted = int(datetime.strptime(tag("pubDate"), "%a, %d %b %Y %H:%M:%S %z").timestamp())
+        except ValueError:
+            posted = None
+        out.append(dict(
+            title=tag("title"), company=name, url=tag("link"), location=", ".join(dict.fromkeys(locs)),
+            remote=True if re.search(r"remote|fully|temporary", remote_status, re.I) or re.search(r"\bremote\b", tag("title"), re.I) else None,
+            restrictions=None, posted=posted, tags=tags, desc=desc,
+        ))
+    return out
+
+
+_WD_AGO = re.compile(r"(\d+)\+? Days? Ago", re.I)
+WD_QUERIES = ("data engineer", "data architect", "data analyst", "analytics engineer", "etl", "business intelligence", "big data")
+
+
+def _wd_posted(text):
+    t = (text or "").lower()
+    day = 86400
+    if "today" in t:
+        return int(time.time())
+    if "yesterday" in t:
+        return int(time.time()) - day
+    m = _WD_AGO.search(t)
+    return int(time.time()) - int(m.group(1)) * day if m else None
+
+
+def workday(slug, name, tags):
+    """slug is "tenant|wd number|site". Searches data roles, keeps those in India or remote, then reads each posting."""
+    import classify  # local import: classify has no dependency on sources
+    tenant, wd, site = slug.split("|")
+    base = f"https://{tenant}.wd{wd}.myworkdayjobs.com"
+    api = f"{base}/wday/cxs/{tenant}/{site}"
+    hdr = {**UA, "Accept": "application/json", "Content-Type": "application/json"}
+    seen, picks = set(), []
+    for q in WD_QUERIES:
+        for offset in (0, 20, 40):
+            r = requests.post(f"{api}/jobs", json={"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": q},
+                              headers=hdr, timeout=TIMEOUT)
+            r.raise_for_status()
+            posts = r.json().get("jobPostings") or []
+            for p in posts:
+                path = p.get("externalPath")
+                if not path or path in seen:
+                    continue
+                seen.add(path)
+                loc = p.get("locationsText") or ""
+                if not classify.role_of(p.get("title") or ""):
+                    continue
+                if not (classify.INDIA.search(loc) or classify.REMOTE.search(loc) or re.search(r"\d+ Locations", loc)):
+                    continue
+                picks.append(p)
+            if len(posts) < 20:
+                break
+        time.sleep(0.3)
+    out = []
+    for p in picks[:60]:
+        info = {}
+        try:
+            info = requests.get(f"{api}{p['externalPath']}", headers=hdr, timeout=TIMEOUT).json().get("jobPostingInfo") or {}
+        except (requests.RequestException, ValueError):
+            pass
+        locs = [info.get("location") or p.get("locationsText") or ""] + list(info.get("additionalLocations") or [])
+        loc = ", ".join(dict.fromkeys(l for l in locs if l))
+        rt = (info.get("remoteType") or "").lower()
+        out.append(dict(
+            title=info.get("title") or p.get("title"), company=name,
+            url=info.get("externalUrl") or f"{base}/{site}{p['externalPath']}", location=loc,
+            remote=True if "remote" in rt or re.search(r"\bremote\b", loc, re.I) else None, restrictions=None,
+            posted=_iso(info.get("startDate")) or _wd_posted(p.get("postedOn")), tags=tags,
+            desc=_strip(info.get("jobDescription")), etype=info.get("timeType") or "",
+        ))
+        time.sleep(0.2)
+    return out
+
+
 ATS = {
     "Recruitee": (recruitee, getattr(companies, "RECRUITEE", [])),
+    "Personio": (personio, getattr(companies, "PERSONIO", [])),
+    "Teamtailor": (teamtailor, getattr(companies, "TEAMTAILOR", [])),
+    "Workday": (workday, getattr(companies, "WORKDAY", [])),
     "Greenhouse": (greenhouse, companies.GREENHOUSE),
     "Lever": (lever, companies.LEVER),
     "Ashby": (ashby, companies.ASHBY),

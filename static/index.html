@@ -236,7 +236,7 @@ const pct=(a,b)=>b?Math.round(100*a/b):0;
 const WHO={"in-remote":["India · remote","--accent"],"in-office":["India · office","--muted"],apac:["APAC","--apac"],
   world:["Worldwide","--world"],unclear:["Region unclear","--muted"],locked:["Region-locked","--locked"]};
 const who=j=>j.region==="India"?(j.remote?"in-remote":"in-office"):({APAC:"apac",Worldwide:"world",Unclear:"unclear",Locked:"locked"})[j.region];
-const DIRECT=new Set(["Greenhouse","Lever","Ashby","SmartRecruiters","Workable","HN Who's Hiring"]);
+const DIRECT=new Set(["Greenhouse","Lever","Ashby","SmartRecruiters","Workable","Recruitee","Personio","Teamtailor","Workday","HN Who's Hiring"]);
 const direct=j=>DIRECT.has(j.source);
 const ROLES=["Engineering","Analytics","Architecture","Science"];
 const GENERIC=new Set(["Python","SQL"]);

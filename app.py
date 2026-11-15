@@ -46,6 +46,9 @@ def normalize(raw, source):
             region = r2
     if region == "Unclear":
         region = classify.region_from_desc(desc) or region
+    elif region == "Locked" and raw.get("remote") and not classify.LOCKED.search(loc):
+        # a remote role listed under a head-office city: let a clear statement in the description decide
+        region = classify.region_from_desc(desc) or region
     if region is None:
         return None
 
