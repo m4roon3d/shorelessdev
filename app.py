@@ -47,8 +47,11 @@ def normalize(raw, source):
     if region == "Unclear":
         region = classify.region_from_desc(desc) or region
     elif region == "Locked" and raw.get("remote") and not classify.LOCKED.search(loc):
-        # a remote role listed under a head-office city: let a clear statement in the description decide
-        region = classify.region_from_desc(desc) or region
+        # A remote role listed under an office city. Trust the description only when it names India,
+        # or says worldwide at a company known to be all-remote (company boilerplate often says "global").
+        r = classify.region_from_desc(desc)
+        if r == "India" or (r == "Worldwide" and "allremote" in (raw.get("tags") or [])):
+            region = r
     if region is None:
         return None
 
