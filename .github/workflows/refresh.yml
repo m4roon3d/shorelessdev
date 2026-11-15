@@ -19,10 +19,6 @@ jobs:
           python-version: "3.12"
       - run: pip install requests flask
       - run: python build.py
-        env:
-          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
-          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
-          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
       - name: Commit jobs.json
         run: |
           git config user.name "shoreless-bot"

@@ -488,10 +488,6 @@ function vPulse(){
       h("div",{class:"legend"},order.map(k=>h("div",{},h("i",{style:`--c:var(${WHO[k][1]})`}),WHO[k][0],h("span",{},`${cw[k]||0} · ${pct(cw[k]||0,jobs.length)}%`))))),
     h("section",{class:"panel"},h("h4",{},"Freshness"),h("p",{class:"note"},"How long the roles you can apply to have been open. Early applications get read."),
       bars(buckets,Math.max(1,...buckets.map(b=>b[1]))))));
-  const has=k=>feed.sources.some(s=>s.key===k);
-  if(has("Adzuna")||has("Jooble"))el.append(h("p",{class:"sub",style:"margin-top:16px"},"India listings include ",
-    has("Adzuna")&&h("a",{href:"https://www.adzuna.in/",target:"_blank",rel:"noopener"},"Jobs by Adzuna"),has("Adzuna")&&has("Jooble")&&" and ",
-    has("Jooble")&&h("a",{href:"https://in.jooble.org/",target:"_blank",rel:"noopener"},"jobs from Jooble"),"."));
   const ok=feed.sources.filter(s=>s.ok).length;
   el.append(h("details",{class:"src"},h("summary",{},`Sources · ${ok} working, ${feed.sources.length-ok} not responding`),
     h("div",{class:"srclist"},feed.sources.map(s=>h("div",{class:s.ok?"":"bad"},s.ok?`${s.key} · ${s.kept}/${s.total}`:`${s.key} · ${s.error==="404"?"not found":s.error}`)))));

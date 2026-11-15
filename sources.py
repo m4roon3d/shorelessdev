@@ -2,7 +2,6 @@
 {title, company, url, location, remote(bool|None), restrictions(list|None), posted(epoch s|None), source, tags, extra}
 """
 import html
-import os
 import re
 import time
 from datetime import datetime, timezone
@@ -360,67 +359,3 @@ FEEDS = {
     "Jobicy": jobicy,
     "We Work Remotely": weworkremotely,
 }
-
-
-# ---------- India job aggregators (official APIs, need free keys in the environment) ----------
-INDIA_QUERIES = ("remote data engineer", "work from home data engineer", "remote data architect", "remote data analyst",
-                 "remote etl developer", "remote snowflake", "remote databricks", "remote informatica")
-_WFH = re.compile(r"remote|work from home|wfh|work from anywhere|telecommut", re.I)
-
-
-def adzuna():
-    """Adzuna India. Free key: https://developer.adzuna.com (limits: 250 calls a day, 1,000 a week)."""
-    aid, key = os.environ["ADZUNA_APP_ID"], os.environ["ADZUNA_APP_KEY"]
-    out = []
-    for q in INDIA_QUERIES:
-        try:
-            data = _get("https://api.adzuna.com/v1/api/jobs/in/search/1", params={
-                "app_id": aid, "app_key": key, "what": q, "results_per_page": 50, "max_days_old": 30,
-                "sort_by": "date", "content-type": "application/json"}).json()
-        except (requests.RequestException, ValueError):
-            continue
-        for j in data.get("results", []):
-            desc = _strip(j.get("description"))
-            if not _WFH.search(f"{j.get('title')} {desc}"):
-                continue  # office jobs in India are out of scope here
-            predicted = str(j.get("salary_is_predicted")) == "1"
-            out.append(dict(
-                title=_strip(j.get("title")), company=(j.get("company") or {}).get("display_name"),
-                url=j.get("redirect_url"), location=f"{(j.get('location') or {}).get('display_name') or ''}, India".strip(", "),
-                remote=True, restrictions=None, posted=_iso(j.get("created")), tags=[], desc=desc,
-                pay=None if predicted else _rng(j.get("salary_min"), j.get("salary_max"), "INR"),
-                etype=(j.get("contract_time") or "").replace("_", " ").title(),
-            ))
-        time.sleep(2.5)
-    return out
-
-
-def jooble():
-    """Jooble India. Free key on request: https://jooble.org/api/about (limit: 100 requests a day)."""
-    key = os.environ["JOOBLE_API_KEY"]
-    out = []
-    for q in INDIA_QUERIES:
-        try:
-            r = requests.post(f"https://in.jooble.org/api/{key}", json={"keywords": q, "location": "India", "ResultOnPage": 50},
-                              headers=UA, timeout=TIMEOUT)
-            r.raise_for_status()
-            data = r.json()
-        except (requests.RequestException, ValueError):
-            continue
-        for j in data.get("jobs", []):
-            desc = _strip(j.get("snippet"))
-            if not _WFH.search(f"{j.get('title')} {desc} {j.get('location')}"):
-                continue
-            out.append(dict(
-                title=_strip(j.get("title")), company=j.get("company"), url=j.get("link"),
-                location=f"{j.get('location') or ''}, India".strip(", "), remote=True, restrictions=None,
-                posted=_iso(j.get("updated")), tags=[], desc=desc, pay_text=_strip(j.get("salary")), etype=j.get("type"),
-            ))
-        time.sleep(1)
-    return out
-
-
-if os.environ.get("ADZUNA_APP_ID") and os.environ.get("ADZUNA_APP_KEY"):
-    FEEDS["Adzuna"] = adzuna
-if os.environ.get("JOOBLE_API_KEY"):
-    FEEDS["Jooble"] = jooble
