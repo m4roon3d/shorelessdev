@@ -71,6 +71,34 @@ GREENHOUSE = [
     ('netlify', 'Netlify', []),
     ('outrider', 'Outrider', ['supply']),
     ('platformscience', 'Platform Science', ['supply']),
+    # remote-first companies (remoteintech list)
+    ('ebury', 'Ebury', []),
+    ('inter', 'Inter&Co', []),
+    ('okta', 'Okta', []),
+    ('wizeline', 'Wizeline', []),
+    ('asana', 'Asana', []),
+    ('paypay', 'PayPay', []),
+    ('epicgames', 'Epic Games', []),
+    ('seatgeek', 'SeatGeek', []),
+    ('godaddy', 'GoDaddy', []),
+    ('udacity', 'Udacity', ['allremote']),
+    ('cabify', 'Cabify', []),
+    ('fingerprint', 'Fingerprint', ['allremote']),
+    ('fastly', 'Fastly', []),
+    ('nearform', 'Nearform', ['allremote']),
+    ('customerio', 'Customer.io', ['allremote']),
+    ('fleetio', 'Fleetio', ['supply']),
+    ('karat', 'Karat', []),
+    ('launchpotato', 'Launch Potato', ['allremote']),
+    ('labelbox', 'Labelbox', []),
+    ('muckrack', 'Muck Rack', ['allremote']),
+    ('chainguard', 'Chainguard', ['allremote']),
+    ('bitwarden', 'Bitwarden', ['allremote']),
+    ('circleci', 'CircleCI', []),
+    ('consensys', 'Consensys', ['allremote']),
+    ('brave', 'Brave', []),
+    ('mattermost', 'Mattermost', ['allremote']),
+    ('dashlane', 'Dashlane', []),
 ]
 
 LEVER = [
@@ -93,6 +121,13 @@ LEVER = [
     ('zeta', 'Zeta', []),
     ('keboola', 'Keboola', ['vendor']),
     ('turvo', 'Turvo', ['supply']),
+    # remote-first companies (remoteintech list)
+    ('veeva', 'Veeva Systems', []),
+    ('spotify', 'Spotify', []),
+    ('extremenetworks', 'Extreme Networks', []),
+    ('bounteous', 'Bounteous', []),
+    ('sonatype', 'Sonatype', []),
+    ('verygoodsecurity', 'VGS', []),
 ]
 
 ASHBY = [
@@ -138,6 +173,17 @@ ASHBY = [
     ('close', 'Close', ['allremote']),
     ('gooddata', 'GoodData', ['vendor']),
     ('sentry', 'Sentry', []),
+    # remote-first companies (remoteintech list)
+    ('klaviyo', 'Klaviyo', []),
+    ('webfx', 'WebFX', []),
+    ('lightspeedhq', 'Lightspeed', []),
+    ('temporal', 'Temporal', ['vendor']),
+    ('revenuecat', 'RevenueCat', ['allremote']),
+    ('caremessage', 'CareMessage', ['allremote']),
+    ('sardine', 'Sardine', []),
+    ('replit', 'Replit', []),
+    ('percona', 'Percona', ['vendor', 'allremote']),
+    ('primer', 'Primer', []),
 ]
 
 SMARTRECRUITERS = [
@@ -150,6 +196,8 @@ SMARTRECRUITERS = [
     ('wise', 'Wise', []),
     ('grab', 'Grab', []),
     ('deliveryhero', 'Delivery Hero', []),
+    # remote-first companies (remoteintech list)
+    ('swiggy', 'Swiggy', ['supply']),
 ]
 
 WORKABLE = [
@@ -159,4 +207,50 @@ WORKABLE = [
     ("toggl", "Toggl", ["allremote", ]),
     ("smartcat", "Smartcat", []),
     ("intellias", "Intellias", []),
+]
+
+# Workday career sites ("tenant|wd number|site"). Mostly office or hybrid roles at India tech centres.
+WORKDAY = [
+    ('jda|5|Jda_Careers', 'Blue Yonder', ['supply']),
+    ('manh|5|External', 'Manhattan Associates', ['supply']),
+    ('maersk|3|Maersk_Careers', 'Maersk', ['supply']),
+    ('target|5|targetcareers', 'Target', []),
+    ('lowes|5|LWS_External_CS', "Lowe's", []),
+    ('carrier|5|jobs', 'Carrier', []),
+    ('pg|5|1000', 'Procter & Gamble', []),
+    ('nvidia|5|NVIDIAExternalCareerSite', 'NVIDIA', []),
+    ('adobe|5|external_experienced', 'Adobe', []),
+    ('intel|1|External', 'Intel', []),
+    ('salesforce|12|External_Career_Site', 'Salesforce', []),
+    ('workday|5|Workday', 'Workday', []),
+    ('micron|1|External', 'Micron', []),
+    ('amat|1|External', 'Applied Materials', []),
+    ('broadcom|1|External_Career', 'Broadcom', []),
+    ('cadence|1|External_Careers', 'Cadence', []),
+    ('equinix|1|External', 'Equinix', []),
+    ('hp|5|ExternalCareerSite', 'HP', []),
+    ('kyndryl|5|KyndrylProfessionalCareers', 'Kyndryl', []),
+    ('gartner|5|EXT', 'Gartner', []),
+    ('wk|3|External', 'Wolters Kluwer', []),
+    ('mastercard|1|CorporateCareers', 'Mastercard', []),
+    ('paypal|1|jobs', 'PayPal', []),
+    ('capitalone|12|Capital_One', 'Capital One', []),
+    ('ms|5|External', 'Morgan Stanley', []),
+    ('statestreet|1|Global', 'State Street', []),
+    ('citi|5|2', 'Citi', []),
+    ('db|3|DBWebsite', 'Deutsche Bank', []),
+    ('barclays|3|External_Career_Site_Barclays', 'Barclays', []),
+    ('amgen|1|Careers', 'Amgen', []),
+    ('novartis|3|Novartis_Careers', 'Novartis', []),
+    ('gsk|5|GSKCareers', 'GSK', []),
+    ('pfizer|1|PfizerCareers', 'Pfizer', []),
+    ('sanofi|3|SanofiCareers', 'Sanofi', []),
+    ('abbott|5|abbottcareers', 'Abbott', []),
+    ('medtronic|1|MedtronicCareers', 'Medtronic', []),
+    ('philips|3|jobs-and-careers', 'Philips', []),
+    ('athenahealth|1|External', 'athenahealth', []),
+    ('3m|1|Search', '3M', []),
+    ('nike|1|nke', 'Nike', []),
+    ('chevron|5|jobs', 'Chevron', []),
+    ('shell|3|ShellCareers', 'Shell', []),
 ]
