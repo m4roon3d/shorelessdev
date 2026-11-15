@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["tools/probe.py"]
+    paths: ["tools/probe.py", "tools/probe2.py"]
 permissions:
   contents: write
 concurrency: refresh
@@ -16,11 +16,12 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install requests
-      - run: python tools/probe.py
+      - run: python tools/probe2.py
+        timeout-minutes: 40
       - run: |
           git config user.name "shoreless-bot"
           git config user.email "shoreless-bot@users.noreply.github.com"
-          git add tools/probe.json
+          git add tools/probe.json tools/probe2.json
           git diff --cached --quiet || git commit -m "Board probe results"
           git pull --rebase
           git push

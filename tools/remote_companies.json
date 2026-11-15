@@ -1,0 +1,5510 @@
+[
+{
+"name": "Reaction Commerce",
+"slug": "reaction-commerce",
+"site": "http://reactioncommerce.com/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"javascript"
+]
+},
+{
+"name": "Brainstorm Force",
+"slug": "brainstorm-force",
+"site": "https://brainstormforce.com/",
+"careers": "https://brainstormforce.com/join/",
+"region": "worldwide",
+"tech": [
+"javascript",
+"php"
+]
+},
+{
+"name": "Functionize",
+"slug": "functionize",
+"site": "https://www.functionize.com/",
+"careers": "https://www.functionize.com/careers/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"java",
+"javascript",
+"php"
+]
+},
+{
+"name": "ScyllaDB",
+"slug": "scylladb",
+"site": "https://scylladb.com/",
+"careers": "https://www.scylladb.com/company/careers/",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"linux",
+"python"
+]
+},
+{
+"name": "Smile.io",
+"slug": "smile",
+"site": "https://smile.io",
+"careers": "https://smile.io/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"data",
+"devops",
+"javascript",
+"nosql",
+"ruby",
+"search",
+"sql",
+"/companies/smile-io",
+"/smile-io"
+]
+},
+{
+"name": "Kona",
+"slug": "kona",
+"site": "https://www.heykona.com",
+"careers": "https://www.heykona.com/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"python"
+]
+},
+{
+"name": "Deel",
+"slug": "deel",
+"site": "https://www.deel.com/",
+"careers": "https://jobs.ashbyhq.com/Deel",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"javascript",
+"sql"
+]
+},
+{
+"name": "Asana",
+"slug": "asana",
+"site": "https://asana.com/",
+"careers": "https://asana.com/jobs",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript"
+]
+},
+{
+"name": "Yahoo!",
+"slug": "yahoo",
+"site": "https://www.yahooinc.com/",
+"careers": "https://www.yahooinc.com/careers/",
+"region": "worldwide",
+"tech": [
+"data",
+"devops",
+"javascript",
+"ml",
+"nosql"
+]
+},
+{
+"name": "ZooTools",
+"slug": "zootools",
+"site": "https://zootools.co/",
+"careers": "https://zootools.notion.site/Careers-at-ZooTools-2e2815794b14415daca297506c54cb69",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript"
+]
+},
+{
+"name": "Appstractor",
+"slug": "appstractor",
+"site": "https://www.appstractor.com/",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Grubhub",
+"slug": "grubhub",
+"site": "https://www.grubhub.com/",
+"careers": "https://careers.grubhub.com/",
+"region": "other",
+"tech": [
+"cloud",
+"java",
+"javascript",
+"mobile",
+"nosql"
+]
+},
+{
+"name": "Automattic",
+"slug": "automattic",
+"site": "https://automattic.com/",
+"careers": "https://automattic.com/work-with-us/",
+"region": "worldwide",
+"tech": [
+"data",
+"java",
+"javascript",
+"php",
+"python",
+"search",
+"sql"
+]
+},
+{
+"name": "Bounteous",
+"slug": "bounteous",
+"site": "https://bounteous.com",
+"careers": "https://www.bounteous.com/careers/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"dotnet",
+"java",
+"javascript",
+"mobile",
+"php",
+"python"
+]
+},
+{
+"name": "Bairesdev",
+"slug": "bairesdev",
+"site": "https://bairesdev.com/",
+"careers": "https://www.bairesdev.com/join-us/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"dotnet",
+"java",
+"javascript",
+"linux",
+"ml",
+"mobile",
+"nosql",
+"php",
+"python",
+"ruby",
+"sql"
+]
+},
+{
+"name": "O'Reilly Online Learning",
+"slug": "oreilly-online-learning",
+"site": "https://www.oreilly.com/",
+"careers": "https://www.oreilly.com/careers/#positions",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ml",
+"/companies/o-reilly-online-learning",
+"/o-reilly-online-learning"
+]
+},
+{
+"name": "IQVIA",
+"slug": "iqvia",
+"site": "https://jobs.iqvia.com/our-company",
+"careers": "https://jobs.iqvia.com/",
+"region": "worldwide",
+"tech": [
+"api",
+"mobile"
+]
+},
+{
+"name": "Jitera",
+"slug": "jitera",
+"site": "https://iruuza-inc.com/",
+"careers": "https://angel.co/company/iruuza/jobs",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"mobile",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Basecamp",
+"slug": "basecamp",
+"site": "https://basecamp.com/",
+"careers": "https://basecamp.com/about/jobs",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Glenn Website Design",
+"slug": "glenn-website-design",
+"site": "https://glennwebsitedesign.com/",
+"careers": "https://glennwebsitedesign.com/contact/",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ml",
+"php",
+"sql"
+]
+},
+{
+"name": "Drupal Jedi",
+"slug": "drupal-jedi",
+"site": "https://drupaljedi.com/",
+"careers": "https://drupaljedi.com/careers",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"javascript",
+"php"
+]
+},
+{
+"name": "Clootrack",
+"slug": "clootrack",
+"site": "https://www.clootrack.com/",
+"careers": "https://www.clootrack.com/careers",
+"region": "asia-pacific",
+"tech": [
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "Payfully",
+"slug": "payfully",
+"site": "https://www.payfully.co",
+"careers": "https://angel.co/payfully/jobs/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"nosql"
+]
+},
+{
+"name": "Hashex",
+"slug": "hashex",
+"site": "https://hashex.org/",
+"careers": "https://hashex.org/company/careers",
+"region": "other",
+"tech": [
+"go",
+"graphql",
+"javascript",
+"ml"
+]
+},
+{
+"name": "SignEasy",
+"slug": "signeasy",
+"site": "https://signeasy.com/",
+"careers": "https://signeasy.com/careers",
+"region": "worldwide",
+"tech": [
+"api",
+"cloud",
+"devops",
+"javascript",
+"python",
+"search",
+"sql"
+]
+},
+{
+"name": "GoldFire Agency",
+"slug": "goldfire-agency",
+"site": "https://goldfireagency.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"go"
+]
+},
+{
+"name": "Yonder",
+"slug": "yonder",
+"site": "https://www.yonder.io",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Verve Systems",
+"slug": "verve-systems",
+"site": "https://www.vervesys.com/company/contact-us/",
+"careers": "",
+"region": "other",
+"tech": [
+"javascript",
+"python",
+"php",
+"dotnet",
+"react",
+"nodejs",
+"mobile",
+"cloud",
+"ml"
+]
+},
+{
+"name": "Cal.com",
+"slug": "cal-com",
+"site": "https://cal.com/",
+"careers": "https://cal.com/careers",
+"region": "worldwide",
+"tech": [
+"javascript",
+"cloud",
+"sql"
+]
+},
+{
+"name": "Upworthy",
+"slug": "upworthy",
+"site": "https://www.upworthy.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"mobile"
+]
+},
+{
+"name": "Linear",
+"slug": "linear",
+"site": "https://linear.app/",
+"careers": "https://linear.app/careers",
+"region": "worldwide",
+"tech": [
+"javascript",
+"cloud"
+]
+},
+{
+"name": "Cabify",
+"slug": "cabify",
+"site": "https://cabify.com/",
+"careers": "https://cabify.com/en/jobs",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"java",
+"javascript",
+"mobile",
+"nosql",
+"python"
+]
+},
+{
+"name": "CloudApp",
+"slug": "cloudapp",
+"site": "https://getcloudapp.com",
+"careers": "https://www.getcloudapp.com/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"go",
+"javascript",
+"nosql",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Netsparker",
+"slug": "netsparker",
+"site": "https://www.netsparker.com/",
+"careers": "https://www.netsparker.com/jobs/",
+"region": "worldwide",
+"tech": [
+"dotnet"
+]
+},
+{
+"name": "CrazyGames",
+"slug": "crazygames",
+"site": "https://www.crazygames.com",
+"careers": "https://jobs.crazygames.com/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"graphql",
+"javascript"
+]
+},
+{
+"name": "Ushahidi",
+"slug": "ushahidi",
+"site": "https://www.ushahidi.com",
+"careers": "https://ushahidi.workable.com/",
+"region": "worldwide",
+"tech": [
+"devops",
+"infrastructure",
+"javascript",
+"php",
+"python",
+"sql"
+]
+},
+{
+"name": "messagebird",
+"slug": "messagebird",
+"site": "https://messagebird.com/",
+"careers": "https://messagebird.com/careers#jobs",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ml"
+]
+},
+{
+"name": "BandLab",
+"slug": "bandlab",
+"site": "https://bandlab.com/",
+"careers": "https://apply.workable.com/bandlabtechnologies/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"dotnet",
+"go",
+"java",
+"javascript",
+"mobile"
+]
+},
+{
+"name": "Bitwarden",
+"slug": "bitwarden",
+"site": "https://bitwarden.com/",
+"careers": "https://bitwarden.com/careers/",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"javascript",
+"rust",
+"mobile",
+"cloud"
+]
+},
+{
+"name": "Vercel",
+"slug": "vercel",
+"site": "https://vercel.com/",
+"careers": "https://vercel.com/careers",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Spotify",
+"slug": "spotify",
+"site": "https://www.spotify.com/",
+"careers": "https://www.lifeatspotify.com/jobs",
+"region": "worldwide",
+"tech": [
+"cloud",
+"nosql",
+"scala"
+]
+},
+{
+"name": "Tower",
+"slug": "tower",
+"site": "https://www.git-tower.com/",
+"careers": "https://www.git-tower.com/company/jobs/",
+"region": "worldwide",
+"tech": [
+"mobile",
+"ruby"
+]
+},
+{
+"name": "Uhuru",
+"slug": "uhuru",
+"site": "https://uhurunetwork.com/",
+"careers": "https://uhurunetwork.com/digital-marketing-careers/",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript"
+]
+},
+{
+"name": "Lifetime Value Company",
+"slug": "lifetime-value-company",
+"site": "https://www.ltvco.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"php",
+"ruby"
+]
+},
+{
+"name": "Baremetrics",
+"slug": "baremetrics",
+"site": "https://baremetrics.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"php"
+]
+},
+{
+"name": "Replit",
+"slug": "replit",
+"site": "https://replit.com",
+"careers": "https://replit.com/careers",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript"
+]
+},
+{
+"name": "CloudEra",
+"slug": "cloudera",
+"site": "https://www.cloudera.com",
+"careers": "https://cloudera.wd5.myworkdayjobs.com/External_Career?remoteType=648856a73acb1001a30bbdb5cbb70002",
+"region": "worldwide",
+"tech": [
+"ml"
+]
+},
+{
+"name": "Rakuten Travel Xchange",
+"slug": "rakuten-travel-xchange",
+"site": "https://solutions.travel.rakuten.com",
+"careers": "https://solutions.travel.rakuten.com/jobs",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"javascript",
+"nosql",
+"sql"
+]
+},
+{
+"name": "StormX",
+"slug": "stormx",
+"site": "https://stormx.io/",
+"careers": "https://stormx.io/careers",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"mobile"
+]
+},
+{
+"name": "ScrapingBee",
+"slug": "scrapingbee",
+"site": "https://scrapingbee.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"nosql",
+"python",
+"sql"
+]
+},
+{
+"name": "HE:labs",
+"slug": "he-labs",
+"site": "https://www.helabs.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"elixir",
+"javascript",
+"ml",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Epilocal",
+"slug": "epilocal",
+"site": "https://epilocal.com",
+"careers": "https://www.epilocal.com/contact/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"go",
+"javascript"
+]
+},
+{
+"name": "Nearform",
+"slug": "nearform",
+"site": "https://www.nearform.com",
+"careers": "https://www.nearform.com/careers/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"data",
+"javascript"
+]
+},
+{
+"name": "WebScrapingHQ",
+"slug": "webscrapinghq",
+"site": "https://www.webscrapinghq.com",
+"careers": "",
+"region": "asia-pacific",
+"tech": [
+"javascript",
+"python"
+]
+},
+{
+"name": "Conversio",
+"slug": "conversio",
+"site": "https://conversio.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"nosql"
+]
+},
+{
+"name": "VGS",
+"slug": "vgs",
+"site": "https://www.verygoodsecurity.com/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"java",
+"javascript",
+"python"
+]
+},
+{
+"name": "Employment Hero",
+"slug": "employment-hero",
+"site": "https://employmenthero.com/careers",
+"careers": "",
+"region": "other",
+"tech": [
+"dotnet",
+"javascript",
+"php",
+"ruby"
+]
+},
+{
+"name": "Calibre",
+"slug": "calibre",
+"site": "https://calibreapp.com/",
+"careers": "https://calibreapp.com/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"ruby",
+"sql"
+]
+},
+{
+"name": "fleetio",
+"slug": "fleetio",
+"site": "https://www.fleetio.com/",
+"careers": "https://www.fleetio.com/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"javascript",
+"python"
+]
+},
+{
+"name": "Designcode",
+"slug": "designcode",
+"site": "https://designcode.io/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Ambaum",
+"slug": "ambaum",
+"site": "https://ambaum.com/",
+"careers": "https://ambaum.com/careers",
+"region": "worldwide",
+"tech": [
+"javascript",
+"nosql",
+"php",
+"sql"
+]
+},
+{
+"name": "Prisma",
+"slug": "prisma",
+"site": "https://www.prisma.io/",
+"careers": "https://www.prisma.io/careers",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"rust"
+]
+},
+{
+"name": "Hubstaff",
+"slug": "hubstaff",
+"site": "https://hubstaff.com/jobs",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ruby",
+"rust",
+"mobile",
+"sql",
+"nosql"
+]
+},
+{
+"name": "Lorum",
+"slug": "lorum",
+"site": "https://www.lorum.com",
+"careers": "https://www.lorum.com/about",
+"region": "worldwide",
+"tech": [
+"rust",
+"cloud",
+"sql",
+"devops"
+]
+},
+{
+"name": "Transloadit",
+"slug": "transloadit",
+"site": "https://transloadit.com/",
+"careers": "https://x.com/transloadit",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript"
+]
+},
+{
+"name": "MongoDB",
+"slug": "mongodb",
+"site": "https://mongodb.com",
+"careers": "https://www.mongodb.com/company/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"sql"
+]
+},
+{
+"name": "Connexa",
+"slug": "connexa",
+"site": "https://www.connexa.com/",
+"careers": "https://connexa.breezy.hr",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript"
+]
+},
+{
+"name": "Discourse",
+"slug": "discourse",
+"site": "https://discourse.org",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"ruby"
+]
+},
+{
+"name": "Applied AI Company (AAICO)",
+"slug": "applied-ai-company-aaico",
+"site": "https://aaico.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"api",
+"cloud",
+"devops",
+"elixir",
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "CareCru",
+"slug": "carecru",
+"site": "https://carecru.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"go",
+"java",
+"javascript"
+]
+},
+{
+"name": "Raycast",
+"slug": "raycast",
+"site": "https://raycast.com/",
+"careers": "https://www.raycast.com/careers",
+"region": "worldwide",
+"tech": [
+"swift",
+"typescript"
+]
+},
+{
+"name": "ConsenSys Inc",
+"slug": "consensys",
+"site": "https://consensys.net/",
+"careers": "https://consensys.net/open-positions/",
+"region": "worldwide",
+"tech": [
+"go",
+"java",
+"javascript",
+"python",
+"rust",
+"scala",
+"search",
+"/companies/consensys-inc",
+"/consensys-inc"
+]
+},
+{
+"name": "CareMessage",
+"slug": "caremessage",
+"site": "https://www.caremessage.org/about-us/careers/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"nosql",
+"ruby",
+"sql"
+]
+},
+{
+"name": "37signals",
+"slug": "37signals",
+"site": "https://37signals.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"ruby"
+]
+},
+{
+"name": "Broadwing",
+"slug": "broadwing",
+"site": "https://broadwing.io",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "X-Team",
+"slug": "x-team",
+"site": "https://x-team.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"go",
+"java",
+"javascript",
+"ml",
+"php",
+"python"
+]
+},
+{
+"name": "Best Practical Solutions",
+"slug": "best-practical-solutions",
+"site": "https://bestpractical.com/",
+"careers": "https://bestpractical.com/jobs",
+"region": "worldwide",
+"tech": [
+"javascript",
+"linux",
+"sql"
+]
+},
+{
+"name": "HashiCorp",
+"slug": "hashicorp",
+"site": "https://www.hashicorp.com/",
+"careers": "https://www.hashicorp.com/jobs",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"ruby"
+]
+},
+{
+"name": "Groove HQ",
+"slug": "groove",
+"site": "https://www.groovehq.com",
+"careers": "https://www.groovehq.com/about#hiring",
+"region": "worldwide",
+"tech": [
+"graphql",
+"javascript",
+"ruby",
+"/companies/groove-hq",
+"/groove-hq"
+]
+},
+{
+"name": "ZenRows",
+"slug": "zenrows",
+"site": "https://zenrows.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"javascript",
+"nosql",
+"php",
+"sql"
+]
+},
+{
+"name": "Igalia",
+"slug": "igalia",
+"site": "https://www.igalia.com/",
+"careers": "https://www.igalia.com/jobs/",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "FivexL",
+"slug": "fivexl",
+"site": "https://fivexl.io",
+"careers": "https://fivexl.io/#contact",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"python"
+]
+},
+{
+"name": "Glitch",
+"slug": "glitch",
+"site": "https://www.glitch.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"dotnet",
+"go",
+"javascript",
+"ml",
+"nosql",
+"python",
+"ruby",
+"search",
+"sql"
+]
+},
+{
+"name": "Travis",
+"slug": "travis",
+"site": "https://travistravis.co",
+"careers": "https://www.travistravis.co/career",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript"
+]
+},
+{
+"name": "IOHK",
+"slug": "iohk",
+"site": "https://iohk.io/",
+"careers": "https://iohk.io/careers/",
+"region": "worldwide",
+"tech": [
+"rust",
+"scala"
+]
+},
+{
+"name": "Coingape",
+"slug": "coingape",
+"site": "https://coingape.com/",
+"careers": "https://coingape.com/careers/",
+"region": "asia-pacific",
+"tech": []
+},
+{
+"name": "Udacity",
+"slug": "udacity",
+"site": "https://www.udacity.com/",
+"careers": "https://www.udacity.com/jobs",
+"region": "worldwide",
+"tech": [
+"go",
+"java",
+"javascript",
+"python",
+"ruby",
+"scala"
+]
+},
+{
+"name": "Wikimedia Foundation",
+"slug": "wikimedia-foundation",
+"site": "https://wikimediafoundation.org",
+"careers": "https://wikimediafoundation.org/jobs/",
+"region": "other",
+"tech": [
+"data",
+"devops",
+"infrastructure",
+"java",
+"nosql",
+"php",
+"sql"
+]
+},
+{
+"name": "Crowdstrike",
+"slug": "crowdstrike",
+"site": "https://www.crowdstrike.com",
+"careers": "https://jobs.jobvite.com/crowdstrike/jobs",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Acquia",
+"slug": "acquia",
+"site": "https://www.acquia.com/",
+"careers": "https://www.acquia.com/careers/open-positions",
+"region": "worldwide",
+"tech": [
+"cloud",
+"go",
+"java",
+"javascript",
+"php",
+"python",
+"ruby"
+]
+},
+{
+"name": "Fly.io",
+"slug": "fly-io",
+"site": "https://Fly.io",
+"careers": "https://fly.io/jobs/",
+"region": "worldwide",
+"tech": [
+"elixir",
+"ruby"
+]
+},
+{
+"name": "iwantmyname",
+"slug": "iwantmyname",
+"site": "https://iwantmyname.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"elixir",
+"javascript",
+"nosql",
+"python"
+]
+},
+{
+"name": "Sutherland CloudSource",
+"slug": "sutherland-cloudsource",
+"site": "https://www.sutherlandcloudsource.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud"
+]
+},
+{
+"name": "Percona",
+"slug": "percona",
+"site": "https://www.percona.com",
+"careers": "https://www.percona.com/careers/",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Status",
+"slug": "status",
+"site": "https://www.status.im/",
+"careers": "https://status.im/open-positions.html",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Mercari",
+"slug": "mercari",
+"site": "https://about.mercari.com/en/",
+"careers": "https://careers.mercari.com/job-categories/engineering/?utm_source=remoteintech.company&utm_medium=Referral&utm_campaign=remote-in-tech",
+"region": "asia-pacific",
+"tech": [
+"go",
+"java",
+"javascript",
+"mobile",
+"php"
+]
+},
+{
+"name": "Ren\u00e9e Space",
+"slug": "renee-space",
+"site": "https://www.reneespace.com",
+"careers": "https://www.reneespace.com/careers",
+"region": "worldwide",
+"tech": [
+"typescript",
+"react",
+"nodejs",
+"mobile",
+"nosql",
+"ml"
+]
+},
+{
+"name": "Kestra",
+"slug": "kestra",
+"site": "https://www.kestra.io/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"java",
+"javascript",
+"sql"
+]
+},
+{
+"name": "Inter.link",
+"slug": "inter-link",
+"site": "https://inter.link/",
+"careers": "https://inter.link/about-interlink/careers/",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "Varnish Software",
+"slug": "varnish-software",
+"site": "https://www.varnish-software.com/about-us",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"linux",
+"python"
+]
+},
+{
+"name": "Sendwave (International Remittance)",
+"slug": "sendwave",
+"site": "https://www.sendwave.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"mobile",
+"/companies/sendwave-international-remittance",
+"/sendwave-international-remittance"
+]
+},
+{
+"name": "Oracle",
+"slug": "oracle",
+"site": "https://www.oracle.com/",
+"careers": "https://www.oracle.com/in/careers/",
+"region": "worldwide",
+"tech": [
+"java"
+]
+},
+{
+"name": "Scandit",
+"slug": "scandit",
+"site": "https://scandit.com",
+"careers": "https://www.scandit.com/careers/",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"mobile",
+"python"
+]
+},
+{
+"name": "SearchApi",
+"slug": "searchapi",
+"site": "https://www.searchapi.io/",
+"careers": "https://www.searchapi.io/careers",
+"region": "worldwide",
+"tech": [
+"ruby",
+"search",
+"python",
+"javascript",
+"devops"
+]
+},
+{
+"name": "Remote Garage",
+"slug": "remote-garage",
+"site": "http://www.remotegarage.club/",
+"careers": "https://angel.co/company/remotegarage",
+"region": "asia-pacific",
+"tech": [
+"api",
+"devops",
+"go",
+"javascript"
+]
+},
+{
+"name": "Oyster HR",
+"slug": "oyster-hr",
+"site": "https://www.oysterhr.com/",
+"careers": "https://www.oysterhr.com/careers",
+"region": "worldwide",
+"tech": [
+"javascript",
+"cloud"
+]
+},
+{
+"name": "Ombu Labs",
+"slug": "ombu-labs",
+"site": "https://www.ombulabs.com/",
+"careers": "https://www.ombulabs.com/jobs",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"nosql",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Reboot Studio",
+"slug": "reboot-studio",
+"site": "https://reboot.studio",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"mobile",
+"sql"
+]
+},
+{
+"name": "Netlify",
+"slug": "netlify",
+"site": "https://www.netlify.com/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"cloud",
+"devops"
+]
+},
+{
+"name": "GreenStitch.io",
+"slug": "greenstitch-io",
+"site": "https://greenstitch.io",
+"careers": "https://greenstitch.io/#/about-us",
+"region": "asia-pacific",
+"tech": [
+"java",
+"ml"
+]
+},
+{
+"name": "Luxoft",
+"slug": "luxoft",
+"site": "https://www.luxoft.com/",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Muck Rack",
+"slug": "muck-rack",
+"site": "https://muckrack.com",
+"careers": "https://muckrack.com/careers",
+"region": "worldwide",
+"tech": [
+"devops",
+"infrastructure",
+"javascript",
+"nosql",
+"python",
+"search"
+]
+},
+{
+"name": "toggl",
+"slug": "toggl",
+"site": "https://toggl.com/",
+"careers": "http://jobs.toggl.com",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"sql"
+]
+},
+{
+"name": "DynaPictures",
+"slug": "dynapictures",
+"site": "https://dynapictures.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript"
+]
+},
+{
+"name": "90 Seconds",
+"slug": "90-seconds",
+"site": "https://90seconds.com/",
+"careers": "https://90seconds.com/about/careers/",
+"region": "worldwide",
+"tech": [
+"java",
+"javascript",
+"php"
+]
+},
+{
+"name": "Iterative",
+"slug": "iterative",
+"site": "https://www.iterative.ai/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"javascript",
+"python"
+]
+},
+{
+"name": "Appwrite",
+"slug": "appwrite",
+"site": "https://appwrite.io",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Strapi",
+"slug": "strapi",
+"site": "https://strapi.io/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"graphql",
+"javascript",
+"sql"
+]
+},
+{
+"name": "Time Doctor",
+"slug": "time-doctor",
+"site": "https://www.timedoctor.com/",
+"careers": "https://www.timedoctor.com/careers",
+"region": "worldwide",
+"tech": [
+"javascript",
+"php",
+"mobile",
+"data"
+]
+},
+{
+"name": "Netris",
+"slug": "netris",
+"site": "https://www.netris.io",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"linux",
+"python"
+]
+},
+{
+"name": "Khan Academy",
+"slug": "khan-academy",
+"site": "https://www.khanacademy.org/",
+"careers": "https://www.khanacademy.org/careers",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Ergeon",
+"slug": "ergeon",
+"site": "https://www.ergeon.com/",
+"careers": "https://www.ergeon.com/careers",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Capmo",
+"slug": "capmo",
+"site": "https://www.capmo.com/en",
+"careers": "https://capmo.jobs.personio.de",
+"region": "other",
+"tech": [
+"cloud",
+"graphql",
+"javascript",
+"mobile"
+]
+},
+{
+"name": "Help Scout",
+"slug": "help-scout",
+"site": "https://www.helpscout.net/",
+"careers": "https://www.helpscout.com/company/careers/",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Gruntwork",
+"slug": "gruntwork",
+"site": "https://gruntwork.io",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"ml"
+]
+},
+{
+"name": "Adaface",
+"slug": "adaface",
+"site": "https://www.adaface.com",
+"careers": "https://angel.co/company/adaface/jobs",
+"region": "asia-pacific",
+"tech": [
+"devops",
+"javascript",
+"nosql",
+"python",
+"sql"
+]
+},
+{
+"name": "General Assembly",
+"slug": "general-assembly",
+"site": "https://generalassemb.ly/",
+"careers": "https://generalassemb.ly/careers",
+"region": "worldwide",
+"tech": [
+"api",
+"cloud",
+"javascript",
+"ml",
+"nosql",
+"ruby",
+"scala",
+"sql"
+]
+},
+{
+"name": "Viperdev",
+"slug": "viperdev",
+"site": "https://viperdev.io",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"php"
+]
+},
+{
+"name": "Ebury",
+"slug": "ebury",
+"site": "https://ebury.com/",
+"careers": "https://careers.ebury.com",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Wolfram",
+"slug": "wolfram",
+"site": "https://www.wolfram.com",
+"careers": "https://www.wolfram.com/company/careers/",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "FireHire",
+"slug": "firehire",
+"site": "https://www.firehire.ai",
+"careers": "https://www.firehire.ai/talent",
+"region": "worldwide",
+"tech": [
+"java",
+"javascript",
+"mobile",
+"php",
+"python",
+"ruby",
+"rust",
+"scala"
+]
+},
+{
+"name": "Dev Spotlight",
+"slug": "dev-spotlight",
+"site": "https://www.devspotlight.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"dotnet",
+"java",
+"javascript",
+"mobile",
+"php",
+"python",
+"ruby"
+]
+},
+{
+"name": "Capital Placement",
+"slug": "capital-placement",
+"site": "https://capital-placement.com",
+"careers": "https://capital-placement.com/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"dotnet",
+"javascript",
+"ml"
+]
+},
+{
+"name": "Lightspeed",
+"slug": "lightspeed",
+"site": "https://www.lightspeedhq.com/",
+"careers": "https://www.lightspeedhq.com/careers/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"data",
+"go",
+"php"
+]
+},
+{
+"name": "Quora",
+"slug": "quora",
+"site": "https://www.quora.com",
+"careers": "https://www.quora.com/careers/",
+"region": "worldwide",
+"tech": [
+"javascript",
+"nosql",
+"python",
+"sql"
+]
+},
+{
+"name": "Geckoboard",
+"slug": "geckoboard",
+"site": "https://www.geckoboard.com",
+"careers": "https://www.geckoboard.com/about/careers/",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript"
+]
+},
+{
+"name": "LionSher",
+"slug": "lionsher",
+"site": "https://lionsher.com/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"php"
+]
+},
+{
+"name": "Pex",
+"slug": "pex",
+"site": "https://pex.com",
+"careers": "https://pex.com/careers/",
+"region": "worldwide",
+"tech": [
+"go",
+"java",
+"javascript",
+"python",
+"search",
+"sql"
+]
+},
+{
+"name": "Ramp",
+"slug": "ramp",
+"site": "https://www.ramp.com/",
+"careers": "https://ramp.com/careers",
+"region": "worldwide",
+"tech": [
+"elixir",
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "Bizink",
+"slug": "bizink",
+"site": "https://bizinkonline.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"php"
+]
+},
+{
+"name": "Zapier",
+"slug": "zapier",
+"site": "https://zapier.com/",
+"careers": "https://zapier.com/jobs/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"data",
+"devops",
+"infrastructure",
+"javascript",
+"nosql",
+"python",
+"sql"
+]
+},
+{
+"name": "Seeq",
+"slug": "seeq",
+"site": "https://www.seeq.com",
+"careers": "https://www.seeq.com/careers/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"data",
+"java",
+"nosql"
+]
+},
+{
+"name": "Mixmax",
+"slug": "mixmax",
+"site": "https://mixmax.com",
+"careers": "https://careers.mixmax.com/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"javascript",
+"nosql",
+"search"
+]
+},
+{
+"name": "Convert",
+"slug": "convert",
+"site": "https://www.convert.com",
+"careers": "https://www.convert.com/jobs",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"javascript",
+"nosql",
+"php"
+]
+},
+{
+"name": "Polygon",
+"slug": "polygon",
+"site": "https://polygon.technology/careers/#all-roles",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ml",
+"nosql",
+"sql"
+]
+},
+{
+"name": "Kinsta",
+"slug": "kinsta",
+"site": "https://kinsta.com",
+"careers": "https://kinsta.com/careers/",
+"region": "worldwide",
+"tech": [
+"go",
+"java",
+"javascript",
+"nosql",
+"php",
+"python",
+"ruby",
+"scala",
+"sql"
+]
+},
+{
+"name": "Veeva Systems",
+"slug": "veeva",
+"site": "https://www.veeva.com/",
+"careers": "https://careers.veeva.com",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ml",
+"/companies/veeva-systems",
+"/veeva-systems"
+]
+},
+{
+"name": "MixRank",
+"slug": "mixrank",
+"site": "https://mixrank.com",
+"careers": "https://www.ycombinator.com/companies/mixrank",
+"region": "worldwide",
+"tech": [
+"javascript",
+"linux",
+"python",
+"sql"
+]
+},
+{
+"name": "CartoDB",
+"slug": "cartodb",
+"site": "https://cartodb.com/",
+"careers": "https://cartodb.com/jobs/",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"nosql",
+"ruby"
+]
+},
+{
+"name": "Octopus Deploy",
+"slug": "octopus-deploy",
+"site": "https://octopus.com/",
+"careers": "https://octopus.com/company/careers",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"go",
+"javascript"
+]
+},
+{
+"name": "On The Go Systems",
+"slug": "on-the-go-systems",
+"site": "https://onthegosystems.com/",
+"careers": "https://onthegosystems.com/jobs/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"php"
+]
+},
+{
+"name": "CodeSandbox",
+"slug": "codesandbox",
+"site": "https://codesandbox.io",
+"careers": "https://codesandbox.io/jobs",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Temporal",
+"slug": "temporal",
+"site": "https://temporal.io/",
+"careers": "https://temporal.io/careers",
+"region": "worldwide",
+"tech": [
+"go",
+"java",
+"javascript",
+"cloud",
+"devops"
+]
+},
+{
+"name": "Intuition Machines, Inc.",
+"slug": "intuition-machines-inc",
+"site": "https://www.imachines.com/",
+"careers": "https://jobs.imachines.com/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"data",
+"devops",
+"go",
+"javascript"
+]
+},
+{
+"name": "Memory",
+"slug": "memory",
+"site": "https://memory.ai/",
+"careers": "https://memory.ai/jobs",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Etsy",
+"slug": "etsy",
+"site": "https://www.etsy.com/",
+"careers": "https://careers.etsy.com/",
+"region": "worldwide",
+"tech": [
+"data",
+"devops",
+"go",
+"javascript",
+"php",
+"ruby",
+"search",
+"sql"
+]
+},
+{
+"name": "Ghost",
+"slug": "the-ghost-foundation",
+"site": "https://ghost.org/",
+"careers": "https://careers.ghost.org/",
+"region": "worldwide",
+"tech": [
+"javascript",
+"sql"
+]
+},
+{
+"name": "Scalac",
+"slug": "scalac",
+"site": "https://scalac.io/",
+"careers": "https://scalac.io/careers/",
+"region": "worldwide",
+"tech": [
+"scala"
+]
+},
+{
+"name": "RevenueCat",
+"slug": "revenuecat",
+"site": "https://www.revenuecat.com/",
+"careers": "https://www.revenuecat.com/careers/",
+"region": "worldwide",
+"tech": [
+"go",
+"python",
+"mobile",
+"cloud"
+]
+},
+{
+"name": "Silverfin",
+"slug": "silverfin",
+"site": "https://www.silverfin.com/",
+"careers": "https://www.silverfin.com/careers",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"nosql",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Spoqa, Inc.",
+"slug": "spoqa",
+"site": "https://spoqa.co.kr/",
+"careers": "https://spoqa.co.kr/careers/#recruit",
+"region": "asia-pacific",
+"tech": [
+"java",
+"javascript",
+"ml",
+"mobile",
+"python",
+"/companies/spoqa-inc",
+"/spoqa-inc"
+]
+},
+{
+"name": "Tyk",
+"slug": "tyk",
+"site": "https://tyk.io/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"cloud",
+"devops"
+]
+},
+{
+"name": "Turtlemint",
+"slug": "turtlemint",
+"site": "https://careers.turtlemint",
+"careers": "https://careers.turtlemint.com/jobs",
+"region": "asia-pacific",
+"tech": [
+"cloud",
+"go",
+"java",
+"javascript",
+"python",
+"scala",
+"sql"
+]
+},
+{
+"name": "Particular Software",
+"slug": "particular-software",
+"site": "https://particular.net",
+"careers": "https://particular.net/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"dotnet",
+"javascript",
+"linux",
+"ml"
+]
+},
+{
+"name": "CREEX TEAM",
+"slug": "creex-team",
+"site": "https://creex.team",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"javascript",
+"python"
+]
+},
+{
+"name": "DealDash",
+"slug": "dealdash",
+"site": "http://www.dealdash.com",
+"careers": "https://www.dealdash.com/careers",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Tag1 Consulting",
+"slug": "tag1-consulting",
+"site": "https://tag1consulting.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"php",
+"python",
+"ruby"
+]
+},
+{
+"name": "Bugfender",
+"slug": "bugfender",
+"site": "https://bugfender.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"java",
+"javascript",
+"ml",
+"mobile",
+"php"
+]
+},
+{
+"name": "Collabora",
+"slug": "collabora",
+"site": "https://www.collabora.com/",
+"careers": "https://www.collabora.com/careers.html",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "SimpleTexting",
+"slug": "simpletexting",
+"site": "https://simpletexting.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"java",
+"javascript"
+]
+},
+{
+"name": "QuickTrials",
+"slug": "quicktrials",
+"site": "https://quicktrials.com",
+"careers": "https://www.quicktrials.com/open-jobs/",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "Primotly",
+"slug": "primotly",
+"site": "https://primotly.com",
+"careers": "https://primotly.com/career/",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"php",
+"python"
+]
+},
+{
+"name": "Scaloy Technology LLP",
+"slug": "scaloy",
+"site": "https://scaloy.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"javascript",
+"nosql",
+"php",
+"sql",
+"/companies/scaloy-technology-llp",
+"/scaloy-technology-llp"
+]
+},
+{
+"name": "Findify",
+"slug": "findify",
+"site": "https://findify.io",
+"careers": "https://careers.findify.io",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "LogDog",
+"slug": "logdog",
+"site": "https://log.dog",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"java",
+"javascript",
+"mobile"
+]
+},
+{
+"name": "ClickUp",
+"slug": "clickup",
+"site": "https://clickup.com/",
+"careers": "https://clickup.com/careers",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"mobile"
+]
+},
+{
+"name": "Edify",
+"slug": "edify",
+"site": "https://edify.cr/",
+"careers": "https://edify.cr/careers/open-positions/",
+"region": "worldwide",
+"tech": [
+"go",
+"java",
+"javascript",
+"php",
+"ruby"
+]
+},
+{
+"name": "Rainforest QA",
+"slug": "rainforest-qa",
+"site": "https://www.rainforestqa.com/jobs",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"elixir",
+"go",
+"javascript",
+"linux",
+"nosql",
+"python",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Foh&Boh",
+"slug": "foh-and-boh",
+"site": "https://fohandboh.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"/companies/foh-boh",
+"/foh-boh"
+]
+},
+{
+"name": "Invesco",
+"slug": "invesco",
+"site": "https://www.invesco.com/corporate",
+"careers": "https://careers.invesco.com/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"dotnet",
+"java",
+"javascript",
+"python"
+]
+},
+{
+"name": "CodePen",
+"slug": "codepen",
+"site": "https://codepen.io",
+"careers": "https://blog.codepen.io",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"ruby"
+]
+},
+{
+"name": "Veryfi",
+"slug": "veryfi",
+"site": "https://veryfi.com/about",
+"careers": "https://angel.co/company/veryfi/jobs",
+"region": "worldwide",
+"tech": [
+"cloud",
+"java",
+"javascript",
+"ml",
+"mobile",
+"python",
+"sql"
+]
+},
+{
+"name": "Roundproxies",
+"slug": "roundproxies",
+"site": "https://roundproxies.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"go",
+"javascript",
+"nosql",
+"python"
+]
+},
+{
+"name": "Shattered Silicon",
+"slug": "shattered-silicon",
+"site": "https://shatteredsilicon.net",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"linux",
+"sql"
+]
+},
+{
+"name": "PayPay Corporation",
+"slug": "paypay",
+"site": "https://about.paypay.ne.jp/career/en/",
+"careers": "",
+"region": "asia-pacific",
+"tech": [
+"data",
+"java",
+"javascript",
+"mobile",
+"scala",
+"/companies/paypay-corporation",
+"/paypay-corporation"
+]
+},
+{
+"name": "SmugMug",
+"slug": "smugmug",
+"site": "https://www.smugmug.com/",
+"careers": "https://jobs.smugmug.com/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"dotnet",
+"java",
+"javascript",
+"linux",
+"ml",
+"mobile",
+"php"
+]
+},
+{
+"name": "DataRobot",
+"slug": "datarobot",
+"site": "https://www.datarobot.com/",
+"careers": "https://www.datarobot.com/careers/",
+"region": "worldwide",
+"tech": [
+"python",
+"ml",
+"data",
+"cloud",
+"sql",
+"/companies/algorithmia",
+"/algorithmia"
+]
+},
+{
+"name": "Honeybadger",
+"slug": "honeybadger",
+"site": "https://www.honeybadger.io/",
+"careers": "https://www.honeybadger.io/careers/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"ruby"
+]
+},
+{
+"name": "SweetRush",
+"slug": "sweetrush",
+"site": "https://www.sweetrush.com",
+"careers": "https://www.sweetrush.com/join-us/",
+"region": "worldwide",
+"tech": [
+"ml",
+"mobile"
+]
+},
+{
+"name": "Buffer",
+"slug": "buffer",
+"site": "https://buffer.com/",
+"careers": "https://buffer.com/journey",
+"region": "worldwide",
+"tech": [
+"data",
+"javascript",
+"php"
+]
+},
+{
+"name": "Precision Nutrition",
+"slug": "precision-nutrition",
+"site": "https://www.precisionnutrition.com/",
+"careers": "https://www.precisionnutrition.com/jobs",
+"region": "worldwide",
+"tech": [
+"cloud",
+"data",
+"devops",
+"elixir",
+"javascript",
+"ruby"
+]
+},
+{
+"name": "Memberful",
+"slug": "memberful",
+"site": "https://memberful.com",
+"careers": "https://memberful.com/careers",
+"region": "worldwide",
+"tech": [
+"api",
+"go",
+"ml",
+"php"
+]
+},
+{
+"name": "Cofense",
+"slug": "cofense",
+"site": "https://cofense.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"ruby",
+"sql"
+]
+},
+{
+"name": "CloudBees",
+"slug": "cloudbees",
+"site": "https://www.cloudbees.com/",
+"careers": "https://www.cloudbees.com/careers",
+"region": "worldwide",
+"tech": [
+"java",
+"devops",
+"cloud",
+"javascript",
+"go",
+"/companies/codeship",
+"/codeship"
+]
+},
+{
+"name": "SUSE",
+"slug": "suse",
+"site": "https://www.suse.com/",
+"careers": "https://jobs.suse.com",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "GoDaddy",
+"slug": "godaddy",
+"site": "https://www.godaddy.com/",
+"careers": "https://careers.godaddy.com/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"go",
+"java",
+"javascript",
+"php"
+]
+},
+{
+"name": "Canonical",
+"slug": "canonical",
+"site": "https://www.canonical.com/",
+"careers": "https://canonical.com/careers/all",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"mobile"
+]
+},
+{
+"name": "BharatPe",
+"slug": "bharatpe",
+"site": "https://www.bharatpe.com",
+"careers": "https://bharatpe.com/career/",
+"region": "asia-pacific",
+"tech": []
+},
+{
+"name": "BetaPeak",
+"slug": "betapeak",
+"site": "https://betapeak.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"php"
+]
+},
+{
+"name": "Microsoft",
+"slug": "microsoft",
+"site": "https://www.microsoft.com/",
+"careers": "https://careers.microsoft.com/v2/global/en/home.html",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"java",
+"javascript",
+"mobile"
+]
+},
+{
+"name": "Plaid",
+"slug": "plaid",
+"site": "https://plaid.com/",
+"careers": "https://plaid.com/careers/",
+"region": "worldwide",
+"tech": [
+"python",
+"react",
+"typescript",
+"kubernetes"
+]
+},
+{
+"name": "Audiense",
+"slug": "audiense",
+"site": "https://www.audiense.com/",
+"careers": "https://aboutus.audiense.com/careers",
+"region": "worldwide",
+"tech": [
+"ml",
+"python"
+]
+},
+{
+"name": "Whitespectre",
+"slug": "whitespectre",
+"site": "https://www.whitespectre.com",
+"careers": "https://www.glassdoor.com/Reviews/Whitespectre-Reviews-E1575846.htm",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Jolly Good Code",
+"slug": "jolly-good-code",
+"site": "https://jollygoodcode.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"ruby"
+]
+},
+{
+"name": "Ordermentum",
+"slug": "ordermentum",
+"site": "https://www.ordermentum.com/",
+"careers": "",
+"region": "asia-pacific",
+"tech": []
+},
+{
+"name": "A-1 Auto Transport",
+"slug": "a-1-auto-transport",
+"site": "https://a1autotransport.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"api",
+"infrastructure",
+"javascript",
+"ml",
+"php",
+"sql"
+]
+},
+{
+"name": "Zignaly",
+"slug": "zignaly",
+"site": "https://zignaly.io/",
+"careers": "https://discord.com/invite/r5qRXDJ",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"infrastructure",
+"javascript",
+"nosql",
+"php",
+"sql"
+]
+},
+{
+"name": "Chainguard",
+"slug": "chainguard",
+"site": "https://www.chainguard.dev/",
+"careers": "https://www.chainguard.dev/careers",
+"region": "worldwide",
+"tech": [
+"go",
+"cloud",
+"devops"
+]
+},
+{
+"name": "Kraken",
+"slug": "kraken",
+"site": "https://kraken.com",
+"careers": "https://www.kraken.com/careers",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"php",
+"rust"
+]
+},
+{
+"name": "SeatGeek",
+"slug": "seatgeek",
+"site": "https://seatgeek.com/",
+"careers": "https://seatgeek.com/jobs?departments=softwareengineering&locations=all",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "NetApp",
+"slug": "netapp",
+"site": "https://www.netapp.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"data",
+"devops",
+"go",
+"java",
+"javascript",
+"python",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Brave",
+"slug": "brave",
+"site": "https://brave.com/",
+"careers": "https://brave.com/careers/",
+"region": "worldwide",
+"tech": [
+"javascript",
+"rust",
+"go",
+"mobile"
+]
+},
+{
+"name": "Codea IT",
+"slug": "codea-it",
+"site": "https://www.codeait.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"java",
+"javascript",
+"ml",
+"mobile",
+"nosql",
+"php",
+"python",
+"ruby",
+"sql"
+]
+},
+{
+"name": "DNSimple",
+"slug": "dnsimple",
+"site": "https://dnsimple.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Harvest",
+"slug": "harvest",
+"site": "https://www.getharvest.com/",
+"careers": "https://www.getharvest.com/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"infrastructure",
+"javascript",
+"nosql",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Locus Robotics",
+"slug": "locus-robotics",
+"site": "https://locusrobotics.com/company/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Chess",
+"slug": "chess",
+"site": "https://www.chess.com/jobs",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"mobile",
+"php",
+"python"
+]
+},
+{
+"name": "BeBanjo",
+"slug": "bebanjo",
+"site": "https://bebanjo.com/",
+"careers": "https://www.bebanjo.com/company/careers",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Fyle",
+"slug": "fyle",
+"site": "https://www.fylehq.com/",
+"careers": "https://www.fylehq.com/company/team/join",
+"region": "asia-pacific",
+"tech": [
+"devops",
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "Civo",
+"slug": "civo",
+"site": "https://www.civo.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"ruby"
+]
+},
+{
+"name": "OpenZeppelin",
+"slug": "openzeppelin",
+"site": "https://openzeppelin.com/",
+"careers": "https://www.openzeppelin.com/careers",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Akamai Technologies Inc",
+"slug": "akamai",
+"site": "https://www.akamai.com/",
+"careers": "https://www.akamai.com/careers",
+"region": "other",
+"tech": [
+"ml",
+"/companies/akamai-technologies-inc",
+"/akamai-technologies-inc"
+]
+},
+{
+"name": "BigData Boutique",
+"slug": "bigdata-boutique",
+"site": "https://bigdataboutique.com",
+"careers": "https://bigdataboutique.com/careers",
+"region": "worldwide",
+"tech": [
+"java",
+"data",
+"search",
+"cloud",
+"devops",
+"sql",
+"nosql"
+]
+},
+{
+"name": "Wipro",
+"slug": "wipro",
+"site": "https://www.wipro.com/",
+"careers": "https://careers.wipro.com/careers-home/",
+"region": "asia-pacific",
+"tech": [
+"data",
+"javascript",
+"php"
+]
+},
+{
+"name": "EPAM",
+"slug": "epam",
+"site": "https://epam.com/",
+"careers": "https://anywhere.epam.com/",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Travis CI",
+"slug": "travis-ci",
+"site": "https://travis-ci.org/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"api",
+"cloud",
+"javascript",
+"ruby"
+]
+},
+{
+"name": "Quantify",
+"slug": "quantify",
+"site": "https://quantifyhq.com",
+"careers": "https://angel.co/company/quantify",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"ml"
+]
+},
+{
+"name": "The Crafters Lab",
+"slug": "the-crafters-lab",
+"site": "https://thecrafterslab.eu",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Parabol",
+"slug": "parabol",
+"site": "https://www.parabol.co/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"graphql",
+"javascript",
+"nosql",
+"sql"
+]
+},
+{
+"name": "MODSQUAD",
+"slug": "modsquad",
+"site": "https://modsquad.com/",
+"careers": "https://modsquad.com/careers/",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "CartStack",
+"slug": "cartstack",
+"site": "https://www.cartstack.com/",
+"careers": "https://www.cartstack.com/careers/",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Sommo",
+"slug": "sommo",
+"site": "https://www.sommo.io",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "BeenVerified",
+"slug": "beenverified",
+"site": "https://www.beenverified.com/",
+"careers": "https://www.beenverified.com/careers/",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"php",
+"ruby"
+]
+},
+{
+"name": "Amazon",
+"slug": "amazon",
+"site": "https://www.amazon.jobs/content/en/locations",
+"careers": "https://www.amazon.jobs/",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"java",
+"python",
+"ruby"
+]
+},
+{
+"name": "TimeSpot",
+"slug": "timespot",
+"site": "https://timespothq.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "MetaMask",
+"slug": "metamask",
+"site": "https://metamask.io",
+"careers": "https://boards.greenhouse.io/consensys/jobs/1990589",
+"region": "worldwide",
+"tech": [
+"javascript",
+"mobile"
+]
+},
+{
+"name": "ATOZDEBUG",
+"slug": "atozdebug",
+"site": "https://atozdebug.com/",
+"careers": "https://www.linkedin.com/company/atozdebug/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"javascript",
+"mobile",
+"nosql",
+"php",
+"python",
+"sql"
+]
+},
+{
+"name": "Close",
+"slug": "close",
+"site": "https://close.com",
+"careers": "http://jobs.close.com",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"javascript",
+"ml",
+"nosql",
+"python",
+"search",
+"sql"
+]
+},
+{
+"name": "StudySoup",
+"slug": "studysoup",
+"site": "https://studysoup.com/",
+"careers": "https://studysoup.com/apply",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Karat",
+"slug": "karat",
+"site": "https://karat.com",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "ReCharge Payments",
+"slug": "recharge",
+"site": "https://rechargepayments.com/",
+"careers": "https://getrecharge.com/careers/",
+"region": "worldwide",
+"tech": [
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "Balena",
+"slug": "balena",
+"site": "https://www.balena.io/",
+"careers": "https://balena.workable.com/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"javascript",
+"linux",
+"rust",
+"sql"
+]
+},
+{
+"name": "Merico",
+"slug": "merico",
+"site": "https://merico.dev",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Primer",
+"slug": "primer",
+"site": "https://primer.io/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"python"
+]
+},
+{
+"name": "PostHog",
+"slug": "posthog",
+"site": "https://posthog.com/",
+"careers": "https://posthog.com/careers",
+"region": "worldwide",
+"tech": [
+"python",
+"javascript",
+"cloud",
+"data"
+]
+},
+{
+"name": "Dashlane",
+"slug": "dashlane",
+"site": "https://dashlane.com",
+"careers": "https://www.dashlane.com/about/careers",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "RemoteMore",
+"slug": "remotemore",
+"site": "https://remotemore.com",
+"careers": "https://remotemore.com/careers/",
+"region": "worldwide",
+"tech": [
+"javascript",
+"nosql",
+"python",
+"sql"
+]
+},
+{
+"name": "ExportData",
+"slug": "exportdata",
+"site": "https://www.exportdata.io/",
+"careers": "https://www.exportdata.io/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"javascript",
+"nosql",
+"ruby",
+"search",
+"sql"
+]
+},
+{
+"name": "Mattermost",
+"slug": "mattermost",
+"site": "https://mattermost.com/careers/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"go",
+"python",
+"mobile",
+"cloud",
+"devops"
+]
+},
+{
+"name": "GMBapi",
+"slug": "gmbapi",
+"site": "https://www.gmbapi.com/",
+"careers": "https://gmbapi.com/vacancies/",
+"region": "other",
+"tech": [
+"data",
+"devops",
+"go",
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "Hugo",
+"slug": "hugo",
+"site": "https://hugo.events",
+"careers": "http://hugo.events/careers",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Chroma",
+"slug": "chroma",
+"site": "https://www.chromatic.com",
+"careers": "https://www.chromatic.com/company/careers",
+"region": "asia-pacific",
+"tech": []
+},
+{
+"name": "Revolut",
+"slug": "revolut",
+"site": "https://www.revolut.com/",
+"careers": "https://www.revolut.com/careers/",
+"region": "worldwide",
+"tech": [
+"devops",
+"java",
+"javascript",
+"python"
+]
+},
+{
+"name": "JupiterOne",
+"slug": "jupiterone",
+"site": "https://www.jupiterone.com/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"graphql",
+"javascript"
+]
+},
+{
+"name": "Evrone",
+"slug": "evrone",
+"site": "https://evrone.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"elixir",
+"go",
+"javascript",
+"mobile",
+"python",
+"ruby",
+"rust"
+]
+},
+{
+"name": "Rocket.Chat",
+"slug": "rocket-chat",
+"site": "https://rocket.chat",
+"careers": "https://rocket.chat/jobs",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript"
+]
+},
+{
+"name": "Alami",
+"slug": "alami",
+"site": "https://alamisharia.co.id/en/",
+"careers": "https://alamisharia.co.id/en/career/",
+"region": "asia-pacific",
+"tech": [
+"go",
+"java",
+"javascript",
+"python"
+]
+},
+{
+"name": "Coinbase",
+"slug": "coinbase",
+"site": "https://www.coinbase.com",
+"careers": "https://www.coinbase.com/careers/positions",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"javascript",
+"nosql",
+"ruby",
+"sql"
+]
+},
+{
+"name": "GoHiring",
+"slug": "gohiring",
+"site": "https://www.gohiring.com/",
+"careers": "https://www.gohiring.com/jobs/#jobs",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ruby"
+]
+},
+{
+"name": "darecode",
+"slug": "darecode",
+"site": "https://darecode.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"dotnet",
+"go",
+"java",
+"javascript"
+]
+},
+{
+"name": "SerpApi",
+"slug": "serpapi",
+"site": "https://serpapi.com/",
+"careers": "https://serpapi.com/careers",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"nosql",
+"python",
+"ruby"
+]
+},
+{
+"name": "Stack Exchange",
+"slug": "stack-exchange",
+"site": "https://stackexchange.com/",
+"careers": "http://stackexchange.com/work-here",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "GitLab",
+"slug": "gitlab",
+"site": "https://about.gitlab.com/",
+"careers": "https://about.gitlab.com/jobs/",
+"region": "worldwide",
+"tech": [
+"ruby"
+]
+},
+{
+"name": "Focusnetworks",
+"slug": "focusnetworks",
+"site": "https://focusnetworks.com.br",
+"careers": "https://focusnetworks.enlizt.me/?utm_source=jooble&utm_medium=cpc&utm_campaign=jooble",
+"region": "worldwide",
+"tech": [
+"go"
+]
+},
+{
+"name": "Embraer",
+"slug": "embraer",
+"site": "https://embraer.com/",
+"careers": "https://embraer.com/corporate-careers/en/",
+"region": "other",
+"tech": [
+"python"
+]
+},
+{
+"name": "Kake",
+"slug": "kake",
+"site": "https://kake.co/jobs",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"data",
+"dotnet",
+"go",
+"graphql",
+"java",
+"javascript",
+"ml",
+"mobile",
+"php",
+"python",
+"sql"
+]
+},
+{
+"name": "Taskade",
+"slug": "taskade",
+"site": "https://taskade.com/",
+"careers": "https://www.taskade.com/contact",
+"region": "worldwide",
+"tech": [
+"javascript",
+"nosql",
+"sql"
+]
+},
+{
+"name": "Doist",
+"slug": "doist",
+"site": "https://doist.com",
+"careers": "https://doist.com/careers",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"javascript",
+"mobile",
+"nosql",
+"php",
+"python",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Freeagent",
+"slug": "freeagent",
+"site": "https://www.freeagent.com/",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "42 Technologies",
+"slug": "42-technologies",
+"site": "https://www.42technologies.com/",
+"careers": "https://angel.co/company/42",
+"region": "worldwide",
+"tech": [
+"cloud",
+"data",
+"devops",
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "FDTE",
+"slug": "fdte",
+"site": "https://fdte.org.br/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"java",
+"javascript"
+]
+},
+{
+"name": "QuestDB",
+"slug": "questdb",
+"site": "https://questdb.io",
+"careers": "https://questdb.io/careers",
+"region": "worldwide",
+"tech": [
+"devops",
+"java",
+"javascript",
+"python"
+]
+},
+{
+"name": "Namecheap",
+"slug": "namecheap",
+"site": "https://www.namecheap.com",
+"careers": "https://www.namecheap.com/careers/openings/",
+"region": "worldwide",
+"tech": [
+"infrastructure",
+"javascript",
+"linux",
+"php",
+"sql"
+]
+},
+{
+"name": "Zaneffi",
+"slug": "zaneffi",
+"site": "https://zaneffi.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"mobile",
+"nosql",
+"sql"
+]
+},
+{
+"name": "OpenCraft",
+"slug": "opencraft",
+"site": "https://opencraft.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"ml"
+]
+},
+{
+"name": "GitHub",
+"slug": "github",
+"site": "https://github.com/",
+"careers": "https://github.com/about/jobs",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Teamflow",
+"slug": "teamflow",
+"site": "https://www.teamflowhq.com/",
+"careers": "https://teamflowhq.notion.site/Teamflow-Job-Board-225515ad0f824ef8920e9a4db7c7abbf?utm_source=remoteintech",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript"
+]
+},
+{
+"name": "Akka",
+"slug": "akka",
+"site": "https://akka.io/",
+"careers": "https://akka.io/contact-us",
+"region": "worldwide",
+"tech": [
+"java",
+"scala"
+]
+},
+{
+"name": "Data Science Dojo",
+"slug": "data-science-dojo",
+"site": "https://datasciencedojo.com/",
+"careers": "https://datasciencedojo.com/about/careers",
+"region": "worldwide",
+"tech": [
+"javascript",
+"python"
+]
+},
+{
+"name": "rtCamp Solutions",
+"slug": "rtcamp-solutions",
+"site": "https://rtcamp.com",
+"careers": "",
+"region": "asia-pacific",
+"tech": [
+"infrastructure",
+"javascript",
+"php"
+]
+},
+{
+"name": "Abstract",
+"slug": "abstract",
+"site": "https://abstractapi.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"nosql",
+"python"
+]
+},
+{
+"name": "Cognizant",
+"slug": "cognizant",
+"site": "https://www.cognizant.com/in/en",
+"careers": "https://careers.cognizant.com/in/en",
+"region": "worldwide",
+"tech": [
+"cloud",
+"dotnet",
+"java",
+"python"
+]
+},
+{
+"name": "Kentik Technologies Inc.",
+"slug": "kentik",
+"site": "https://www.kentik.com/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"javascript",
+"scala",
+"/companies/kentik-technologies-inc",
+"/kentik-technologies-inc"
+]
+},
+{
+"name": "Okta",
+"slug": "okta",
+"site": "https://www.okta.com",
+"careers": "https://www.okta.com/company/careers/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"java",
+"javascript",
+"nosql",
+"search",
+"sql"
+]
+},
+{
+"name": "Leadership Success",
+"slug": "leadership-success",
+"site": "https://leadershipsuccess.co",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Code Like a Girl",
+"slug": "code-like-a-girl",
+"site": "https://codelikeagirl.com",
+"careers": "https://www.codelikeagirl.com/about/join-our-team/",
+"region": "asia-pacific",
+"tech": [
+"cloud",
+"dotnet",
+"javascript",
+"ml",
+"nosql",
+"python"
+]
+},
+{
+"name": "Turing",
+"slug": "turing",
+"site": "https://www.turing.com/",
+"careers": "https://careers.turing.com/",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Bandcamp",
+"slug": "bandcamp",
+"site": "https://bandcamp.com/",
+"careers": "https://bandcamp.com/jobs",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Compucorp",
+"slug": "compucorp",
+"site": "https://www.compuco.io",
+"careers": "https://careers.compuco.io/open-roles",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"python"
+]
+},
+{
+"name": "Scrapinghub",
+"slug": "scrapinghub",
+"site": "https://scrapinghub.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"api",
+"ml"
+]
+},
+{
+"name": "Linaro",
+"slug": "linaro",
+"site": "https://www.linaro.org/",
+"careers": "https://www.linaro.org/careers/",
+"region": "worldwide",
+"tech": [
+"linux"
+]
+},
+{
+"name": "Fingerprint",
+"slug": "fingerprint",
+"site": "https://fingerprint.com",
+"careers": "https://fingerprint.com/careers/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"go",
+"javascript",
+"sql"
+]
+},
+{
+"name": "Yodo1",
+"slug": "yodo1",
+"site": "https://www.yodo1.com/en/",
+"careers": "https://www.yodo1.com/careers",
+"region": "worldwide",
+"tech": [
+"devops",
+"java",
+"mobile",
+"python"
+]
+},
+{
+"name": "3Blocks",
+"slug": "3blocks",
+"site": "https://3blocks.io/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript",
+"ml",
+"scala"
+]
+},
+{
+"name": "Encora",
+"slug": "encora",
+"site": "https://careers.encora.com/",
+"careers": "https://careers.encora.com/find-more-than-job",
+"region": "other",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "ChainLink Labs",
+"slug": "chainlink",
+"site": "https://chainlinklabs.com/",
+"careers": "https://chainlinklabs.com/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"javascript",
+"python",
+"sql",
+"/companies/chainlink-labs",
+"/chainlink-labs"
+]
+},
+{
+"name": "CircleCI",
+"slug": "circleci",
+"site": "https://circleci.com/",
+"careers": "https://boards.greenhouse.io/circleci",
+"region": "worldwide",
+"tech": [
+"go",
+"python"
+]
+},
+{
+"name": "Modern Tribe",
+"slug": "modern-tribe",
+"site": "https://tri.be/",
+"careers": "https://tri.be/careers/",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"mobile",
+"php",
+"search"
+]
+},
+{
+"name": "Soshace, LLC.",
+"slug": "soshace",
+"site": "https://www.soshace.com/",
+"careers": "https://soshace.com/careers",
+"region": "worldwide",
+"tech": [
+"java",
+"javascript",
+"python",
+"/companies/soshace-llc",
+"/soshace-llc"
+]
+},
+{
+"name": "IBM",
+"slug": "ibm",
+"site": "https://www.ibm.com",
+"careers": "https://www.ibm.com/careers",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"java",
+"javascript",
+"mobile"
+]
+},
+{
+"name": "Skillshare",
+"slug": "skillshare",
+"site": "https://www.skillshare.com/teach",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Retool",
+"slug": "retool",
+"site": "https://retool.com/",
+"careers": "https://retool.com/careers",
+"region": "worldwide",
+"tech": [
+"react",
+"javascript",
+"nodejs",
+"postgres",
+"docker"
+]
+},
+{
+"name": "Three Movers",
+"slug": "three-movers",
+"site": "https://threemovers.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"api",
+"infrastructure",
+"javascript",
+"ml",
+"php",
+"sql"
+]
+},
+{
+"name": "Cueup",
+"slug": "cueup",
+"site": "https://cueup.io",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"nosql",
+"sql"
+]
+},
+{
+"name": "Epsy Health",
+"slug": "epsy-health",
+"site": "https://epsyhealth.com/",
+"careers": "https://epsyhealth.com/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"java",
+"javascript",
+"mobile",
+"python"
+]
+},
+{
+"name": "Sardine.ai",
+"slug": "sardine-ai",
+"site": "https://sardine.ai",
+"careers": "https://www.sardine.ai/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"infrastructure",
+"javascript",
+"python"
+]
+},
+{
+"name": "Hugging Face",
+"slug": "hugging-face",
+"site": "https://huggingface.co/",
+"careers": "https://apply.workable.com/huggingface/",
+"region": "worldwide",
+"tech": [
+"python",
+"ml",
+"cloud"
+]
+},
+{
+"name": "NodeSource",
+"slug": "nodesource",
+"site": "https://nodesource.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"javascript"
+]
+},
+{
+"name": "Articulate",
+"slug": "articulate",
+"site": "https://www.articulate.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"dotnet"
+]
+},
+{
+"name": "Luxor Technology",
+"slug": "luxor",
+"site": "https://luxor.tech/",
+"careers": "https://jobs.ashbyhq.com/luxor",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"rust",
+"/companies/luxor-technology",
+"/luxor-technology"
+]
+},
+{
+"name": "Crossover",
+"slug": "crossover",
+"site": "https://www.crossover.com",
+"careers": "https://www.crossover.com/jobs",
+"region": "other",
+"tech": []
+},
+{
+"name": "WP-Media",
+"slug": "wp-media",
+"site": "https://wp-media.me/",
+"careers": "https://apply.workable.com/wp-media/",
+"region": "worldwide",
+"tech": [
+"php"
+]
+},
+{
+"name": "AlphaSights>",
+"slug": "alphasights",
+"site": "https://engineering.alphasights.com",
+"careers": "https://engineering.alphasights.com/#positions",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Wizeline",
+"slug": "wizeline",
+"site": "https://www.wizeline.com/",
+"careers": "https://www.wizeline.com/careers/open-roles/",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"go",
+"java",
+"javascript",
+"mobile",
+"php",
+"python"
+]
+},
+{
+"name": "Heap",
+"slug": "heap",
+"site": "https://heapanalytics.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"data",
+"javascript",
+"nosql",
+"scala",
+"sql"
+]
+},
+{
+"name": "Aula Education",
+"slug": "aula",
+"site": "https://aula.education/",
+"careers": "https://aulaatcoventry.notion.site/career",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"javascript",
+"/companies/aula-education",
+"/aula-education"
+]
+},
+{
+"name": "LivePerson",
+"slug": "liveperson",
+"site": "https://www.liveperson.com/company/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"data",
+"infrastructure",
+"java",
+"javascript",
+"nosql",
+"search"
+]
+},
+{
+"name": "MariaDB",
+"slug": "mariadb",
+"site": "https://www.mariadb.com/",
+"careers": "https://mariadb.com/about-us/careers/",
+"region": "worldwide",
+"tech": [
+"sql"
+]
+},
+{
+"name": "Jitbit",
+"slug": "jitbit",
+"site": "https://jitbit.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"javascript",
+"mobile",
+"python"
+]
+},
+{
+"name": "Xapo",
+"slug": "xapo",
+"site": "https://xapo.com/",
+"careers": "https://xapo.com/en/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"data",
+"devops",
+"graphql",
+"java",
+"javascript",
+"ml",
+"mobile",
+"nosql",
+"python",
+"sql"
+]
+},
+{
+"name": "Parexel",
+"slug": "parexel",
+"site": "https://www.parexel.com",
+"careers": "https://jobs.parexel.com/",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"java",
+"python",
+"ruby"
+]
+},
+{
+"name": "Wingify",
+"slug": "wingify",
+"site": "https://wingify.com/",
+"careers": "https://wingify.com/careers",
+"region": "asia-pacific",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Bandzoogle",
+"slug": "bandzoogle",
+"site": "https://bandzoogle.com/",
+"careers": "https://bandzoogle.com/jobs",
+"region": "worldwide",
+"tech": [
+"api",
+"javascript",
+"ruby"
+]
+},
+{
+"name": "Bonsai",
+"slug": "bonsai",
+"site": "https://hellobonsai.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"mobile",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Intuit Inc.",
+"slug": "intuit",
+"site": "https://www.intuit.com/",
+"careers": "https://www.intuit.com/careers/",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"java",
+"javascript",
+"ml",
+"php",
+"python",
+"ruby",
+"/companies/intuit-inc",
+"/intuit-inc"
+]
+},
+{
+"name": "Enjoei",
+"slug": "enjoei",
+"site": "https://www.enjoei.com.br/",
+"careers": "",
+"region": "other",
+"tech": [
+"api",
+"cloud",
+"devops",
+"go",
+"java",
+"javascript",
+"ruby",
+"sql"
+]
+},
+{
+"name": "You Need A Budget",
+"slug": "you-need-a-budget",
+"site": "https://www.youneedabudget.com/",
+"careers": "https://www.youneedabudget.com/careers/",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ruby",
+"sql"
+]
+},
+{
+"name": "PhantomBuster",
+"slug": "phantombuster",
+"site": "https://phantombuster.com/",
+"careers": "https://careers.phantombuster.com/jobs",
+"region": "worldwide",
+"tech": [
+"javascript",
+"cloud"
+]
+},
+{
+"name": "folotop",
+"slug": "folotop",
+"site": "https://folotop.com/",
+"careers": "https://www.folotop.com/job/",
+"region": "worldwide",
+"tech": [
+"php"
+]
+},
+{
+"name": "Sourcegraph",
+"slug": "sourcegraph",
+"site": "https://sourcegraph.com/jobs",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"rust",
+"sql",
+"devops",
+"cloud",
+"search"
+]
+},
+{
+"name": "Willings Inc",
+"slug": "willings-inc",
+"site": "https://willings.co.jp/en/",
+"careers": "https://willings.co.jp/en/join-us",
+"region": "asia-pacific",
+"tech": [
+"api",
+"cloud",
+"go",
+"java",
+"javascript",
+"ml",
+"python",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Prezly",
+"slug": "prezly",
+"site": "https://www.prezly.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"infrastructure",
+"javascript",
+"php",
+"sql"
+]
+},
+{
+"name": "Supabase",
+"slug": "supabase",
+"site": "https://supabase.com/",
+"careers": "https://supabase.com/careers",
+"region": "worldwide",
+"tech": [
+"javascript",
+"go",
+"rust",
+"cloud",
+"sql"
+]
+},
+{
+"name": "DataStax",
+"slug": "datastax",
+"site": "https://www.datastax.com/",
+"careers": "https://www.datastax.com/company/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"javascript",
+"sql"
+]
+},
+{
+"name": "OutsourcingDev",
+"slug": "outsourcingdev",
+"site": "https://www.outsourcingdev.com/",
+"careers": "https://www.outsourcingdev.com/careers/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"dotnet",
+"java",
+"javascript",
+"linux",
+"ml",
+"mobile",
+"nosql",
+"php",
+"python",
+"ruby",
+"sql"
+]
+},
+{
+"name": "CWT",
+"slug": "cwt",
+"site": "https://www.mycwt.com/",
+"careers": "https://careers.mycwt.com/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"dotnet",
+"java",
+"javascript",
+"ml",
+"search"
+]
+},
+{
+"name": "RenoFi",
+"slug": "renofi",
+"site": "https://renofi.com/",
+"careers": "https://renofi.com/careers/",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"ruby"
+]
+},
+{
+"name": "Klaviyo",
+"slug": "klaviyo",
+"site": "https://www.klaviyo.com/",
+"careers": "https://www.klaviyo.com/careers#open-roles",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "Nozbe",
+"slug": "nozbe",
+"site": "https://nozbe.com/",
+"careers": "https://nozbe.com/job",
+"region": "worldwide",
+"tech": [
+"javascript",
+"mobile"
+]
+},
+{
+"name": "Sonatype",
+"slug": "sonatype",
+"site": "https://www.sonatype.com",
+"careers": "https://www.sonatype.com/company/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"java",
+"javascript"
+]
+},
+{
+"name": "Parsely",
+"slug": "parsely",
+"site": "https://Parse.ly",
+"careers": "https://www.parse.ly/careers",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "StreamNative",
+"slug": "streamnative",
+"site": "https://streamnative.io/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"go",
+"java"
+]
+},
+{
+"name": "Railway",
+"slug": "railway",
+"site": "https://railway.com/",
+"careers": "https://railway.com/careers",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"cloud",
+"devops"
+]
+},
+{
+"name": "Labelbox",
+"slug": "labelbox",
+"site": "https://labelbox.com/",
+"careers": "https://labelbox.com/company/careers",
+"region": "worldwide",
+"tech": [
+"devops",
+"java",
+"javascript",
+"python"
+]
+},
+{
+"name": "XWP",
+"slug": "xwp",
+"site": "https://xwp.co/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"php"
+]
+},
+{
+"name": "Seaplane",
+"slug": "seaplane",
+"site": "https://www.seaplane.io/",
+"careers": "https://careers.smartrecruiters.com/SeaplaneIOInc",
+"region": "worldwide",
+"tech": [
+"api",
+"cloud",
+"linux",
+"rust"
+]
+},
+{
+"name": "First Point",
+"slug": "first-point",
+"site": "https://firstpoint.com.tr",
+"careers": "https://firstpoint.com.tr/#careers",
+"region": "worldwide",
+"tech": [
+"javascript",
+"mobile"
+]
+},
+{
+"name": "Argyle",
+"slug": "argyle",
+"site": "https://argyle.com/",
+"careers": "https://argyle.com/careers#open-positions",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"python"
+]
+},
+{
+"name": "Nettl Edinburgh",
+"slug": "nettl-edinburgh",
+"site": "https://www.webdesignedinburgh.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"infrastructure",
+"linux",
+"php",
+"sql"
+]
+},
+{
+"name": "Graylog",
+"slug": "graylog",
+"site": "https://www.graylog.org/",
+"careers": "https://www.graylog.org/careers",
+"region": "worldwide",
+"tech": [
+"java",
+"javascript",
+"nosql"
+]
+},
+{
+"name": "Netguru",
+"slug": "netguru",
+"site": "https://www.netguru.com",
+"careers": "https://www.netguru.com/career",
+"region": "worldwide",
+"tech": [
+"elixir",
+"java",
+"javascript",
+"mobile",
+"python",
+"ruby"
+]
+},
+{
+"name": "Core-Apps",
+"slug": "core-apps",
+"site": "https://www.core-apps.com/",
+"careers": "https://www.core-apps.com/event-technology-company/jobs/",
+"region": "worldwide",
+"tech": [
+"api",
+"go",
+"scala"
+]
+},
+{
+"name": "Flexera",
+"slug": "flexera",
+"site": "https://www.flexera.com/",
+"careers": "https://www.flexera.com/about-us/careers",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ml"
+]
+},
+{
+"name": "OmniTI",
+"slug": "omniti",
+"site": "https://omniti.com/",
+"careers": "https://omniti.com/is/hiring.html",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"javascript",
+"mobile",
+"nosql",
+"python",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Syde",
+"slug": "syde",
+"site": "https://syde.com/",
+"careers": "https://syde.com/career/",
+"region": "worldwide",
+"tech": [
+"javascript",
+"php"
+]
+},
+{
+"name": "Shopify",
+"slug": "shopify",
+"site": "https://www.shopify.com",
+"careers": "https://www.shopify.com/careers",
+"region": "worldwide",
+"tech": [
+"devops",
+"infrastructure",
+"javascript",
+"nosql",
+"ruby",
+"sql"
+]
+},
+{
+"name": "LeadIQ",
+"slug": "leadiq",
+"site": "https://leadiq.com/",
+"careers": "https://leadiq.com/careers",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript"
+]
+},
+{
+"name": "Boldare",
+"slug": "boldare",
+"site": "https://boldare.com",
+"careers": "https://boldare.com/career/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"dotnet",
+"java",
+"javascript",
+"mobile",
+"php",
+"python"
+]
+},
+{
+"name": "Safeguard Global",
+"slug": "safeguard-global",
+"site": "https://www.safeguardglobal.com/",
+"careers": "https://www.safeguardglobal.com/company/careers/",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "MySQL",
+"slug": "mysql",
+"site": "https://www.mysql.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"java",
+"php",
+"python"
+]
+},
+{
+"name": "Shogun",
+"slug": "shogun",
+"site": "https://getshogun.com",
+"careers": "https://angel.co/shogun/jobs",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"ruby"
+]
+},
+{
+"name": "Customer.io",
+"slug": "customer-io",
+"site": "https://customer.io",
+"careers": "https://customer.io/careers",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"ruby"
+]
+},
+{
+"name": "Sticker Mule",
+"slug": "sticker-mule",
+"site": "https://www.stickermule.com/",
+"careers": "https://www.stickermule.com/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"dotnet",
+"go",
+"graphql",
+"javascript",
+"nosql",
+"python",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Peakforce",
+"slug": "peakforce",
+"site": "https://www.peakforce.dev",
+"careers": "https://www.peakforce.dev/contact",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "PayU",
+"slug": "payu",
+"site": "https://corporate.payu.com",
+"careers": "https://corporate.payu.com/job-board/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"data",
+"go",
+"java",
+"scala"
+]
+},
+{
+"name": "Instamobile",
+"slug": "instamobile",
+"site": "https://instamobile.io",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"java",
+"mobile"
+]
+},
+{
+"name": "iRonin",
+"slug": "ironin",
+"site": "https://www.ironin.it/",
+"careers": "https://careers.ironin.it/",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"mobile",
+"ruby"
+]
+},
+{
+"name": "Code B Solutions",
+"slug": "code-b-solutions",
+"site": "https://code-b.dev/",
+"careers": "https://code-b.dev/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"dotnet",
+"javascript",
+"mobile",
+"nosql",
+"php",
+"python",
+"sql"
+]
+},
+{
+"name": "Epic Games",
+"slug": "epic-games",
+"site": "https://www.epicgames.com/site/en-US/careers",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Hubspot",
+"slug": "hubspot",
+"site": "https://www.hubspot.com/",
+"careers": "https://www.hubspot.com/careers/jobs?hubs_signup-url=www.hubspot.com%2Fcareers%2Fremote&hubs_signup-cta=careers-location-hero&page=1",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"infrastructure",
+"javascript",
+"ml"
+]
+},
+{
+"name": "MarsBased",
+"slug": "marsbased",
+"site": "https://marsbased.com/",
+"careers": "https://marsbased.com/jobs",
+"region": "worldwide",
+"tech": [
+"javascript",
+"mobile",
+"python",
+"ruby"
+]
+},
+{
+"name": "DuckDuckGo",
+"slug": "duckduckgo",
+"site": "https://duckduckgo.com/",
+"careers": "https://duckduckgo.com/hiring/",
+"region": "worldwide",
+"tech": [
+"java",
+"javascript",
+"mobile"
+]
+},
+{
+"name": "reinteractive",
+"slug": "reinteractive",
+"site": "https://reinteractive.com/careers",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"ruby"
+]
+},
+{
+"name": "MailerLite",
+"slug": "mailerlite",
+"site": "https://www.mailerlite.com",
+"careers": "https://www.mailerlite.com/jobs/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"javascript",
+"mobile",
+"nosql",
+"php",
+"python",
+"search",
+"sql"
+]
+},
+{
+"name": "datawebot",
+"slug": "datawebot",
+"site": "https://www.datawebot.com",
+"careers": "https://www.datawebot.com/careers",
+"region": "asia-pacific",
+"tech": [
+"typescript",
+"python",
+"cloud",
+"data",
+"ml"
+]
+},
+{
+"name": "RedMonk",
+"slug": "redmonk",
+"site": "https://redmonk.com",
+"careers": "https://redmonk.com/about/",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Chargify",
+"slug": "chargify",
+"site": "https://www.chargify.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"ruby"
+]
+},
+{
+"name": "Coalition Technologies",
+"slug": "coalition-technologies",
+"site": "https://coalitiontechnologies.com/",
+"careers": "https://coalitiontechnologies.com/jobs",
+"region": "worldwide",
+"tech": [
+"ml"
+]
+},
+{
+"name": "Formstack",
+"slug": "formstack",
+"site": "https://www.formstack.com/",
+"careers": "https://www.formstack.com/careers",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "ServMask",
+"slug": "servmask",
+"site": "https://servmask.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"infrastructure",
+"javascript",
+"php",
+"sql"
+]
+},
+{
+"name": "VMware",
+"slug": "vmware",
+"site": "https://www.vmware.com/",
+"careers": "https://careers.vmware.com/main/",
+"region": "worldwide",
+"tech": [
+"devops",
+"ml"
+]
+},
+{
+"name": "DigitalOcean",
+"slug": "digitalocean",
+"site": "https://www.digitalocean.com/",
+"careers": "https://www.digitalocean.com/careers",
+"region": "worldwide",
+"tech": [
+"data",
+"devops",
+"go",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Auth0",
+"slug": "auth0",
+"site": "https://auth0.com/",
+"careers": "https://auth0.com/jobs",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"python",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Devsquad",
+"slug": "devsquad",
+"site": "https://devsquad.com",
+"careers": "https://apply.workable.com/devsquad",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"javascript",
+"php"
+]
+},
+{
+"name": "WeMakeMVP",
+"slug": "wemakemvp",
+"site": "https://wemakemvp.com",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "IDoneThis",
+"slug": "idonethis",
+"site": "https://www.idonethis.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Over",
+"slug": "over",
+"site": "https://www.madewithover.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"mobile"
+]
+},
+{
+"name": "Platform Builders",
+"slug": "platform-builders",
+"site": "https://platformbuilders.io/",
+"careers": "https://jobs.kenoby.com/sejabuilder",
+"region": "worldwide",
+"tech": [
+"cloud",
+"dotnet",
+"javascript",
+"mobile",
+"ruby",
+"search",
+"sql"
+]
+},
+{
+"name": "Fastly",
+"slug": "fastly",
+"site": "https://www.fastly.com/",
+"careers": "https://www.fastly.com/about/careers",
+"region": "worldwide",
+"tech": [
+"cloud"
+]
+},
+{
+"name": "Optoro",
+"slug": "optoro",
+"site": "https://www.optoro.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"data",
+"devops",
+"nosql",
+"python",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Redlio Labs",
+"slug": "redlio-labs",
+"site": "https://redliolabs.com",
+"careers": "https://redliolabs.com/careers",
+"region": "worldwide",
+"tech": [
+"javascript",
+"react",
+"nodejs",
+"postgres",
+"nosql",
+"php",
+"python",
+"/companies/redlio-designs",
+"/redlio-designs"
+]
+},
+{
+"name": "Stairlin",
+"slug": "stairlin",
+"site": "https://www.stairlin.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"javascript",
+"ml",
+"nosql"
+]
+},
+{
+"name": "Salesforce",
+"slug": "salesforce",
+"site": "https://www.salesforce.com/",
+"careers": "https://salesforce.wd1.myworkdayjobs.com/External_Career_Site",
+"region": "worldwide",
+"tech": [
+"cloud",
+"java",
+"javascript",
+"ml"
+]
+},
+{
+"name": "Molteo",
+"slug": "molteo",
+"site": "https://molteo.com/",
+"careers": "https://molteo.join.com/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"javascript",
+"mobile",
+"sql"
+]
+},
+{
+"name": "Twilio",
+"slug": "twilio",
+"site": "https://www.twilio.com/",
+"careers": "https://www.twilio.com/company/jobs",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"java",
+"python"
+]
+},
+{
+"name": "Tanatasa",
+"slug": "tanatasa",
+"site": "https://tanatasa.sg",
+"careers": "https://tanatasa.sg/career",
+"region": "asia-pacific",
+"tech": [
+"typescript",
+"javascript",
+"react",
+"nodejs",
+"python",
+"sql",
+"cloud",
+"ml"
+]
+},
+{
+"name": "Wells Fargo",
+"slug": "wells-fargo",
+"site": "https://www.wellsfargo.com/",
+"careers": "https://www.wellsfargo.com/about/careers/",
+"region": "worldwide",
+"tech": [
+"dotnet",
+"java",
+"javascript",
+"ml",
+"sql"
+]
+},
+{
+"name": "Thinkful",
+"slug": "thinkful",
+"site": "https://www.thinkful.com/",
+"careers": "https://www.thinkful.com/about/careers/",
+"region": "worldwide",
+"tech": [
+"javascript",
+"python"
+]
+},
+{
+"name": "WebFX",
+"slug": "webfx",
+"site": "https://www.webfx.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ml",
+"php"
+]
+},
+{
+"name": "Clevertech",
+"slug": "clevertech",
+"site": "https://clevertech.biz/",
+"careers": "https://clevertech.biz/careers",
+"region": "worldwide",
+"tech": [
+"java",
+"javascript",
+"php",
+"python",
+"ruby"
+]
+},
+{
+"name": "Session",
+"slug": "session",
+"site": "https://getsession.com",
+"careers": "https://getsession.com/about",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "RebelMouse",
+"slug": "rebelmouse",
+"site": "https://www.rebelmouse.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript",
+"mobile",
+"python"
+]
+},
+{
+"name": "No Code No Problem",
+"slug": "no-code-no-problem",
+"site": "https://www.nocodenoprob.com",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Axelerant",
+"slug": "axelerant",
+"site": "https://axelerant.com/",
+"careers": "https://www.axelerant.com/careers",
+"region": "worldwide",
+"tech": [
+"javascript",
+"php",
+"ruby"
+]
+},
+{
+"name": "Swiggy",
+"slug": "swiggy",
+"site": "https://www.swiggy.com",
+"careers": "https://careers.swiggy.com/#/",
+"region": "other",
+"tech": [
+"cloud",
+"devops",
+"go",
+"java",
+"javascript",
+"mobile",
+"nosql",
+"python",
+"rust",
+"scala",
+"search",
+"sql"
+]
+},
+{
+"name": "Meant4",
+"slug": "meant4",
+"site": "https://meant4.com/jobs",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"go",
+"javascript",
+"mobile",
+"php",
+"python"
+]
+},
+{
+"name": "Andela",
+"slug": "andela",
+"site": "https://andela.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"java",
+"javascript",
+"python",
+"ruby"
+]
+},
+{
+"name": "TatvaSoft",
+"slug": "tatvasoft",
+"site": "https://www.tatvasoft.com/",
+"careers": "https://www.tatvasoft.com/career",
+"region": "worldwide",
+"tech": [
+"cloud",
+"dotnet",
+"java",
+"javascript",
+"mobile",
+"nosql",
+"php",
+"ruby",
+"sql"
+]
+},
+{
+"name": "Jaya Tech",
+"slug": "jaya-tech",
+"site": "http://jaya.tech",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"elixir",
+"java",
+"javascript",
+"ruby"
+]
+},
+{
+"name": "Capgemini",
+"slug": "capgemini",
+"site": "https://www.capgemini.com/us-en/",
+"careers": "https://www.capgemini.com/careers/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"ml"
+]
+},
+{
+"name": "Human Made",
+"slug": "human-made",
+"site": "https://hmn.md",
+"careers": "https://hmn.md/hiring/",
+"region": "worldwide",
+"tech": [
+"javascript",
+"php"
+]
+},
+{
+"name": "Bit Zesty",
+"slug": "bit-zesty",
+"site": "https://bitzesty.com/",
+"careers": "https://bitzesty.com/careers/",
+"region": "worldwide",
+"tech": [
+"elixir",
+"javascript",
+"mobile",
+"python",
+"ruby"
+]
+},
+{
+"name": "Fire Engine Red",
+"slug": "fire-engine-red",
+"site": "https://fire-engine-red.com/",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "v0 report",
+"slug": "v0-report",
+"site": "https://v0.report",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Deskpass",
+"slug": "deskpass",
+"site": "https://www.deskpass.com",
+"careers": "https://jobs.deskpass.com",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"javascript",
+"nosql",
+"php",
+"sql"
+]
+},
+{
+"name": "Datadog",
+"slug": "datadog",
+"site": "https://www.datadoghq.com/",
+"careers": "",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "Capchase",
+"slug": "capchase",
+"site": "https://www.capchase.com/",
+"careers": "https://www.notion.so/9b9e8dbcc5a2415f9da69f1e00617f94?v=cdd6935b11024b68aba4375714c7cc00",
+"region": "worldwide",
+"tech": [
+"devops",
+"go",
+"javascript",
+"nosql"
+]
+},
+{
+"name": "Skyrocket Ventures",
+"slug": "skyrocket-ventures",
+"site": "https://www.skyrocketventures.com/",
+"careers": "https://www.linkedin.com/jobs/senior-lead-software-engineer-jobs",
+"region": "worldwide",
+"tech": []
+},
+{
+"name": "EngineYard (Support Team)",
+"slug": "engineyard",
+"site": "https://www.engineyard.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"javascript",
+"linux",
+"ruby",
+"sql",
+"/companies/engineyard-support-team",
+"/engineyard-support-team"
+]
+},
+{
+"name": "Inshorts",
+"slug": "inshorts",
+"site": "https://www.inshorts.com/",
+"careers": "https://inshorts.zohorecruit.com/careers",
+"region": "asia-pacific",
+"tech": [
+"infrastructure",
+"javascript",
+"php"
+]
+},
+{
+"name": "I-Stem",
+"slug": "i-stem",
+"site": "https://www.istemai.com/",
+"careers": "https://wellfound.com/company/i-stem/jobs",
+"region": "asia-pacific",
+"tech": [
+"javascript",
+"python"
+]
+},
+{
+"name": "Six to Start",
+"slug": "six-to-start",
+"site": "https://sixtostart.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"javascript"
+]
+},
+{
+"name": "Red Hat",
+"slug": "red-hat",
+"site": "https://www.redhat.com",
+"careers": "https://www.redhat.com/en/jobs",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"javascript",
+"linux"
+]
+},
+{
+"name": "Rackspace",
+"slug": "rackspace",
+"site": "https://rackspace.com/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"linux",
+"python"
+]
+},
+{
+"name": "Launch Potato",
+"slug": "launch-potato",
+"site": "https://launchpotato.com/",
+"careers": "https://launchpotato.com/careers",
+"region": "worldwide",
+"tech": [
+"api",
+"cloud",
+"data",
+"devops",
+"graphql",
+"javascript",
+"python",
+"sql"
+]
+},
+{
+"name": "DashboardHub",
+"slug": "dashboardhub",
+"site": "https://dashboardhub.io/",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript"
+]
+},
+{
+"name": "Linux Foundation",
+"slug": "linux-foundation",
+"site": "https://www.linuxfoundation.org/",
+"careers": "https://www.linuxfoundation.org/careers",
+"region": "worldwide",
+"tech": [
+"devops",
+"go"
+]
+},
+{
+"name": "Carbon Black",
+"slug": "carbon-black",
+"site": "https://www.carbonblack.com/",
+"careers": "https://www.carbonblack.com/company/careers/",
+"region": "worldwide",
+"tech": [
+"cloud",
+"javascript"
+]
+},
+{
+"name": "Interpersonal Frequency (I.F.)",
+"slug": "interpersonal-frequency-i-f",
+"site": "https://ifsight.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"go",
+"javascript",
+"ml"
+]
+},
+{
+"name": "Extreme Networks",
+"slug": "extreme-networks",
+"site": "https://www.extremenetworks.com/",
+"careers": "https://www.extremenetworks.com/about-extreme-networks/career/",
+"region": "worldwide",
+"tech": [
+"cloud"
+]
+},
+{
+"name": "Data Science Brigade",
+"slug": "data-science-brigade",
+"site": "https://dsbrigade.com",
+"careers": "",
+"region": "worldwide",
+"tech": [
+"python"
+]
+},
+{
+"name": "DappRadar",
+"slug": "dappradar",
+"site": "https://dappradar.com/",
+"careers": "https://dappradar.com/careers",
+"region": "worldwide",
+"tech": [
+"devops",
+"javascript",
+"sql"
+]
+},
+{
+"name": "Nagarro",
+"slug": "nagarro",
+"site": "https://www.nagarro.com/en",
+"careers": "https://www.nagarro.com/en/careers",
+"region": "worldwide",
+"tech": [
+"cloud",
+"devops",
+"go",
+"java",
+"ml",
+"mobile"
+]
+},
+{
+"name": "Arkency",
+"slug": "arkency",
+"site": "https://arkency.com/",
+"careers": "https://blog.arkency.com/join-our-team/",
+"region": "worldwide",
+"tech": [
+"javascript",
+"ruby"
+]
+},
+{
+"name": "Maxicus",
+"slug": "maxicus",
+"site": "https://maxicus.com/",
+"careers": "https://remoters.net/jobs/maxicus/",
+"region": "asia-pacific",
+"tech": [
+"dotnet",
+"php",
+"python",
+"sql"
+]
+}
+]
