@@ -4,7 +4,7 @@ Remote data roles open to India, fresh from the source.
 
 A personal job feed for remote data engineering, analytics and architect roles that are open to candidates in India.
 
-It pulls listings directly from company hiring systems (Greenhouse, Lever, Ashby, SmartRecruiters, Workable) plus free remote feeds (Hacker News "Who's Hiring", Remotive, RemoteOK, Himalayas, Jobicy, We Work Remotely). Closed roles disappear on the next refresh, so nothing goes stale.
+It pulls listings directly from company hiring systems (Greenhouse, Lever, Ashby, SmartRecruiters, Workable, Workday, Oracle Recruiting Cloud, Eightfold, Avature) and the career sites of big employers with India tech centres (Amazon, Google, Goldman Sachs), plus free remote feeds (Hacker News "Who's Hiring", Remotive, RemoteOK, Himalayas, Jobicy, We Work Remotely). Closed roles disappear on the next refresh, so nothing goes stale.
 
 ## What it does
 - **Today:** the 15 best-fitting open roles as a deck. Pass, save or mark applied; when it's empty you're done.
@@ -21,6 +21,11 @@ Edit `companies.py`. The slug is the part of the company's job board URL:
 - `jobs.ashbyhq.com/<slug>`
 - `jobs.smartrecruiters.com/<slug>`
 - `apply.workable.com/<slug>`
+- Workday: `tenant|wd number|site` from `<tenant>.wd<n>.myworkdayjobs.com/<site>`
+- Oracle Recruiting Cloud: `host|siteNumber`, e.g. `jpmc.fa.oraclecloud.com|CX_1001`
+- Eightfold: `host|domain`, e.g. `apply.careers.microsoft.com|microsoft.com`
+
+GCC employers (India tech centres) were found with `tools/probe3.py` and checked with `tools/try_new.py`.
 
 Push the change and Render redeploys automatically.
 
