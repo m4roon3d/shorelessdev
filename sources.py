@@ -363,14 +363,17 @@ def oracle(slug, name, tags):
     return out
 
 
+EF_QUERIES = ("data engineer", "data architect", "data analyst", "analytics engineer", "big data")  # Eightfold limits hard
+
+
 def eightfold(slug, name, tags):
     """Eightfold career sites (PCSX API). slug is "host|domain", e.g. "apply.careers.microsoft.com|microsoft.com"."""
     host, domain = slug.split("|")
     base = f"https://{host}"
     hdr = {**UA, "Accept": "application/json"}
     seen, picks = set(), []
-    for q in WD_QUERIES:
-        for start in (0, 10, 20, 30, 40):
+    for q in EF_QUERIES:
+        for start in (0, 10, 20):
             try:
                 r = _req("GET", f"{base}/api/pcsx/search", params={"domain": domain, "query": q, "location": "India", "start": start},
                          headers=hdr, waits=(8, 20, 45))
@@ -379,7 +382,7 @@ def eightfold(slug, name, tags):
                     break  # still rate-limited: keep what we have
                 raise
             pos = (r.json().get("data") or {}).get("positions") or []
-            time.sleep(1.2)
+            time.sleep(3)
             for p in pos:
                 if p.get("id") in seen or not _data_title(p.get("name")):
                     continue
@@ -391,7 +394,7 @@ def eightfold(slug, name, tags):
                 break
         time.sleep(0.3)
     out = []
-    for p in picks[:80]:
+    for p in picks[:40]:
         desc = ""
         try:
             d = _req("GET", f"{base}/api/pcsx/position_details", params={"position_id": p["id"], "domain": domain, "hl": "en"},

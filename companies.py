@@ -271,8 +271,6 @@ WORKDAY = [
     ('assetmark|5|AssetMark_Careers', 'AssetMark', []),
     ('standard|1|Search', 'The Standard', []),
     ('gevernova|5|Vernova_ExternalSite', 'GE Vernova', []),
-    ('abercrombie|108|anf', 'Abercrombie & Fitch', []),
-    ('amadeus|502|jobs', 'Amadeus', []),
 ]
 
 # Big employers on other hiring systems (sources.py). Searched for data roles, India only.
