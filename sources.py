@@ -20,6 +20,18 @@ def _get(url, **kw):
     return r
 
 
+def _req(method, url, waits=(4, 12, 30), **kw):
+    """requests call that waits and retries when the site rate-limits (429/503)."""
+    kw.setdefault("timeout", TIMEOUT)
+    for i, wait in enumerate((0,) + tuple(waits)):
+        time.sleep(wait)
+        r = requests.request(method, url, **kw)
+        if r.status_code not in (429, 503) or i == len(waits):
+            r.raise_for_status()
+            return r
+    return r
+
+
 def _iso(s):
     if not s:
         return None
@@ -239,9 +251,8 @@ def workday(slug, name, tags):
     seen, picks = set(), []
     for q in WD_QUERIES:
         for offset in (0, 20, 40):
-            r = requests.post(f"{api}/jobs", json={"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": q},
-                              headers=hdr, timeout=TIMEOUT)
-            r.raise_for_status()
+            r = _req("POST", f"{api}/jobs", json={"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": q},
+                     headers=hdr)
             posts = r.json().get("jobPostings") or []
             for p in posts:
                 path = p.get("externalPath")
@@ -303,9 +314,8 @@ def oracle(slug, name, tags):
 
     def search(extra, limit=25, offset=0):
         finder = f"findReqs;siteNumber={site},limit={limit},offset={offset},sortBy=POSTING_DATES_DESC{extra}"
-        r = requests.get(f"{base}{ORC}", params={"onlyData": "true", "expand": "requisitionList.secondaryLocations",
-                                                 "finder": finder}, headers=hdr, timeout=TIMEOUT)
-        r.raise_for_status()
+        r = _req("GET", f"{base}{ORC}", params={"onlyData": "true", "expand": "requisitionList.secondaryLocations",
+                                                "finder": finder}, headers=hdr)
         items = r.json().get("items") or [{}]
         return items[0]
 
@@ -361,10 +371,15 @@ def eightfold(slug, name, tags):
     seen, picks = set(), []
     for q in WD_QUERIES:
         for start in (0, 10, 20, 30, 40):
-            r = requests.get(f"{base}/api/pcsx/search", params={"domain": domain, "query": q, "location": "India", "start": start},
-                             headers=hdr, timeout=TIMEOUT)
-            r.raise_for_status()
+            try:
+                r = _req("GET", f"{base}/api/pcsx/search", params={"domain": domain, "query": q, "location": "India", "start": start},
+                         headers=hdr, waits=(8, 20, 45))
+            except requests.HTTPError:
+                if picks:
+                    break  # still rate-limited: keep what we have
+                raise
             pos = (r.json().get("data") or {}).get("positions") or []
+            time.sleep(1.2)
             for p in pos:
                 if p.get("id") in seen or not _data_title(p.get("name")):
                     continue
@@ -379,11 +394,12 @@ def eightfold(slug, name, tags):
     for p in picks[:80]:
         desc = ""
         try:
-            d = requests.get(f"{base}/api/pcsx/position_details", params={"position_id": p["id"], "domain": domain, "hl": "en"},
-                             headers=hdr, timeout=TIMEOUT).json().get("data") or {}
+            d = _req("GET", f"{base}/api/pcsx/position_details", params={"position_id": p["id"], "domain": domain, "hl": "en"},
+                     headers=hdr, waits=(8, 20)).json().get("data") or {}
             desc = _strip(d.get("jobDescription"))
         except (requests.RequestException, ValueError):
             pass
+        time.sleep(0.8)
         out.append(dict(
             title=p.get("name"), company=name, url=f"{base}{p.get('positionUrl') or ''}",
             location=", ".join(p.get("locations") or []),
@@ -457,7 +473,7 @@ def google(slug, name, tags):
                     continue
                 seen.add(jid)
                 strings = [s for s in _walk(j[3:]) if isinstance(s, str)]
-                locs = [s for s in strings if len(s) < 80 and re.search(r",\s*[A-Z][a-z]+$|India", s) and "<" not in s]
+                locs = [s for s in strings if len(s) < 60 and re.search(r",\s*[A-Z][a-z]+$", s) and "<" not in s and not re.search(r"\d", s)]
                 ts = next((p[0] for p in (k for k in j if isinstance(k, list)) if len(p) == 2
                            and all(isinstance(v, int) for v in p) and 1.5e9 < p[0] < 2.5e9), None)
                 slug_t = re.sub(r"[^a-z0-9]+", "-", title.lower()).strip("-")
@@ -487,8 +503,7 @@ def goldman(slug, name, tags):
                 "page": {"pageSize": 50, "pageNumber": page}, "sort": {"sortStrategy": "RELEVANCE", "sortOrder": "DESC"},
                 "filters": [{"filterCategoryType": "LOCATION", "filters": [{"filter": slug, "subFilters": []}]}],
                 "experiences": ["PROFESSIONAL", "EARLY_CAREER"], "searchTerm": q}}}
-            r = requests.post("https://api-higher.gs.com/gateway/api/v1/graphql", json=body, headers=hdr, timeout=TIMEOUT)
-            r.raise_for_status()
+            r = _req("POST", "https://api-higher.gs.com/gateway/api/v1/graphql", json=body, headers=hdr)
             items = ((r.json().get("data") or {}).get("roleSearch") or {}).get("items") or []
             for j in items:
                 sid = (j.get("externalSource") or {}).get("sourceId") or j.get("roleId")
