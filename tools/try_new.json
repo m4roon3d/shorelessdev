@@ -1,0 +1,782 @@
+{
+ "JPMorgan Chase": {
+  "ok": true,
+  "secs": 19,
+  "total": 12,
+  "kept": 11,
+  "regions": [
+   "India"
+  ],
+  "sample": [
+   [
+    "Director of Software Engineering - Data Engineering & Transformation",
+    "Bengaluru, Karnataka, India",
+    "India",
+    "Engineering",
+    true
+   ],
+   [
+    "Commercial & Investment Bank - Payments Data Scientist Associate",
+    "Mumbai, Maharashtra, India",
+    "India",
+    "Science",
+    true
+   ],
+   [
+    "Data Engineer III - Databricks, Pyspark, Python, AWS",
+    "Bengaluru, Karnataka, India",
+    "India",
+    "Engineering",
+    true
+   ],
+   [
+    "ICB Risk Data Analytics \u2013 Risk Modelling Senior Associate",
+    "Bengaluru, Karnataka, India",
+    "India",
+    "Analytics",
+    true
+   ],
+   [
+    "Software Engineer III - AWS BIG Data Engineer",
+    "Bengaluru, Karnataka, India",
+    "India",
+    "Engineering",
+    true
+   ],
+   [
+    "Research Modernization - Business Intelligence Developer",
+    "Mumbai, Maharashtra, India",
+    "India",
+    "Engineering",
+    true
+   ]
+  ],
+  "raw_sample": [
+   [
+    "Director of Software Engineering - Data Engineering & Transformation",
+    "Bengaluru, Karnataka, India",
+    3452
+   ],
+   [
+    "Commercial & Investment Bank - Payments Data Scientist Associate",
+    "Mumbai, Maharashtra, India",
+    6343
+   ],
+   [
+    "Data Engineer III - Databricks, Pyspark, Python, AWS",
+    "Bengaluru, Karnataka, India",
+    4497
+   ]
+  ]
+ },
+ "American Express": {
+  "ok": true,
+  "secs": 9,
+  "total": 3,
+  "kept": 3,
+  "regions": [
+   "India"
+  ],
+  "sample": [
+   [
+    "Senior Analyst-Data Science",
+    "Bengaluru, KA, India, Gurugram, HR, India",
+    "India",
+    "Science",
+    true
+   ],
+   [
+    "Senior Manager - Data Science",
+    "Bengaluru, KA, India, Gurugram, HR, India",
+    "India",
+    "Science",
+    true
+   ],
+   [
+    "Senior Data Engineer I",
+    "Bengaluru, KA, India",
+    "India",
+    "Engineering",
+    true
+   ]
+  ],
+  "raw_sample": [
+   [
+    "Senior Analyst-Data Science",
+    "Bengaluru, KA, India, Gurugram, HR, India",
+    5848
+   ],
+   [
+    "Senior Manager - Data Science",
+    "Bengaluru, KA, India, Gurugram, HR, India",
+    5446
+   ],
+   [
+    "Senior Data Engineer I",
+    "Bengaluru, KA, India",
+    9676
+   ]
+  ]
+ },
+ "Microsoft": {
+  "ok": false,
+  "secs": 1,
+  "error": "HTTPError('429 Client Error: Too Many Requests for url: https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=data+engineer&location=India&start=30')",
+  "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/shorelessdev/shorelessdev/tools/try_new.py\", line 27, in run\n    raws = fn(slug, name, tags)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/shorelessdev/shorelessdev/sources.py\", line 366, in eightfold\n    r.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://apply.careers.microsoft.com/api/pcsx/search?domain=microsoft.com&query=data+engineer&location=India&start=30\n"
+ },
+ "Starbucks": {
+  "ok": false,
+  "secs": 3,
+  "error": "HTTPError('429 Client Error: TOO MANY REQUESTS for url: https://starbucks.eightfold.ai/api/pcsx/search?domain=starbucks.com&query=etl&location=India&start=0')",
+  "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/shorelessdev/shorelessdev/tools/try_new.py\", line 27, in run\n    raws = fn(slug, name, tags)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/shorelessdev/shorelessdev/sources.py\", line 366, in eightfold\n    r.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 429 Client Error: TOO MANY REQUESTS for url: https://starbucks.eightfold.ai/api/pcsx/search?domain=starbucks.com&query=etl&location=India&start=0\n"
+ },
+ "Amazon": {
+  "ok": true,
+  "secs": 10,
+  "total": 63,
+  "kept": 33,
+  "regions": [
+   "India"
+  ],
+  "sample": [
+   [
+    "Data Engineer, MIDAS, Digital Acceleration",
+    "Chennai, Tamil Nadu, IND",
+    "India",
+    "Engineering",
+    true
+   ],
+   [
+    "Data Engineer I, DSP Analytics",
+    "Hyderabad, Telangana, IND",
+    "India",
+    "Engineering",
+    true
+   ],
+   [
+    "Data Engineer II, Alexa AI - ML Engineering",
+    "Bengaluru, Karnataka, IND",
+    "India",
+    "Engineering",
+    true
+   ],
+   [
+    "Data Engineer II, Alexa AI - ML Engineering",
+    "Bengaluru, Karnataka, IND",
+    "India",
+    "Engineering",
+    true
+   ],
+   [
+    "Data Engineer",
+    "Hyderabad, Telangana, IND",
+    "India",
+    "Engineering",
+    true
+   ],
+   [
+    "Data Engineer, SPT",
+    "Hyderabad, Telangana, IND",
+    "India",
+    "Engineering",
+    true
+   ]
+  ],
+  "raw_sample": [
+   [
+    "Data Engineer, MIDAS, Digital Acceleration",
+    "Chennai, Tamil Nadu, IND",
+    3196
+   ],
+   [
+    "Data Engineer I, DSP Analytics",
+    "Hyderabad, Telangana, IND",
+    4525
+   ],
+   [
+    "Data Engineer II, Alexa AI - ML Engineering",
+    "Bengaluru, Karnataka, IND",
+    3922
+   ]
+  ]
+ },
+ "Google": {
+  "ok": true,
+  "secs": 5,
+  "total": 6,
+  "kept": 6,
+  "regions": [
+   "India"
+  ],
+  "sample": [
+   [
+    "Data Engineer, YouTube India",
+    "Bengaluru, Karnataka, India, Chickpet Rd, Ragipet, Dodpete, Nagarathpete, Bengaluru, Karnataka 560053, India",
+    "India",
+    "Engineering",
+    true
+   ],
+   [
+    "Data Analytics Customer Engineer, Google Cloud (English)",
+    "Bengaluru, Karnataka, India",
+    "India",
+    "Analytics",
+    true
+   ],
+   [
+    "Data Analyst, Risk",
+    "Hyderabad, Telangana, India",
+    "India",
+    "Analytics",
+    true
+   ],
+   [
+    "Applied Solutions Architect, Data and AI",
+    "Bengaluru, Karnataka, India",
+    "India",
+    "Architecture",
+    true
+   ],
+   [
+    "Software Engineer, Knowledge Catalog Data Products",
+    "Bengaluru, Karnataka, India",
+    "India",
+    "Engineering",
+    true
+   ],
+   [
+    "Senior Staff Software Engineer, Napa, Data Intelligence",
+    "Bengaluru, Karnataka, India",
+    "India",
+    "Engineering",
+    true
+   ]
+  ],
+  "raw_sample": [
+   [
+    "Data Engineer, YouTube India",
+    "Bengaluru, Karnataka, India, Chickpet Rd, Ragipet, Dodpete, Nagarathpete, Bengaluru, Karnataka 560053, India",
+    3737
+   ],
+   [
+    "Data Analytics Customer Engineer, Google Cloud (English)",
+    "Bengaluru, Karnataka, India",
+    4442
+   ],
+   [
+    "Data Analyst, Risk",
+    "Hyderabad, Telangana, India",
+    1184
+   ]
+  ]
+ },
+ "Goldman Sachs": {
+  "ok": true,
+  "secs": 4,
+  "total": 2,
+  "kept": 2,
+  "regions": [
+   "India"
+  ],
+  "sample": [
+   [
+    "Software Engineering - Data, Lakehouse and AI Data Platform Engineer-Bangalore-Associate",
+    "Bengaluru, India",
+    "India",
+    "Engineering",
+    false
+   ],
+   [
+    "GBM - Transaction Banking Technology - Bengaluru - Vice President - Data Engineering",
+    "Bengaluru, India",
+    "India",
+    "Engineering",
+    false
+   ]
+  ],
+  "raw_sample": [
+   [
+    "Software Engineering - Data, Lakehouse and AI Data Platform Engineer-Bangalore-Associate",
+    "Bengaluru, India",
+    6166
+   ],
+   [
+    "GBM - Transaction Banking Technology - Bengaluru - Vice President - Data Engineering",
+    "Bengaluru, India",
+    4974
+   ]
+  ]
+ },
+ "Tesco": {
+  "ok": true,
+  "secs": 15,
+  "total": 0,
+  "kept": 0,
+  "regions": [],
+  "sample": [],
+  "raw_sample": []
+ },
+ "Wells Fargo": {
+  "ok": true,
+  "secs": 21,
+  "total": 7,
+  "kept": 5,
+  "regions": [
+   "India"
+  ],
+  "sample": [
+   [
+    "Lead Risk Analytics Consultant",
+    "Bengaluru, India",
+    "India",
+    "Analytics",
+    true
+   ],
+   [
+    "Lead Credit Risk Analytics Consultant",
+    "Bengaluru, India",
+    "India",
+    "Analytics",
+    true
+   ],
+   [
+    "Quantitative Analytics Specialist",
+    "Bengaluru, India",
+    "India",
+    "Analytics",
+    true
+   ],
+   [
+    "Senior Risk Analytics Consultant",
+    "Hyderabad, India",
+    "India",
+    "Analytics",
+    true
+   ],
+   [
+    "Risk Analytics Consultant",
+    "Hyderabad, India",
+    "India",
+    "Analytics",
+    true
+   ]
+  ],
+  "raw_sample": [
+   [
+    "Principal Enterprise Data Architect",
+    "CHARLOTTE, NC, IRVING, TX, SAN FRANCISCO, CA",
+    9089
+   ],
+   [
+    "Lead Risk Analytics Consultant",
+    "Bengaluru, India",
+    7172
+   ],
+   [
+    "Lead Credit Risk Analytics Consultant",
+    "Bengaluru, India",
+    6481
+   ]
+  ]
+ },
+ "Fidelity Investments": {
+  "ok": true,
+  "secs": 18,
+  "total": 1,
+  "kept": 1,
+  "regions": [
+   "India"
+  ],
+  "sample": [
+   [
+    "Manager, Data Science",
+    "Bangalore, Karnataka",
+    "India",
+    "Science",
+    true
+   ]
+  ],
+  "raw_sample": [
+   [
+    "Manager, Data Science",
+    "Bangalore, Karnataka",
+    4234
+   ]
+  ]
+ },
+ "T-Mobile": {
+  "ok": true,
+  "secs": 18,
+  "total": 4,
+  "kept": 1,
+  "regions": [
+   "Locked"
+  ],
+  "sample": [
+   [
+    "VM-Analytics Manager",
+    "Remote, California",
+    "Locked",
+    "Analytics",
+    true
+   ]
+  ],
+  "raw_sample": [
+   [
+    "Principal Data Engineer",
+    "New York, New York, Philadelphia, Pennsylvania",
+    7522
+   ],
+   [
+    "Senior Data Engineer, AdTech",
+    "New York, New York, Philadelphia, Pennsylvania",
+    7389
+   ],
+   [
+    "Sr Manager, Data Engineering",
+    "Bellevue, Washington, Overland Park, Kansas",
+    7572
+   ]
+  ]
+ },
+ "Unilever": {
+  "ok": true,
+  "secs": 19,
+  "total": 2,
+  "kept": 0,
+  "regions": [],
+  "sample": [],
+  "raw_sample": [
+   [
+    "Data Engineer Benelux",
+    "Brussels, Belgium, Rotterdam - Hofplein 19",
+    7902
+   ],
+   [
+    "Data Science Manager \u2013 Customer Development XOPS",
+    "Hoboken US HQ, Rogers, AR, Minneapolis - Nicollet Mall",
+    7590
+   ]
+  ]
+ },
+ "Mars": {
+  "ok": true,
+  "secs": 16,
+  "total": 3,
+  "kept": 0,
+  "regions": [],
+  "sample": [],
+  "raw_sample": [
+   [
+    "DataOps Engineer",
+    "BRA-Sao Paulo-Guararema, POL-Mazowieckie-Warsaw",
+    3539
+   ],
+   [
+    "Principal Integration Architect",
+    "BRA-Sao Paulo-Guararema, WAW-Mars Polska, Warsaw Poland, POL-Mazowieckie-Warsaw",
+    5911
+   ],
+   [
+    "Lead Integration Architect Manager",
+    "BRA-Sao Paulo-Guararema, WAW-Mars Polska, Warsaw Poland, POL-Mazowieckie-Warsaw",
+    6346
+   ]
+  ]
+ },
+ "JLL": {
+  "ok": true,
+  "secs": 25,
+  "total": 4,
+  "kept": 2,
+  "regions": [
+   "India"
+  ],
+  "sample": [
+   [
+    "Building Performance & Energy Analytics Engineer",
+    "Bengaluru, KA",
+    "India",
+    "Engineering",
+    true
+   ],
+   [
+    "Data Engineer 2",
+    "Bengaluru, KA",
+    "India",
+    "Engineering",
+    true
+   ]
+  ],
+  "raw_sample": [
+   [
+    "BI Analyst",
+    "Austin, TX, Dallas, TX, Odessa, TX",
+    6065
+   ],
+   [
+    "Building Performance & Energy Analytics Engineer",
+    "Bengaluru, KA",
+    3944
+   ],
+   [
+    "Senior Data Analyst",
+    "Chicago, IL, Charlotte, NC, Los Angeles, CA, Charleston, SC, Washington, DC, Austin, TX, Dallas, TX, Orlando, FL, Denver, CO, Atlanta, GA",
+    13032
+   ]
+  ]
+ },
+ "CIBC": {
+  "ok": true,
+  "secs": 17,
+  "total": 0,
+  "kept": 0,
+  "regions": [],
+  "sample": [],
+  "raw_sample": []
+ },
+ "Blackstone": {
+  "ok": true,
+  "secs": 7,
+  "total": 0,
+  "kept": 0,
+  "regions": [],
+  "sample": [],
+  "raw_sample": []
+ },
+ "AssetMark": {
+  "ok": true,
+  "secs": 5,
+  "total": 0,
+  "kept": 0,
+  "regions": [],
+  "sample": [],
+  "raw_sample": []
+ },
+ "The Standard": {
+  "ok": true,
+  "secs": 7,
+  "total": 0,
+  "kept": 0,
+  "regions": [],
+  "sample": [],
+  "raw_sample": []
+ },
+ "GE Vernova": {
+  "ok": true,
+  "secs": 22,
+  "total": 5,
+  "kept": 3,
+  "regions": [
+   "India"
+  ],
+  "sample": [
+   [
+    "Data Analyst",
+    "Bengaluru",
+    "India",
+    "Analytics",
+    true
+   ],
+   [
+    "Data Scientist",
+    "Bengaluru",
+    "India",
+    "Science",
+    true
+   ],
+   [
+    "Senior Data Architect",
+    "Chennai",
+    "India",
+    "Architecture",
+    true
+   ]
+  ],
+  "raw_sample": [
+   [
+    "Staff Analytics Engineer",
+    "Greenville, Barcelona, Schenectady",
+    8005
+   ],
+   [
+    "Data Analyst",
+    "Bengaluru",
+    3191
+   ],
+   [
+    "Sr Staff Analytics Engineer",
+    "Greenville, Schenectady",
+    7197
+   ]
+  ]
+ },
+ "Abercrombie & Fitch": {
+  "ok": false,
+  "secs": 4,
+  "error": "HTTPError('429 Client Error: Too Many Requests for url: https://abercrombie.wd108.myworkdayjobs.com/wday/cxs/abercrombie/anf/jobs')",
+  "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/shorelessdev/shorelessdev/tools/try_new.py\", line 27, in run\n    raws = fn(slug, name, tags)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/shorelessdev/shorelessdev/sources.py\", line 244, in workday\n    r.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://abercrombie.wd108.myworkdayjobs.com/wday/cxs/abercrombie/anf/jobs\n"
+ },
+ "Amadeus": {
+  "ok": false,
+  "secs": 0,
+  "error": "HTTPError('429 Client Error: Too Many Requests for url: https://amadeus.wd502.myworkdayjobs.com/wday/cxs/amadeus/jobs/jobs')",
+  "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/shorelessdev/shorelessdev/tools/try_new.py\", line 27, in run\n    raws = fn(slug, name, tags)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/shorelessdev/shorelessdev/sources.py\", line 244, in workday\n    r.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://amadeus.wd502.myworkdayjobs.com/wday/cxs/amadeus/jobs/jobs\n"
+ },
+ "Smartsheet": {
+  "ok": true,
+  "secs": 0,
+  "total": 72,
+  "kept": 0,
+  "regions": [],
+  "sample": [],
+  "raw_sample": [
+   [
+    "AI ML Ops Software Engineer (Bangalore Hybrid)",
+    "Bangalore, INDIA",
+    4780
+   ],
+   [
+    "Commercial Account Executive (Asia)",
+    "Singapore, SGP",
+    4399
+   ],
+   [
+    "Commercial Account Executive (Remote Eligible - Costa Rica)",
+    "San Jose, CR",
+    6129
+   ]
+  ]
+ },
+ "Airbnb": {
+  "ok": true,
+  "secs": 1,
+  "total": 212,
+  "kept": 1,
+  "regions": [
+   "Locked"
+  ],
+  "sample": [
+   [
+    "Senior Data Scientist, People Analytics & Research",
+    "Remote - USA",
+    "Locked",
+    "Science",
+    true
+   ]
+  ],
+  "raw_sample": [
+   [
+    "Account Executive (Hotels)",
+    "Barcelona, Spain",
+    6196
+   ],
+   [
+    "Advanced Analytics Intern",
+    "United States",
+    6231
+   ],
+   [
+    "AirCover Specialist, Claims Experience",
+    "Canada",
+    9075
+   ]
+  ]
+ },
+ "Experian": {
+  "ok": true,
+  "secs": 2,
+  "total": 388,
+  "kept": 7,
+  "regions": [
+   "India",
+   "Locked"
+  ],
+  "sample": [
+   [
+    "Analytics Consultant",
+    "Mumbai, , India",
+    "India",
+    "Analytics",
+    true
+   ],
+   [
+    "Risk Analyst \u2013 Data Science & Analytics",
+    "Mumbai, , India",
+    "India",
+    "Science",
+    true
+   ],
+   [
+    "BI Developer (Oracle Apex)",
+    "Hyderabad, , India",
+    "India",
+    "Engineering",
+    true
+   ],
+   [
+    "Risk Analyst \u2013 Data Science & Analytics",
+    "Mumbai, Maharashtra, India",
+    "India",
+    "Science",
+    true
+   ],
+   [
+    "Risk Analyst \u2013 Data Science & Analytics",
+    "Mumbai, , India",
+    "India",
+    "Science",
+    true
+   ],
+   [
+    "[Expression of Interest] Data Engineer",
+    "Mid Valley City, Lingkaran Syed Putra,, KUALA LUMPUR, Malaysia",
+    "Locked",
+    "Engineering",
+    true
+   ]
+  ],
+  "raw_sample": [
+   [
+    "Senior AI web software Engineer",
+    "Heredia, , Costa Rica",
+    0
+   ],
+   [
+    "Senior Director, Healthcare Revenue Cycle Consulting",
+    "United States, UNITED STATES, United States",
+    0
+   ],
+   [
+    "Senior Director, Client Relationship Management (Preferred candidates will reside in the Northeast)",
+    "United States, UNITED STATES, United States",
+    0
+   ]
+  ]
+ },
+ "H&M": {
+  "ok": true,
+  "secs": 3,
+  "total": 500,
+  "kept": 0,
+  "regions": [],
+  "sample": [],
+  "raw_sample": [
+   [
+    "ARKET \ub354\ud604\ub300\uc11c\uc6b8\uc810 - Sales Advisor PT30",
+    "Yeongdeungpo District, Seoul, Korea, republic of",
+    0
+   ],
+   [
+    "Finance & Hub Controller",
+    "Bangalore, Karnataka, India",
+    0
+   ],
+   [
+    "H&M \u30bb\u30fc\u30eb\u30b9\u30a2\u30c9\u30d0\u30a4\u30b6\u30fc \u6b63\u793e\u54e1 ( \u6709\u660e\u30ac\u30fc\u30c7\u30f3  )",
+    "Koto City, Tokyo, Japan",
+    0
+   ]
+  ]
+ }
+}
