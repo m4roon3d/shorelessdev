@@ -54,6 +54,9 @@ GREENHOUSE = [
     ("route", "Route", ["supply"]),
     ("pallet", "Pallet", ["supply"]),
     ("aftership", "AfterShip", ["supply"]),
+    # GCCs with India hiring (tools/probe3.py)
+    ("smartsheet", "Smartsheet", []),
+    ("airbnb", "Airbnb", []),
     # added from the board probe
     ('agoda', 'Agoda', []),
     ('sigmoid', 'Sigmoid', []),
@@ -198,6 +201,9 @@ SMARTRECRUITERS = [
     ('deliveryhero', 'Delivery Hero', []),
     # remote-first companies (remoteintech list)
     ('swiggy', 'Swiggy', ['supply']),
+    # GCCs (tools/probe3.py)
+    ('Experian', 'Experian', []),
+    ('HMGroup', 'H&M', []),
 ]
 
 WORKABLE = [
@@ -253,4 +259,32 @@ WORKDAY = [
     ('nike|1|nke', 'Nike', []),
     ('chevron|5|jobs', 'Chevron', []),
     ('shell|3|ShellCareers', 'Shell', []),
+    # GCCs with India hiring (tools/probe3.py)
+    ('wf|1|WellsFargoJobs', 'Wells Fargo', []),
+    ('fmr|1|FidelityCareers', 'Fidelity Investments', []),
+    ('tmobile|1|External', 'T-Mobile', []),
+    ('unilever|3|Unilever_Experienced_Professionals', 'Unilever', []),
+    ('mars|3|External', 'Mars', []),
+    ('jll|1|jllcareers', 'JLL', []),
+    ('cibc|3|search', 'CIBC', []),
+    ('blackstone|1|Blackstone_Careers', 'Blackstone', []),
+    ('assetmark|5|AssetMark_Careers', 'AssetMark', []),
+    ('standard|1|Search', 'The Standard', []),
+    ('gevernova|5|Vernova_ExternalSite', 'GE Vernova', []),
+    ('abercrombie|108|anf', 'Abercrombie & Fitch', []),
+    ('amadeus|502|jobs', 'Amadeus', []),
 ]
+
+# Big employers on other hiring systems (sources.py). Searched for data roles, India only.
+ORACLE = [  # Oracle Recruiting Cloud: "host|siteNumber"
+    ('jpmc.fa.oraclecloud.com|CX_1001', 'JPMorgan Chase', []),
+    ('egug.fa.us2.oraclecloud.com|CX_1', 'American Express', []),
+]
+EIGHTFOLD = [  # Eightfold PCSX: "host|domain"
+    ('apply.careers.microsoft.com|microsoft.com', 'Microsoft', []),
+    ('starbucks.eightfold.ai|starbucks.com', 'Starbucks', []),
+]
+AMAZON = [('IND', 'Amazon', [])]
+GOOGLE = [('India', 'Google', [])]
+GOLDMAN = [('India', 'Goldman Sachs', [])]
+AVATURE = [('careers.tesco.com|en_GB/careers', 'Tesco', [])]
