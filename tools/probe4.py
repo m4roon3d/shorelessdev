@@ -94,6 +94,10 @@ try:
 except Exception as e:  # noqa: BLE001
     res["amazon_fields"] = str(e)
 
+text = json.dumps(res, indent=1, default=str)
+# keep anything that looks like a key or token out of the repo (push protection rejects it)
+text = re.sub(r"AIza[0-9A-Za-z_\\-]{20,}", "AIza<redacted>", text)
+text = re.sub(r"(?i)(key|token|secret|csrf|nonce)([\"':= ]{1,6})[A-Za-z0-9._\\-]{16,}", r"\1\2<redacted>", text)
 with open("tools/probe4.json", "w") as fh:
-    json.dump(res, fh, indent=1, default=str)
+    fh.write(text)
 print("ok", len(res))
