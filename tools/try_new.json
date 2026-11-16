@@ -1,7 +1,7 @@
 {
  "JPMorgan Chase": {
   "ok": true,
-  "secs": 19,
+  "secs": 18,
   "total": 12,
   "kept": 11,
   "regions": [
@@ -71,7 +71,7 @@
  },
  "American Express": {
   "ok": true,
-  "secs": 8,
+  "secs": 9,
   "total": 3,
   "kept": 3,
   "regions": [
@@ -120,7 +120,7 @@
  },
  "Microsoft": {
   "ok": true,
-  "secs": 364,
+  "secs": 174,
   "total": 1,
   "kept": 0,
   "regions": [],
@@ -135,7 +135,7 @@
  },
  "Starbucks": {
   "ok": true,
-  "secs": 21,
+  "secs": 18,
   "total": 0,
   "kept": 0,
   "regions": [],
@@ -144,7 +144,7 @@
  },
  "Amazon": {
   "ok": true,
-  "secs": 8,
+  "secs": 7,
   "total": 63,
   "kept": 33,
   "regions": [
@@ -214,7 +214,7 @@
  },
  "Google": {
   "ok": true,
-  "secs": 5,
+  "secs": 6,
   "total": 6,
   "kept": 6,
   "regions": [
@@ -284,7 +284,7 @@
  },
  "Goldman Sachs": {
   "ok": true,
-  "secs": 3,
+  "secs": 5,
   "total": 2,
   "kept": 2,
   "regions": [
@@ -321,7 +321,7 @@
  },
  "Tesco": {
   "ok": true,
-  "secs": 13,
+  "secs": 15,
   "total": 0,
   "kept": 0,
   "regions": [],
@@ -330,7 +330,7 @@
  },
  "Wells Fargo": {
   "ok": true,
-  "secs": 18,
+  "secs": 20,
   "total": 7,
   "kept": 5,
   "regions": [
@@ -393,7 +393,7 @@
  },
  "Fidelity Investments": {
   "ok": true,
-  "secs": 14,
+  "secs": 16,
   "total": 1,
   "kept": 1,
   "regions": [
@@ -418,7 +418,7 @@
  },
  "T-Mobile": {
   "ok": true,
-  "secs": 16,
+  "secs": 18,
   "total": 4,
   "kept": 1,
   "regions": [
@@ -453,7 +453,7 @@
  },
  "Unilever": {
   "ok": true,
-  "secs": 18,
+  "secs": 21,
   "total": 2,
   "kept": 0,
   "regions": [],
@@ -473,7 +473,7 @@
  },
  "Mars": {
   "ok": true,
-  "secs": 13,
+  "secs": 18,
   "total": 3,
   "kept": 0,
   "regions": [],
@@ -498,7 +498,7 @@
  },
  "JLL": {
   "ok": true,
-  "secs": 23,
+  "secs": 26,
   "total": 4,
   "kept": 2,
   "regions": [
@@ -540,7 +540,7 @@
  },
  "CIBC": {
   "ok": true,
-  "secs": 15,
+  "secs": 17,
   "total": 0,
   "kept": 0,
   "regions": [],
@@ -549,7 +549,7 @@
  },
  "Blackstone": {
   "ok": true,
-  "secs": 6,
+  "secs": 7,
   "total": 0,
   "kept": 0,
   "regions": [],
@@ -558,7 +558,7 @@
  },
  "AssetMark": {
   "ok": true,
-  "secs": 5,
+  "secs": 4,
   "total": 0,
   "kept": 0,
   "regions": [],
@@ -567,7 +567,7 @@
  },
  "The Standard": {
   "ok": true,
-  "secs": 8,
+  "secs": 7,
   "total": 0,
   "kept": 0,
   "regions": [],
@@ -576,7 +576,7 @@
  },
  "GE Vernova": {
   "ok": true,
-  "secs": 12,
+  "secs": 10,
   "total": 5,
   "kept": 3,
   "regions": [
@@ -622,18 +622,6 @@
     7197
    ]
   ]
- },
- "Abercrombie & Fitch": {
-  "ok": false,
-  "secs": 46,
-  "error": "HTTPError('429 Client Error: Too Many Requests for url: https://abercrombie.wd108.myworkdayjobs.com/wday/cxs/abercrombie/anf/jobs')",
-  "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/shorelessdev/shorelessdev/tools/try_new.py\", line 27, in run\n    raws = fn(slug, name, tags)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/shorelessdev/shorelessdev/sources.py\", line 254, in workday\n    r = _req(\"POST\", f\"{api}/jobs\", json={\"appliedFacets\": {}, \"limit\": 20, \"offset\": offset, \"searchText\": q},\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/shorelessdev/shorelessdev/sources.py\", line 30, in _req\n    r.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://abercrombie.wd108.myworkdayjobs.com/wday/cxs/abercrombie/anf/jobs\n"
- },
- "Amadeus": {
-  "ok": false,
-  "secs": 59,
-  "error": "HTTPError('429 Client Error: Too Many Requests for url: https://amadeus.wd502.myworkdayjobs.com/wday/cxs/amadeus/jobs/jobs')",
-  "trace": "Traceback (most recent call last):\n  File \"/home/runner/work/shorelessdev/shorelessdev/tools/try_new.py\", line 27, in run\n    raws = fn(slug, name, tags)\n           ^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/shorelessdev/shorelessdev/sources.py\", line 254, in workday\n    r = _req(\"POST\", f\"{api}/jobs\", json={\"appliedFacets\": {}, \"limit\": 20, \"offset\": offset, \"searchText\": q},\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/shorelessdev/shorelessdev/sources.py\", line 30, in _req\n    r.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py\", line 1167, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 429 Client Error: Too Many Requests for url: https://amadeus.wd502.myworkdayjobs.com/wday/cxs/amadeus/jobs/jobs\n"
  },
  "Smartsheet": {
   "ok": true,
@@ -690,8 +678,8 @@
    ],
    [
     "AirCover Specialist, Claims Experience",
-    "Canada",
-    9075
+    "Japan",
+    8483
    ]
   ]
  },
