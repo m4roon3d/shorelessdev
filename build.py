@@ -10,12 +10,11 @@ if os.environ.get("RENDER"):
     print("Using committed static/jobs.json")
     sys.exit(0)
 
-os.environ["SHORELESS_BUILD"] = "1"
-import app  # noqa: E402
+import pipeline  # noqa: E402
 import sources  # noqa: E402
 
 t0 = time.time()
-jobs, report = app.fetch_all()
+jobs, report = pipeline.fetch_all()
 now = int(time.time())
 
 try:

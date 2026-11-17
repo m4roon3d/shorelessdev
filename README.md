@@ -27,12 +27,16 @@ Edit `companies.py`. The slug is the part of the company's job board URL:
 
 GCC employers (India tech centres) were found with `tools/probe3.py` and checked with `tools/try_new.py`.
 
-Push the change and Render redeploys automatically.
+Push the change: the "Refresh jobs" GitHub Action rebuilds `static/jobs.json`, and the Render static site redeploys with it.
+
+## How it runs
+A scheduled GitHub Action (`.github/workflows/refresh.yml`, every 6 hours) runs `build.py` and commits `static/jobs.json`. Render serves the `static/` folder as a static site, so there is no server process.
 
 ## Run locally
 ```
 pip install -r requirements.txt
-python app.py   # http://localhost:8000
+python build.py                       # fetch every source, write static/jobs.json
+python -m http.server 8000 -d static   # http://localhost:8000
 ```
 
 RemoteOK listings are shown with credit to [RemoteOK](https://remoteok.com). Remotive listings link back to [Remotive](https://remotive.com).

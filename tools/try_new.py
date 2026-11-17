@@ -6,7 +6,7 @@ import traceback
 from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, ".")
-import app  # noqa: E402
+import pipeline  # noqa: E402
 import companies  # noqa: E402
 import sources  # noqa: E402
 
@@ -25,7 +25,7 @@ def run(t):
     t0 = time.time()
     try:
         raws = fn(slug, name, tags)
-        kept = [j for j in (app.normalize(r, ats) for r in raws) if j]
+        kept = [j for j in (pipeline.normalize(r, ats) for r in raws) if j]
         return name, {"ok": True, "secs": round(time.time() - t0), "total": len(raws), "kept": len(kept),
                       "regions": sorted({j["region"] for j in kept}),
                       "sample": [(j["title"], j["location"], j["region"], j["role"], bool(j["posted"])) for j in kept[:6]],
