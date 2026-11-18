@@ -244,8 +244,9 @@ const STAGES=[["saved","Saved"],["applied","Applied"],["interview","Interviewing
 
 /* ---------- state ---------- */
 const P=Object.assign({stacks:["Informatica","SQL"],roles:["Engineering","Analytics","Architecture"],
-  open:["in-remote","apac","world","unclear"],supply:true},store.get("profile",{}));
-const B=Object.assign({q:"",who:null,roles:null,stacks:[],apply:"all",supply:false,senior:false,hidePassed:true,age:30,sort:"fit"},store.get("browse",{}));
+  open:["in-remote","apac","world","unclear"]},store.get("profile",{}));
+delete P.supply;  // ranking is domain-neutral
+const B=Object.assign({q:"",who:null,roles:null,stacks:[],apply:"all",senior:false,hidePassed:true,age:30,sort:"fit"},store.get("browse",{}));
 if(B.direct)B.apply="direct";delete B.direct;
 let T=store.get("triage",{});            // id -> {s, t, note, job}
 let jobs=[],byId={},feed=null,seenBefore=new Set(store.get("seen",[]));
@@ -259,7 +260,7 @@ const snap=j=>({id:j.id,pay:j.pay,title:j.title,company:j.company,url:j.url,loca
 function fit(j){
   const mine=(j.stack||[]).filter(x=>P.stacks.includes(x));
   const core=mine.filter(x=>!GENERIC.has(x)).length, gen=mine.length-core;
-  const sc=P.supply&&j.supply, d=days(j.posted), w=who(j);
+  const sc=false, d=days(j.posted), w=who(j);
   const s=3*core+gen+(sc?3:0)+(P.roles.includes(j.role)?2:0)
     +({"in-remote":2,world:2,apac:1,unclear:0,"in-office":-1,locked:-4})[w]
     +(d==null?0:d<3?2:d<7?1:d<14?.5:0)+(direct(j)?.5:0);
@@ -319,7 +320,6 @@ function vToday(){
     h("div",{class:"prog","aria-hidden":"true"},batch.map((_,i)=>h("i",{class:i<pos?"done":i===pos?"cur":""}))));
   const reasons=[];
   if(f.mine.length)reasons.push(["matches ",h("b",{},f.mine.join(", "))]);
-  if(f.sc)reasons.push(["is in ",h("b",{},"supply chain")]);
   if(direct(j))reasons.push("applies direct to the employer");
   const d=days(j.posted);if(d!=null&&d<7)reasons.push(`was posted ${ago(j.posted)} ago`);
   const card=h("article",{class:"card"},
@@ -365,7 +365,6 @@ function browseList(ignore){
     if(ignore!=="role"&&!R.includes(j.role))return false;
     if(ignore!=="stack"&&B.stacks.length&&!B.stacks.some(x=>(j.stack||[]).includes(x)))return false;
     if(ignore!=="apply"&&B.apply!=="all"&&direct(j)!==(B.apply==="direct"))return false;
-    if(B.supply&&!j.supply)return false;
     if(B.pay&&!j.pay)return false;
     if(B.senior&&j.level!=="Senior+")return false;
     if(j.posted&&j.posted<cut)return false;
@@ -402,7 +401,7 @@ function vBrowse(){
       return h("li",{class:"job"+(j._new?" is-new":"")+(st==="pass"?" dim":"")},
         h("div",{class:"top"},h("a",{class:"title",href:j.url,target:"_blank",rel:"noopener"},j.title),h("span",{class:"age"},B.sort==="arrival"&&j.first_seen?"added "+ago(j.first_seen)+" ago":ago(j.posted))),
         h("div",{class:"co"},j.company||"—",j.location&&h("span",{}," · "+j.location)),
-        h("div",{class:"tags"},j._new&&tag("NEW","new"),whoTag(j),j.pay&&tag(j.pay,"pay"),tag(direct(j)?"Direct":"via "+j.source),stackTags(j,4),j.supply&&tag("Supply chain"),
+        h("div",{class:"tags"},j._new&&tag("NEW","new"),whoTag(j),j.pay&&tag(j.pay,"pay"),tag(direct(j)?"Direct":"via "+j.source),stackTags(j,4),
           h("span",{class:"ra"},
             st&&st!=="pass"&&st!=="saved"?tag(STAGES.find(s=>s[0]===st)[1]):
               h("button",{class:"ic",type:"button","aria-pressed":String(st==="saved"),onclick:()=>{setStage(j,st==="saved"?null:"saved");paintList()}},st==="saved"?"★ Saved":"☆ Save"),
@@ -420,7 +419,7 @@ function vBrowse(){
     h("div",{class:"line"},h("span",{class:"lbl"},"Apply"),
       [["all","All"],["direct","Direct to employer"],["board","Via job boards"]].map(([k,l])=>chip(l,B.apply===k,()=>{B.apply=k;re()},ca[k]))),
     h("div",{class:"line"},h("span",{class:"lbl"},"Only"),
-      chip("Shows pay",B.pay,()=>{B.pay=!B.pay;re()}),chip("Supply chain",B.supply,()=>{B.supply=!B.supply;re()}),
+      chip("Shows pay",B.pay,()=>{B.pay=!B.pay;re()}),
       chip("Senior+",B.senior,()=>{B.senior=!B.senior;re()}),chip("Hide passed",B.hidePassed,()=>{B.hidePassed=!B.hidePassed;re()}))),
     count,list,more);
   paintList();return el;
@@ -501,8 +500,7 @@ function paintTune(){
   $("tune").replaceChildren(
     h("div",{class:"row"},h("span",{class:"lbl"},"Your stack"),h("div",{class:"chips"},all.map(s=>chip(s,P.stacks.includes(s),()=>{tog(P.stacks,s);re()})))),
     h("div",{class:"row"},h("span",{class:"lbl"},"Roles you want"),h("div",{class:"chips"},ROLES.map(r=>chip(r,P.roles.includes(r),()=>{tog(P.roles,r);re()})))),
-    h("div",{class:"row"},h("span",{class:"lbl"},"Who can apply"),h("div",{class:"chips"},Object.keys(WHO).map(k=>chip(WHO[k][0],P.open.includes(k),()=>{tog(P.open,k);re()})))),
-    h("div",{class:"row"},h("span",{class:"lbl"},"Domain"),h("div",{class:"chips"},chip("Rank supply chain roles higher",P.supply,()=>{P.supply=!P.supply;re()}))));
+    h("div",{class:"row"},h("span",{class:"lbl"},"Who can apply"),h("div",{class:"chips"},Object.keys(WHO).map(k=>chip(WHO[k][0],P.open.includes(k),()=>{tog(P.open,k);re()})))));
 }
 $("tune-btn").onclick=()=>{const t=$("tune");t.hidden=!t.hidden;$("tune-btn").setAttribute("aria-expanded",String(!t.hidden));if(!t.hidden)paintTune()};
 
