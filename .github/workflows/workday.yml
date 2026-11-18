@@ -1,0 +1,28 @@
+name: Refresh Workday sites
+on:
+  schedule:
+    - cron: "43 2 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: workday
+jobs:
+  workday:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python build_workday.py
+      - name: Commit workday.json
+        run: |
+          git config user.name "shoreless-bot"
+          git config user.email "shoreless-bot@users.noreply.github.com"
+          git fetch -q origin main
+          git reset -q --mixed origin/main
+          git add static/workday.json
+          git diff --cached --quiet || git commit -m "Refresh Workday jobs"
+          git push origin HEAD:main

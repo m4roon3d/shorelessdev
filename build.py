@@ -13,9 +13,22 @@ if os.environ.get("RENDER"):
 import pipeline  # noqa: E402
 import sources  # noqa: E402
 
+# Workday sites run in their own daily job (build_workday.py); merge its last result here.
+sources.ATS.pop("Workday", None)
+
 t0 = time.time()
 jobs, report = pipeline.fetch_all()
 now = int(time.time())
+
+try:
+    with open("static/workday.json") as fh:
+        wd = json.load(fh)
+except (OSError, ValueError):
+    wd = {}
+if now - wd.get("updated", 0) < 3 * 86400:
+    ids = {j["id"] for j in jobs}
+    jobs += [{k: v for k, v in j.items() if k != "fetched"} for j in wd.get("jobs", []) if j["id"] not in ids]
+    report += wd.get("sources", [])
 
 try:
     with open("static/jobs.json") as fh:

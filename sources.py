@@ -278,7 +278,7 @@ def _workday(slug, name, tags):
             time.sleep(1)
         time.sleep(1)
     out = []
-    for p in picks[:40]:
+    for p in picks[:25]:
         info = {}
         try:
             info = _req("GET", f"{api}{p['externalPath']}", headers=hdr, waits=(10, 30)).json().get("jobPostingInfo") or {}
@@ -403,7 +403,7 @@ def eightfold(slug, name, tags):
                 break
         time.sleep(0.3)
     out = []
-    for p in picks[:40]:
+    for p in picks[:25]:
         desc = ""
         try:
             d = _req("GET", f"{base}/api/pcsx/position_details", params={"position_id": p["id"], "domain": domain, "hl": "en"},
