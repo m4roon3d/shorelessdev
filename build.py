@@ -31,11 +31,14 @@ for j in jobs:
     j["last_seen"] = now
 
 # Job-board feeds are searched, not listed, and can come back short when rate-limited.
-# Keep a feed job for up to 36 hours after it was last returned. Company boards are authoritative: no carry-over.
+# Keep a job for up to 36 hours after it was last returned when its source is a searched feed, or when its
+# company board failed this run (rate limit, outage). A board that answered is authoritative: its closed jobs go.
 have = {j["id"] for j in jobs}
+failed = {(r["key"].split(":")[0], r["name"]) for r in report if not r["ok"]}
 kept = 0
 for j in prev.values():
-    if j["id"] not in have and j.get("source") in sources.FEEDS and now - (j.get("last_seen") or old.get("updated") or 0) < 36 * 3600:
+    carry = j.get("source") in sources.FEEDS or (j.get("source"), j.get("company")) in failed
+    if j["id"] not in have and carry and now - (j.get("last_seen") or old.get("updated") or 0) < 36 * 3600:
         j.setdefault("last_seen", old.get("updated") or now)
         jobs.append(j)
         kept += 1

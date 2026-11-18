@@ -3,6 +3,7 @@
 """
 import html
 import re
+import threading
 import time
 from datetime import datetime, timezone
 
@@ -227,7 +228,9 @@ def teamtailor(slug, name, tags):
 
 
 _WD_AGO = re.compile(r"(\d+)\+? Days? Ago", re.I)
-WD_QUERIES = ("data engineer", "data architect", "data analyst", "analytics engineer", "etl", "business intelligence", "big data")
+WD_QUERIES = ("data engineer", "data architect", "data analyst", "analytics", "etl")
+# Workday rate-limits by IP across all its customers: only two sites at a time, with pauses between calls.
+_WD_LANE = threading.Semaphore(2)
 
 
 def _wd_posted(text):
@@ -243,6 +246,11 @@ def _wd_posted(text):
 
 def workday(slug, name, tags):
     """slug is "tenant|wd number|site". Searches data roles, keeps those in India or remote, then reads each posting."""
+    with _WD_LANE:
+        return _workday(slug, name, tags)
+
+
+def _workday(slug, name, tags):
     import classify  # local import: classify has no dependency on sources
     tenant, wd, site = slug.split("|")
     base = f"https://{tenant}.wd{wd}.myworkdayjobs.com"
@@ -250,9 +258,9 @@ def workday(slug, name, tags):
     hdr = {**UA, "Accept": "application/json", "Content-Type": "application/json"}
     seen, picks = set(), []
     for q in WD_QUERIES:
-        for offset in (0, 20, 40):
+        for offset in (0, 20):
             r = _req("POST", f"{api}/jobs", json={"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": q},
-                     headers=hdr)
+                     headers=hdr, waits=(10, 30, 60))
             posts = r.json().get("jobPostings") or []
             for p in posts:
                 path = p.get("externalPath")
@@ -267,12 +275,13 @@ def workday(slug, name, tags):
                 picks.append(p)
             if len(posts) < 20:
                 break
-        time.sleep(0.3)
+            time.sleep(1)
+        time.sleep(1)
     out = []
-    for p in picks[:60]:
+    for p in picks[:40]:
         info = {}
         try:
-            info = requests.get(f"{api}{p['externalPath']}", headers=hdr, timeout=TIMEOUT).json().get("jobPostingInfo") or {}
+            info = _req("GET", f"{api}{p['externalPath']}", headers=hdr, waits=(10, 30)).json().get("jobPostingInfo") or {}
         except (requests.RequestException, ValueError):
             pass
         locs = [info.get("location") or p.get("locationsText") or ""] + list(info.get("additionalLocations") or [])
@@ -285,7 +294,7 @@ def workday(slug, name, tags):
             posted=_iso(info.get("startDate")) or _wd_posted(p.get("postedOn")), tags=tags,
             desc=_strip(info.get("jobDescription")), etype=info.get("timeType") or "",
         ))
-        time.sleep(0.2)
+        time.sleep(0.8)
     return out
 
 
