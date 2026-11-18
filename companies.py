@@ -177,7 +177,6 @@ ASHBY = [
     ('gooddata', 'GoodData', ['vendor']),
     ('sentry', 'Sentry', []),
     # remote-first companies (remoteintech list)
-    ('klaviyo', 'Klaviyo', []),
     ('webfx', 'WebFX', []),
     ('lightspeedhq', 'Lightspeed', []),
     ('temporal', 'Temporal', ['vendor']),
